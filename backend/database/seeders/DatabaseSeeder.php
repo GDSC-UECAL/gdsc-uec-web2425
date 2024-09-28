@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\products;
 use App\Models\User;
 use App\Models\Teams;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -15,5 +16,6 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
        Teams::factory(10)->create();
+       products::factory(10)->create();
     }
 }
