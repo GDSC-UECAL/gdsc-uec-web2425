@@ -1,0 +1,20 @@
+
+.navbar{
+    background-color: purple;
+    padding: 15px;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    font-weight: bold;
+}
+
+.nav-link{
+    color: hsl(0, 0%, 70%);
+}
+
+.nav-item .nav-link.active {
+    color: #ffffff;
+}
+
+.nav-link:hover{
+    color: white;
+}
