@@ -17,7 +17,7 @@ class TeamsFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => "fake()->sentence()",
+            'name' => fake()->sentence(),
             'role' => fake()->sentence(),
             'image' => fake()->sentence(),
             'did' => rand(0, 200)
