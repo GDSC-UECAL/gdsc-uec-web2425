@@ -4,7 +4,7 @@ function Footer() {
     return (
         <footer className="bg-dark text-light mt-auto py-3 fixed-bottom">
     <div className="container-fluid">
-        <div className="row text-center">
+        <div className="texts row text-center">
             <div className="col-12 col-md-6 mb-2">
                 <h6>Google Developer Student Clubs</h6>
                 <p>University of the East - Caloocan</p>
