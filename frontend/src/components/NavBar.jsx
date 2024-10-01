@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import "../assets/common/gdsc_logo.png"
 import nav_logo from "../assets/common/gdsc_logo.png"
 
@@ -27,7 +28,7 @@ function Navbar() {
                                     <a className="nav-link mx-lg-2" href="#">About</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link mx-lg-2" href="#">Product</a>
+                                    <Link className="nav-link mx-lg-2" to='/products'>Product</Link> {/* Update the route to prodcts*/}
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link mx-lg-2" href="#">Teams</a>
