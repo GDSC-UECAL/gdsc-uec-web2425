@@ -2,19 +2,19 @@
 
 namespace App\Http\Controllers\Api\V1;
 
-use App\Models\Products;
+use App\Models\Carousel;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\StoreProductsRequest;
-use App\Http\Requests\UpdateProductsRequest;
+use App\Http\Requests\StoreCarouselRequest;
+use App\Http\Requests\UpdateCarouselRequest;
 
-class ProductsController extends Controller
+class CarouselController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return Products::all();
+        return Carousel::all();
     }
 
     /**
@@ -28,7 +28,7 @@ class ProductsController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreProductsRequest $request)
+    public function store(StoreCarouselRequest $request)
     {
         //
     }
@@ -36,7 +36,7 @@ class ProductsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Products $products)
+    public function show(Carousel $carousel)
     {
         //
     }
@@ -44,7 +44,7 @@ class ProductsController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Products $products)
+    public function edit(Carousel $carousel)
     {
         //
     }
@@ -52,7 +52,7 @@ class ProductsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateProductsRequest $request, Products $products)
+    public function update(UpdateCarouselRequest $request, Carousel $carousel)
     {
         //
     }
@@ -60,7 +60,7 @@ class ProductsController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Products $products)
+    public function destroy(Carousel $carousel)
     {
         //
     }

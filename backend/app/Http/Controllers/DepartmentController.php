@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Partners;
-use App\Http\Requests\StorePartnersRequest;
-use App\Http\Requests\UpdatePartnersRequest;
+use App\Models\Department;
+use App\Http\Requests\StoreDepartmentRequest;
+use App\Http\Requests\UpdateDepartmentRequest;
 
-class PartnersController extends Controller
+class DepartmentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class PartnersController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StorePartnersRequest $request)
+    public function store(StoreDepartmentRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class PartnersController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Partners $partners)
+    public function show(Department $department)
     {
         //
     }
@@ -43,7 +43,7 @@ class PartnersController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Partners $partners)
+    public function edit(Department $department)
     {
         //
     }
@@ -51,7 +51,7 @@ class PartnersController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdatePartnersRequest $request, Partners $partners)
+    public function update(UpdateDepartmentRequest $request, Department $department)
     {
         //
     }
@@ -59,7 +59,7 @@ class PartnersController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Partners $partners)
+    public function destroy(Department $department)
     {
         //
     }
