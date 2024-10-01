@@ -22,19 +22,19 @@ function Navbar() {
                         <div className="offcanvas-body">
                             <ul className="navbar-nav justify-content-first flex-grow-1 pe-3">
                                 <li className="nav-item">
-                                    <a className="nav-link mx-lg-2" aria-current="page" href="#">Home</a>
+                                    <Link className="nav-link mx-lg-2" aria-current="page" to="/home">Home</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link mx-lg-2" href="#">About</a>
+                                    <Link className="nav-link mx-lg-2" to="/about">About</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link mx-lg-2" to='/products'>Product</Link> {/* Update the route to prodcts*/}
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link mx-lg-2" href="#">Teams</a>
+                                    <Link className="nav-link mx-lg-2" to="/teams">Teams</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link mx-lg-2" href="#">Events</a>
+                                    <Link className="nav-link mx-lg-2" to="/events">Events</Link>
                                 </li>
                             </ul>
                         </div>
