@@ -1,15 +1,17 @@
 
 .navbar{
     background-color: white;
-    padding: 15px;
-    padding-top: 33px;
-    padding-bottom: 33px;
+    padding: 8px;
+    padding-left: 30px;
     font-weight: bold;
-    box-shadow: 0 2px 12px 0 rgba(0,0,0,.2);
+    box-shadow: 0 0px 20px 0 rgba(0,0,0,.1);
 }
 
 .nav-link{
     color: hsl(0, 0%, 1%);
+    font-family: "Mulish", sans-serif;
+    font-weight: 700;
+    font-style: bold;
     
 }
 
@@ -20,3 +22,11 @@
 .nav-link:hover{
     color: rgb(151, 142, 142);
 }
+
+.navbar-brand{
+    height: auto;
+    padding: 0%;
+    padding-right: 50px;
+}
+
+
