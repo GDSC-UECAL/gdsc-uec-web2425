@@ -1,14 +1,16 @@
 
 .navbar{
-    background-color: purple;
+    background-color: white;
     padding: 15px;
     padding-top: 33px;
     padding-bottom: 33px;
     font-weight: bold;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.2);
 }
 
 .nav-link{
-    color: hsl(0, 0%, 70%);
+    color: hsl(0, 0%, 1%);
+    
 }
 
 .nav-item .nav-link.active {
@@ -16,5 +18,5 @@
 }
 
 .nav-link:hover{
-    color: white;
+    color: rgb(151, 142, 142);
 }
