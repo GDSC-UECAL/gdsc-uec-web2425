@@ -14,7 +14,7 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        return Task::all();
+        return Products::all();
     }
 
     /**
