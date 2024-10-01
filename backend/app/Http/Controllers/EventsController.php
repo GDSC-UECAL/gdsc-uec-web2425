@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Partners;
-use App\Http\Requests\StorePartnersRequest;
-use App\Http\Requests\UpdatePartnersRequest;
+use App\Http\Requests\StoreEventsRequest;
+use App\Http\Requests\UpdateEventsRequest;
+use App\Models\Events;
 
-class PartnersController extends Controller
+class EventsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class PartnersController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StorePartnersRequest $request)
+    public function store(StoreEventsRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class PartnersController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Partners $partners)
+    public function show(Events $events)
     {
         //
     }
@@ -43,7 +43,7 @@ class PartnersController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Partners $partners)
+    public function edit(Events $events)
     {
         //
     }
@@ -51,7 +51,7 @@ class PartnersController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdatePartnersRequest $request, Partners $partners)
+    public function update(UpdateEventsRequest $request, Events $events)
     {
         //
     }
@@ -59,7 +59,7 @@ class PartnersController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Partners $partners)
+    public function destroy(Events $events)
     {
         //
     }

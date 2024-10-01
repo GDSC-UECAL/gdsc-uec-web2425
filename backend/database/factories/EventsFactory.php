@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Carousel>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Events>
  */
-class CarouselFactory extends Factory
+class EventsFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,8 +17,7 @@ class CarouselFactory extends Factory
     public function definition(): array
     {
         return [
-            'title' => fake()->sentence(),
-            'image' => fake()->sentence()
+            //
         ];
     }
 }
