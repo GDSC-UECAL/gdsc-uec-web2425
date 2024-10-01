@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Department;
 use App\Models\User;
 use App\Models\Teams;
 
@@ -17,6 +18,7 @@ class DatabaseSeeder extends Seeder
     {
 
         Teams::factory(10)->create();
-
+        Department::factory(10)->create();
+        
     }
 }
