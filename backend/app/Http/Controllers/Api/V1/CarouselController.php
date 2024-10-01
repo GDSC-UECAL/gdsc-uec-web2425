@@ -1,19 +1,20 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
-use App\Models\Partners;
-use App\Http\Requests\StorePartnersRequest;
-use App\Http\Requests\UpdatePartnersRequest;
+use App\Models\Carousel;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreCarouselRequest;
+use App\Http\Requests\UpdateCarouselRequest;
 
-class PartnersController extends Controller
+class CarouselController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        return Carousel::all();
     }
 
     /**
@@ -27,7 +28,7 @@ class PartnersController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StorePartnersRequest $request)
+    public function store(StoreCarouselRequest $request)
     {
         //
     }
@@ -35,7 +36,7 @@ class PartnersController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Partners $partners)
+    public function show(Carousel $carousel)
     {
         //
     }
@@ -43,7 +44,7 @@ class PartnersController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Partners $partners)
+    public function edit(Carousel $carousel)
     {
         //
     }
@@ -51,7 +52,7 @@ class PartnersController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdatePartnersRequest $request, Partners $partners)
+    public function update(UpdateCarouselRequest $request, Carousel $carousel)
     {
         //
     }
@@ -59,7 +60,7 @@ class PartnersController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Partners $partners)
+    public function destroy(Carousel $carousel)
     {
         //
     }
