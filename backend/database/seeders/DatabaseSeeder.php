@@ -8,6 +8,7 @@ use App\Models\Teams;
 use App\Models\Partners;
 use App\Models\Carousel;
 use App\Models\Products;
+use App\Models\Events;
 
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -26,6 +27,6 @@ class DatabaseSeeder extends Seeder
         Products::factory(10)->create();
         Carousel::factory(10)->create();        
         Department::factory(10)->create();
-        
+        Events::factory(10)->create();
     }
 }
