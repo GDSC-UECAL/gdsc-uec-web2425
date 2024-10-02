@@ -10,6 +10,7 @@ import Home from './pages/Home.jsx';
 import './App.css'
 import './components/Navbar.css'
 import './components/ProductsCarousel.css';
+import './pages/Products.css';
 
 function App() {
   const [count, setCount] = useState(0)

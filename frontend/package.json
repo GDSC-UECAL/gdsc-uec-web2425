@@ -24,7 +24,9 @@
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
+    "file-loader": "^6.2.0",
     "globals": "^15.9.0",
+    "url-loader": "^4.1.1",
     "vite": "^5.4.1"
   }
 }
