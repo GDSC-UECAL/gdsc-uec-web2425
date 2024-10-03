@@ -1,10 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
+
 
 use App\Http\Requests\StoreEventsRequest;
 use App\Http\Requests\UpdateEventsRequest;
 use App\Models\Events;
+use App\Http\Controllers\Controller;
+use App\Http\Resources\EventsResource;
+
 
 class EventsController extends Controller
 {
@@ -13,7 +17,7 @@ class EventsController extends Controller
      */
     public function index()
     {
-        //
+        return EventsResource::collection(Events::all());
     }
 
     /**
@@ -35,9 +39,9 @@ class EventsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Events $events)
+    public function show(Events $event)
     {
-        //
+        return EventsResource::make($event);
     }
 
     /**
