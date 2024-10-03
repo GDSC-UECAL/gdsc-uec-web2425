@@ -1,10 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
+
 
 use App\Http\Requests\StoreEventsRequest;
 use App\Http\Requests\UpdateEventsRequest;
 use App\Models\Events;
+use App\Http\Controllers\Controller;
+use App\Http\Resources\EventsResource;
+
 
 class EventsController extends Controller
 {
@@ -13,15 +17,7 @@ class EventsController extends Controller
      */
     public function index()
     {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
+        return EventsResource::collection(Events::all());
     }
 
     /**
@@ -29,15 +25,16 @@ class EventsController extends Controller
      */
     public function store(StoreEventsRequest $request)
     {
-        //
+        $event = Events::create($request->validated());
+        return EventsResource::make($event);
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Events $events)
+    public function show(Events $event)
     {
-        //
+        return EventsResource::make($event);
     }
 
     /**

@@ -6,6 +6,7 @@ use App\Models\Products;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreProductsRequest;
 use App\Http\Requests\UpdateProductsRequest;
+use App\Http\Resources\ProductsResource;
 
 class ProductsController extends Controller
 {
@@ -14,7 +15,7 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        return Products::all();
+        return ProductsResource::collection(Products::all());
     }
 
     /**
@@ -36,9 +37,9 @@ class ProductsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Products $products)
+    public function show(Products $product)
     {
-        //
+        return ProductsResource::make($product);
     }
 
     /**

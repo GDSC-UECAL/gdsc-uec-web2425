@@ -10,4 +10,12 @@ class Events extends Model
 {
     use CrudTrait;
     use HasFactory;
+
+    protected $fillable = [
+        'title',       
+        'date',         
+        'description',  
+        'organizers',   
+        'banner',       
+    ];
 }
