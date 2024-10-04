@@ -4,15 +4,14 @@ import Navbar from './components/NavBar.jsx';
 import Footer from "./components/Footer.jsx";
 import Products from './pages/Products.jsx';
 import About from './pages/About.jsx';
-import Events from './pages/Events.jsx';
 import Teams from './pages/Teams.jsx';
 import Home from './pages/Home.jsx';
 import './App.css'
 import './components/Navbar.css'
 import './components/ProductsCarousel.css';
 import './pages/Products.css';
-
 import Events from './pages/Events.jsx'
+
 function App() {
   const [count, setCount] = useState(0)
 
