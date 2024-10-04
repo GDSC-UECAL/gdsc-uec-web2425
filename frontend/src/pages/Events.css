@@ -1,0 +1,58 @@
+#event-main h1 {
+    text-align: left;
+    margin: 100px 0 50px 0;
+}
+
+#event-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+}
+
+#event-container div {
+    cursor: pointer;
+    text-align: left;
+}
+
+#event-container img {
+    transition: box-shadow 0.3s; 
+}
+
+#event-container div:hover img {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+}
+
+#event-container h6 {
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+}
+
+#event-container p {
+    margin: 10px 0 10px 0;
+    font-size: 10px;
+    color: #B0B0B0;
+}
+
+#event-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+
+#event-button {
+    display: flex;
+    border: none;
+    margin-top: 30px;
+    justify-content:end;
+}
+
+#event-button button {
+    background-color:#4b0082;
+    color: white;
+    border-radius: 0%;
+}
+
+#event-button button:hover {
+    border: none;
+    opacity: 0.9;
+}
