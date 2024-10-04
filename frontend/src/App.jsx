@@ -12,6 +12,7 @@ import './components/Navbar.css'
 import './components/ProductsCarousel.css';
 import './pages/Products.css';
 
+import Events from './pages/Events.jsx'
 function App() {
   const [count, setCount] = useState(0)
 
