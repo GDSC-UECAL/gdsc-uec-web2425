@@ -4,9 +4,8 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
-use App\Http\Resources\SpeakersResource;
 
-class EventsResource extends JsonResource
+class MerchandisesResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -20,9 +19,9 @@ class EventsResource extends JsonResource
             'title' => $this->title,
             'date' => $this->date,
             'description' => $this->description,
-            'location' => $this->location,
+            'price' => $this->price,
             'banner' => $this->banner,
-            'speakers' => SpeakersResource::collection($this->whenLoaded('speakers')),
+            'timestamps' => $this->timestamps
         ];
     }
 }

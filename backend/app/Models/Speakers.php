@@ -5,23 +5,22 @@ namespace App\Models;
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Speakers;
+use App\Models\Events;
 
-class Events extends Model
+class Speakers extends Model
 {
     use CrudTrait;
     use HasFactory;
 
     protected $fillable = [
-        'title', 
-        'date', 
-        'description', 
-        'location', 
-        'banner',
+        'events_id',
+        'name', 
+        'role', 
+        'image',
     ];
 
-    public function speakers()
+    public function event()
     {
-        return $this->hasMany(Speakers::class); 
+        return $this->belongsTo(Events::class);
     }
 }

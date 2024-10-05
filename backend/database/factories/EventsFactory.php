@@ -20,7 +20,7 @@ class EventsFactory extends Factory
             'title' => fake()->sentence(),
             'date' => fake()->date(),
             'description' => fake()->sentence(),
-            'organizers' => fake()->sentence(),
+            'location' => fake()->sentence(),
             'banner' => fake()->sentence()
         ];
     }
