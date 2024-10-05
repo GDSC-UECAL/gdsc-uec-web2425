@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Requests\SpeakersRequest;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
+use App\Models\Events;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 
 /**
@@ -56,12 +57,12 @@ class SpeakersCrudController extends CrudController
     protected function setupCreateOperation()
     {
         CRUD::setValidation(SpeakersRequest::class);
-        CRUD::setFromDb(); // set fields from db columns.
 
-        /**
-         * Fields can be defined using the fluent syntax:
-         * - CRUD::field('price')->type('number');
-         */
+        CRUD::field('events_id')->type('select')->label('Event')->entity('event')->model(Events::class)->attribute('title');
+
+        CRUD::field('name')->label('Name');
+        CRUD::field('role')->label('Role');
+        CRUD::field('image')->label('Image');
     }
 
     /**
