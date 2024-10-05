@@ -10,4 +10,6 @@ class Department extends Model
 {
     use CrudTrait;
     use HasFactory;
+
+    protected $fillable = ['title', 'description'];
 }

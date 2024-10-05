@@ -18,7 +18,7 @@ class DepartmentFactory extends Factory
     {
         return [
             'title' => fake()->sentence(), 
-            'description' => fake()->sentence()
+            'description' => fake()->sentence(), 
         ];
     }
 }

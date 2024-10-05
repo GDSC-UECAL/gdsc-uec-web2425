@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Department;
 use App\Http\Requests\StoreDepartmentRequest;
 use App\Http\Requests\UpdateDepartmentRequest;
+use App\Http\Resources\DepartmentResource;
 
 class DepartmentController extends Controller
 {
@@ -14,15 +15,7 @@ class DepartmentController extends Controller
      */
     public function index()
     {
-        return Department::all();
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
+        return DepartmentResource::collection(Department::all());
     }
 
     /**
@@ -30,7 +23,9 @@ class DepartmentController extends Controller
      */
     public function store(StoreDepartmentRequest $request)
     {
-        //
+        $department = Department::create($request->validated());
+
+        return DepartmentResource::make($department);
     }
 
     /**
@@ -38,7 +33,7 @@ class DepartmentController extends Controller
      */
     public function show(Department $department)
     {
-        //
+        return DepartmentResource::make($department);
     }
 
     /**
