@@ -12,6 +12,7 @@ import './components/Navbar.css'
 import './components/ProductsCarousel.css';
 import './pages/Products.css';
 import Events from './pages/Events.jsx'
+import EventDetails from './components/EventDetails.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,8 +28,7 @@ function App() {
       <Route path='/events' element = {<Events></Events>}/>
       <Route path='/teams' element = {<Teams></Teams>}/>
       <Route path='/home' element = {<Home></Home>}/>
-      
-
+      <Route path='/event_details' element = {<EventDetails></EventDetails>}/>
        {/*Delete after testing*/}
       <Route path='/apitest' element = {<APITest></APITest>}/>
 
