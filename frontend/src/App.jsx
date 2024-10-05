@@ -31,6 +31,7 @@ function App() {
 
       {/* <Footer /> */}
     </Router>
+    
   );
 }
 
