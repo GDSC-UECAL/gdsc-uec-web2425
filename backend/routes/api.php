@@ -14,7 +14,7 @@ Route::prefix('v1')->group(function (){
     Route::apiResource('partners', PartnersController::class);
     Route::apiResource('carousel', CarouselController::class);
     Route::apiResource('events', EventsController::class);
-    Route::apiResource('department', DepartmentController::class);
+    Route::apiResource('departments', DepartmentController::class);
     Route::apiResource('merchandises', MerchandisesController::class);
 });
 
