@@ -29,4 +29,11 @@
     padding-right: 50px;
 }
 
+.btn-primary{
+    color: hsl(0, 0%, 1%);
+    font-family: "Mulish", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+}
+
 
