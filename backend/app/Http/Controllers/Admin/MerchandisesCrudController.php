@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Requests\ProductsRequest;
+use App\Http\Requests\MerchandisesRequest;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 
 /**
- * Class ProductsCrudController
+ * Class MerchandisesCrudController
  * @package App\Http\Controllers\Admin
  * @property-read \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $crud
  */
-class ProductsCrudController extends CrudController
+class MerchandisesCrudController extends CrudController
 {
     use \Backpack\CRUD\app\Http\Controllers\Operations\ListOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\CreateOperation;
@@ -26,9 +26,9 @@ class ProductsCrudController extends CrudController
      */
     public function setup()
     {
-        CRUD::setModel(\App\Models\Products::class);
-        CRUD::setRoute(config('backpack.base.route_prefix') . '/products');
-        CRUD::setEntityNameStrings('products', 'products');
+        CRUD::setModel(\App\Models\Merchandises::class);
+        CRUD::setRoute(config('backpack.base.route_prefix') . '/merchandises');
+        CRUD::setEntityNameStrings('merchandises', 'merchandises');
     }
 
     /**
@@ -55,11 +55,15 @@ class ProductsCrudController extends CrudController
      */
     protected function setupCreateOperation()
     {
-        CRUD::setValidation(ProductsRequest::class);
+        CRUD::setValidation(MerchandisesRequest::class);
 
         CRUD::setFromDb(); 
-   
+        
         CRUD::removeField('banner');
+        CRUD::removeField('price');
+        
+
+        CRUD::field('price')->type('number');
         CRUD::field('banner')->type('upload')->withFiles();
     }
 
