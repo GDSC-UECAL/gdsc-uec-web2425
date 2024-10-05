@@ -5,6 +5,7 @@ use App\Http\Controllers\Api\V1\PartnersController;
 use App\Http\Controllers\Api\V1\CarouselController;
 use App\Http\Controllers\Api\V1\EventsController;
 use App\Http\Controllers\Api\V1\DepartmentController;
+use App\Http\Controllers\Api\V1\MerchandisesController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +15,7 @@ Route::prefix('v1')->group(function (){
     Route::apiResource('carousel', CarouselController::class);
     Route::apiResource('events', EventsController::class);
     Route::apiResource('Department', DepartmentController::class);
+    Route::apiResource('merchandises', MerchandisesController::class);
 });
 
 Route::get('/user', function (Request $request) {

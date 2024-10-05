@@ -1,10 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
 use App\Models\Merchandises;
+use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreMerchandisesRequest;
 use App\Http\Requests\UpdateMerchandisesRequest;
+use App\Http\Resources\MerchandisesResource;
 
 class MerchandisesController extends Controller
 {
@@ -13,7 +15,7 @@ class MerchandisesController extends Controller
      */
     public function index()
     {
-        //
+        return MerchandisesResource::collection(Merchandises::all());
     }
 
     /**
@@ -35,9 +37,9 @@ class MerchandisesController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Merchandises $merchandises)
+    public function show(Merchandises $merchandise)
     {
-        //
+        return MerchandisesResource::make($merchandise);
     }
 
     /**
