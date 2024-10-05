@@ -23,7 +23,8 @@ function APITest() {
                         <p>{event.date}</p>
                         <p>{event.location}</p>
 
-                        <img src={`/events/images/${event.banner}`} alt="Event Banner" style={{ maxWidth: '200px', display: 'block' }} />
+                        {/* the right way of calling the image via the backend's storage */}
+                        <img src={`http://localhost:8000/storage/${event.banner}`} alt="Event Banner" style={{ maxWidth: '200px', display: 'block' }} />
 
                         {/* Render Speakers */}
                         <h4>Speakers:</h4>
