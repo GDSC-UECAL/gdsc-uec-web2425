@@ -1,6 +1,8 @@
 #event-main h1 {
     text-align: left;
-    margin: 100px 0 50px 0;
+    margin-top: 10%;
+    margin-bottom: 2.5%;
+    font-size: 5vw;
 }
 
 #event-container {
@@ -46,13 +48,14 @@
     justify-content:end;
 }
 
-#event-button button {
-    background-color:#4b0082;
-    color: white;
-    border-radius: 0%;
-}
+@media (max-width: 767px) {
+    #event-main h1 {
+        margin-top: 30%;
+        margin-bottom: 5%;
+    }
 
-#event-button button:hover {
-    border: none;
-    opacity: 0.9;
+    #event-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
 }
