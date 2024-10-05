@@ -29,7 +29,7 @@ function App() {
       {/*Add more routes here if needed*/}
       </Routes>
 
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   );
 }

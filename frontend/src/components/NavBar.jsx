@@ -36,6 +36,9 @@ function Navbar() {
                                 <li className="nav-item">
                                     <Link className="nav-link mx-lg-2" to="/events">Events</Link>
                                 </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link mx-lg-2" to="#">Register</Link>
+                                </li>
                             </ul>
                         </div>
                     </div>
