@@ -17,7 +17,7 @@ class EventsController extends Controller
      */
     public function index()
     {
-        return EventsResource::collection(Events::all());
+        return EventsResource::collection(Events::with('speakers')->get());
     }
 
     /**
@@ -25,8 +25,8 @@ class EventsController extends Controller
      */
     public function store(StoreEventsRequest $request)
     {
-        $event = Events::create($request->validated());
-        return EventsResource::make($event);
+        // $event = Events::create($request->validated());
+        // return EventsResource::make($event);
     }
 
     /**
@@ -34,6 +34,7 @@ class EventsController extends Controller
      */
     public function show(Events $event)
     {
+        $event->load('speakers');
         return EventsResource::make($event);
     }
 
