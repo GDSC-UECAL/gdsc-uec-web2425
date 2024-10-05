@@ -17,6 +17,7 @@ return new class extends Migration
             $table->date('date');
             $table->string('description');
             $table->string('location');
+            $table->string('organizers');
             $table->string('banner');
             $table->timestamps();
         });
