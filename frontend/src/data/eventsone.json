@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "title": "Blockchain Technology: Transforming Digital Transactions",
+        "date": "2023-09-15",
+        "description": "An exploration of blockchain technology and its applications in various sectors, focusing on security and transparency.",
+        "location": "Tech Innovation Hub, Silicon Valley, CA",
+        "banner": "Unlocking the potential of decentralized systems.",
+        "speakers": [
+            {
+                "id": 1,
+                "name": "Alice Chen",
+                "role": "Blockchain Developer",
+                "image": "path/to/image1.png"
+            },
+            {
+                "id": 2,
+                "name": "Robert Brown",
+                "role": "Cryptocurrency Analyst",
+                "image": "crypto_expert.png"
+            }
+        ]
+    }
+]
