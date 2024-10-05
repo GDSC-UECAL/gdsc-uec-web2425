@@ -10,4 +10,13 @@ class Merchandises extends Model
 {
     use CrudTrait;
     use HasFactory;
+
+    protected $fillable = [
+        'title', 
+        'date', 
+        'description', 
+        'price',
+        'banner',
+    ];
+
 }
