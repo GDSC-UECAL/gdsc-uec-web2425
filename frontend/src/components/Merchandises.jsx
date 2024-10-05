@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap is imported
 // Card Component
 function Card({ image, title, text, buttonText, link }) {
   return (
-    <div className="card" style={{ width: '18rem' }}>
+    <div className="card" style={{ width: '25rem' }}>
       <img
         src={image}
         className="card-img-top"

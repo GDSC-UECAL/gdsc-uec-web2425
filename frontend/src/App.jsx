@@ -28,9 +28,10 @@ function App() {
       <Route path='/home' element = {<Home></Home>}/>
       {/*Add more routes here if needed*/}
       </Routes>
-
       <Footer />
+      
     </Router>
+    
   );
 }
 

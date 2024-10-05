@@ -1,24 +1,21 @@
 import React from 'react';
 import ProductsCarousel from '../components/ProductsCarousel.jsx';
 import "../components/ProductsCarousel.css"
+import Merchandises from '../components/Merchandises.jsx';
 
 
 
 function Products() {
     return(
         <>
-        <div class='carouselbody'>
-            <h1>Projects</h1>
             <h1>Merchandises</h1>
-            <ProductsCarousel />
+            <Merchandises></Merchandises>
+            {/*<h1>Products</h1>*/}
+            {/* <ProductsCarousel>*/}
             
             
             
             
-        </div>
-
-        
-
         </>
     );
 };
