@@ -41,7 +41,7 @@ function Navbar() {
                                 </li>
                             </ul>
                             <button className="btn btn-primary ms-auto" type="button">Register</button>
-                            <button className="btn btn-primary ms-auto" type="button">Manage</button>
+                            <a href="http://localhost:8000/admin/" className="btn btn-primary ms-auto" target="_blank" rel="noopener noreferrer">Manage</a>
                         </div>
                     </div>
                 </div>
