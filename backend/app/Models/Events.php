@@ -15,7 +15,7 @@ class Events extends Model
         'title',       
         'date',         
         'description',  
-        'organizers',   
+        'location',   
         'banner',       
     ];
 }

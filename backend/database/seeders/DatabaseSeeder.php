@@ -28,6 +28,5 @@ class DatabaseSeeder extends Seeder
         Carousel::factory(10)->create();        
         Department::factory(10)->create();
         Events::factory(10)->create();
-        //TESTTT
     }
 }
