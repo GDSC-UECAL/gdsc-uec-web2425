@@ -10,4 +10,11 @@ class Partners extends Model
 {
     use CrudTrait;
     use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'description',
+        'logo',
+        'link'
+    ];
 }

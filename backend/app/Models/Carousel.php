@@ -10,4 +10,9 @@ class Carousel extends Model
 {
     use CrudTrait;
     use HasFactory;
+
+    protected $fillable = [
+        'title',
+        'image'
+    ];
 }

@@ -6,6 +6,7 @@ use App\Models\Partners;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StorePartnersRequest;
 use App\Http\Requests\UpdatePartnersRequest;
+use App\Http\Resources\PartnersResource;
 
 class PartnersController extends Controller
 {
@@ -14,7 +15,7 @@ class PartnersController extends Controller
      */
     public function index()
     {
-        return Partners::all();
+        return PartnersResource::collection(Partners::all());
     }
 
     /**
@@ -36,9 +37,9 @@ class PartnersController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Partners $partners)
+    public function show(Partners $partner)
     {
-        //
+        return PartnersResource::make($partner);
     }
 
     /**
