@@ -8,3 +8,5 @@
 <x-backpack::menu-item title="Products" icon="la la-question" :link="backpack_url('products')" />
 <x-backpack::menu-item title="Teams" icon="la la-question" :link="backpack_url('teams')" />
 <x-backpack::menu-item title="Users" icon="la la-question" :link="backpack_url('user')" />
+<x-backpack::menu-item title="Speakers" icon="la la-question" :link="backpack_url('speakers')" />
+<x-backpack::menu-item title="Merchandises" icon="la la-question" :link="backpack_url('merchandises')" />

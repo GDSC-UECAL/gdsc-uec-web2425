@@ -6,6 +6,7 @@ use App\Models\Carousel;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreCarouselRequest;
 use App\Http\Requests\UpdateCarouselRequest;
+use App\Http\Resources\CarouselResource;
 
 class CarouselController extends Controller
 {
@@ -14,7 +15,7 @@ class CarouselController extends Controller
      */
     public function index()
     {
-        return Carousel::all();
+        return CarouselResource::collection(Carousel::all());
     }
 
     /**
@@ -38,7 +39,7 @@ class CarouselController extends Controller
      */
     public function show(Carousel $carousel)
     {
-        //
+        return CarouselResource::make($carousel);
     }
 
     /**

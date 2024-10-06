@@ -19,8 +19,7 @@ class TeamsFactory extends Factory
         return [
             'name' => fake()->sentence(),
             'role' => fake()->sentence(),
-            'image' => fake()->sentence(),
-            'did' => rand(0, 200)
+            'image' => fake()->sentence()
         ];
     }
 }

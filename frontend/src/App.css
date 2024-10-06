@@ -1,4 +1,10 @@
 #root {
+<<<<<<< main
+  width: 100%;
+  height: auto;
+  margin: 0 ;
+  text-align: center;
+=======
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -16,6 +22,7 @@ footer.footer {
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
+>>>>>>> home-page
 }
 
 .logo {
@@ -55,7 +62,7 @@ footer.footer {
 }
 
 .body-div{
-  height: 700px;
+
   background-color: grey;
 }
 

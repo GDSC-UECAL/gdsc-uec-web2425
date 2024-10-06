@@ -1,0 +1,57 @@
+/* EventDetails.css */
+.event-details-page {
+  display: flex;                /* Set the container as a flexbox */
+  justify-content: center;      /* Center items horizontally */
+  align-items: center;          /* Center items vertically */
+  height: 100vh;                /* Full height of the viewport */
+  width: 100vw;                 /* Full width of the viewport */
+  overflow: hidden;             /* Prevent scrollbars */
+}
+
+.event-details-column {
+  display: flex;                /* Use flex layout for the column */
+  flex-direction: column;       /* Arrange elements in a column */
+  align-items: center;          /* Center items within the column */
+  justify-content: center;      /* Center items within the column */
+  gap: 20px;                    /* Add spacing between image and details */
+}
+
+/* Image container */
+.image-container {
+  height: 200px;                /* Set a fixed height for the image container */
+  width: 300px;                 /* Set a fixed width for the image container */
+  display: flex;                /* Use flex layout */
+  justify-content: center;      /* Center content horizontally */
+  align-items: center;          /* Center content vertically */
+  background-color: #e3f2fd;    /* Optional background color */
+}
+
+/* Event details container */
+.event-details-container {
+  display: flex;
+  justify-content: center;      /* Center content horizontally */
+  align-items: center;          /* Center content vertically */
+  padding: 20px;
+  background-color: #f9f9f9;    /* Background color to differentiate */
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px;             /* Limit the maximum width to avoid horizontal scroll */
+  width: 100%;                  /* Make it responsive */
+}
+
+/* Event details */
+.event-details {
+  width: 100%;                  /* Take up full width of the container */
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  max-width: 480px;             /* Restrict maximum width inside event details */
+}
+
+/* Right-side flexible container */
+.flexible-container {
+  display: flex;
+  justify-content: center;      /* Center content horizontally */
+  align-items: center;          /* Center content vertically */
+  background-color: #f0f2f5;
+  padding: 20px;
+}

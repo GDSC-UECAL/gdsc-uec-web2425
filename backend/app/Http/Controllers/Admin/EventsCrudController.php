@@ -56,12 +56,14 @@ class EventsCrudController extends CrudController
     protected function setupCreateOperation()
     {
         CRUD::setValidation(EventsRequest::class);
-        CRUD::setFromDb(); // set fields from db columns.
 
-        /**
-         * Fields can be defined using the fluent syntax:
-         * - CRUD::field('price')->type('number');
-         */
+        CRUD::field('title')->type('text');
+        CRUD::field('date')->type('date');
+        CRUD::field('description')->type('textarea');
+        CRUD::field('location')->type('text');
+
+        CRUD::field('banner')->type('upload')->withFiles();
+         
     }
 
     /**

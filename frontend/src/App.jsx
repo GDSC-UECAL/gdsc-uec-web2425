@@ -6,11 +6,14 @@ import Products from './pages/Products.jsx';
 import About from './pages/About.jsx';
 import Teams from './pages/Teams.jsx';
 import Home from './pages/Home.jsx';
+import APITest from './pages/APITest.jsx';
 import './App.css'
 import './components/Navbar.css'
 import './components/ProductsCarousel.css';
 import './pages/Products.css';
 import Events from './pages/Events.jsx'
+import EventDetails from './components/EventDetails.jsx';
+import TeamsExecutive from './pages/TeamsExecutive.jsx'; 
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,11 +29,18 @@ function App() {
       <Route path='/events' element = {<Events></Events>}/>
       <Route path='/teams' element = {<Teams></Teams>}/>
       <Route path='/home' element = {<Home></Home>}/>
+      <Route path='/event_details' element = {<EventDetails></EventDetails>}/>
+      <Route path="/executive" element={<TeamsExecutive />} /> {/* Executive page */}
+       {/*Delete after testing*/}
+      <Route path='/apitest' element = {<APITest></APITest>}/>
+
       {/*Add more routes here if needed*/}
       </Routes>
 
-      <Footer />
+      {/* <Footer /> */}
+      <Footer/>
     </Router>
+    
   );
 }
 

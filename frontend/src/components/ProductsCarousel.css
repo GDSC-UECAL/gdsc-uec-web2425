@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 .carouselcontainer {
   width: 100%;
   display: flex;
@@ -12,8 +11,9 @@
   justify-content: center;
   padding: 30px 10px;
   font-family: 'DM Sans', sans-serif;
-  transition: background .4s ease-in;
-  
+  text-align: center;
+  margin: auto;
+    place-content: center;
 }
 
 .rdbtn[type=radio] {
@@ -22,32 +22,32 @@
 
 .prodcard {
   position: absolute;
-  width: 70%;
+  width: 60%;
   height: auto;
   left: 0;
   right: 0;
   margin: auto;
-  transition: transform .4s ease;
+  transition: transform .4s ease, opacity .4s ease, z-index .4s ease;
   cursor: pointer;
+
+
 }
 
 .container {
   width: 100%;
   max-width: 800px;
   max-height: 600px;
-  height: auto;
-  transform-style: preserve-3d;
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .cards {
   position: relative;
   width: 100%;
   height: auto;
-  margin-bottom: 20px;
+  padding-bottom: 50%;
 }
 
 .eventpic {
@@ -55,41 +55,4 @@
   height: auto;
   border-radius: 10px;
   object-fit: cover;
-  
 }
-
-#itemm-1:checked ~ .cards #song-3, #itemm-2:checked ~ .cards #song-4, #itemm-3:checked ~ .cards #song-5, #itemm-4:checked ~ .cards #song-1, #itemm-5:checked ~ .cards #song-2{
-  transform: translatex(-40%) scale(.8);
-  opacity: .4;
-  z-index: 0;
-}
-
-#itemm-1:checked ~ .cards #song-2, #itemm-2:checked ~ .cards #song-3, #itemm-3:checked ~ .cards #song-4, #itemm-4:checked ~ .cards #song-5, #itemm-5:checked ~ .cards #song-1{
-  transform: translatex(40%) scale(.8);
-  opacity: .4;
-  z-index: 0;
-}
-
-#itemm-1:checked ~ .cards #song-1, #itemm-2:checked ~ .cards #song-2, #itemm-3:checked ~ .cards #song-3, #itemm-4:checked ~ .cards #song-4, #itemm-5:checked ~ .cards #song-5 {
-  transform: translatex(0) scale(1);
-  opacity: 1;
-  z-index: 1;
-  
-}
-
-#itemm-1:checked ~ .cards #song-4,
-#itemm-1:checked ~ .cards #song-5,
-#itemm-2:checked ~ .cards #song-5,
-#itemm-2:checked ~ .cards #song-1,
-#itemm-3:checked ~ .cards #song-1,
-#itemm-3:checked ~ .cards #song-2,
-#itemm-4:checked ~ .cards #song-2,
-#itemm-4:checked ~ .cards #song-3,
-#itemm-5:checked ~ .cards #song-3,
-#itemm-5:checked ~ .cards #song-4{
-   visibility: hidden;
-}
-
-
-
-

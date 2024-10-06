@@ -9,6 +9,8 @@ use App\Models\Partners;
 use App\Models\Carousel;
 use App\Models\Products;
 use App\Models\Events;
+use App\Models\Merchandises;
+
 
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -21,13 +23,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-
-        Teams::factory(10)->create();
+        Teams::factory(12)->create();
         Partners::factory(10)->create();
         Products::factory(10)->create();
         Carousel::factory(10)->create();        
         Department::factory(10)->create();
         Events::factory(10)->create();
-        //TESTTT
+        Merchandises::factory(10)->create();
     }
 }

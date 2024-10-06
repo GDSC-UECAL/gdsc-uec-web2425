@@ -1,11 +1,16 @@
 import React from 'react';
+import TeamsMain from '../components/TeamsMain.jsx';
+import '../components/TeamsMain.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Teams() {
     return(
-        <div>
-            <h1>Teams</h1>
-            <h1>Power Rangers</h1>
-        </div>
+        <>  
+        
+            <TeamsMain/>
+          
+            
+        </>
 
     );
 };

@@ -29,4 +29,21 @@
     padding-right: 50px;
 }
 
+.btn-primary{
+    color: hsl(0, 0%, 1%);
+    font-family: "Mulish", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+}
+
+.button1{
+    background-color: #ffffff;
+    color: rgb(132, 57, 147);
+}
+
+.button2{
+    background-color: rgb(132, 57, 147);
+    color: white;
+}
+
 

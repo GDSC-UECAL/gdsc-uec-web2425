@@ -24,27 +24,27 @@ const Footer = () => {
           </div>
           <div className="col-12 col-md-1 mb-2 pb-2">
             <h6>About</h6>
-            <a href="#">Welcome</a><br />
-            <a href="#">Bulletin</a><br />
-            <a href="#">Partners</a>
+            <a href="#">What is GDSC?</a><br />
+            <a href="#">Igma Kadima</a><br />
+            <a href="#">Mission & Vision</a><br />
+            <a href="">Departments</a> <br />
+            <a href="">GDSC Chapters</a>
           </div>
           <div className="col-12 col-md-1 mb-2 pb-2">
             <h6>Products</h6>
-            <a href="#">Welcome</a><br />
-            <a href="#">Bulletin</a><br />
-            <a href="#">Partners</a>
+            <a href="">Projects</a> <br />
+            <a href="">Merchandise</a>
           </div>
           <div className="col-12 col-md-1 mb-2 pb-2">
             <h6>Team</h6>
-            <a href="#">Welcome</a><br />
-            <a href="#">Bulletin</a><br />
-            <a href="#">Partners</a>
+             <a href="">Executives</a> <br />
+             <a href="">Operations</a> <br />
+             <a href="">Technology</a> <br />
+             <a href="">Creatives</a>
           </div>
           <div className="col-12 col-md-1 mb-2 pb-2">
             <h6>Events</h6>
-            <a href="#">Welcome</a><br />
-            <a href="#">Bulletin</a><br />
-            <a href="#">Partners</a>
+            <a href="">All Events</a>
           </div>
         </div>
 

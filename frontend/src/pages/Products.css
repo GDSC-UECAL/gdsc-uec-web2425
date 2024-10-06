@@ -1,5 +1,11 @@
-.carouselbody{
-    width: 100%;
-    height: auto;
+h1{
+    font-size: 200px;
+}
+.prodcontainer{
+    width: 90%;
     margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    place-content: center;
 }
