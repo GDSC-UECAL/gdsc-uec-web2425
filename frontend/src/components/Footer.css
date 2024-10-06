@@ -6,4 +6,10 @@
 .texts a{
     font: 'Poppins';
     font-weight: 400;
+    color: black;
 }
+
+.texts a{
+    text-decoration: none;
+}
+

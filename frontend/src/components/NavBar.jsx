@@ -36,12 +36,9 @@ function Navbar() {
                                 <li className="nav-item">
                                     <Link className="nav-link mx-lg-2" to="/events">Events</Link>
                                 </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link mx-lg-2" to="#">Register</Link>
-                                </li>
                             </ul>
-                            <button className="btn btn-primary ms-auto" type="button">Register</button>
-                            <a href="http://localhost:8000/admin/" className="btn btn-primary ms-auto" target="_blank" rel="noopener noreferrer">Manage</a>
+                            
+                            <button className="button2" type="button" href="http://localhost:8000/admin/">Register</button>
                         </div>
                     </div>
                 </div>
