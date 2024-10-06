@@ -56,12 +56,10 @@ class PartnersCrudController extends CrudController
     protected function setupCreateOperation()
     {
         CRUD::setValidation(PartnersRequest::class);
-        CRUD::setFromDb(); // set fields from db columns.
+        CRUD::setFromDb(); 
 
-        /**
-         * Fields can be defined using the fluent syntax:
-         * - CRUD::field('price')->type('number');
-         */
+        CRUD::removeField('logo');
+        CRUD::field('logo')->type('upload')->withFiles();
     }
 
     /**
