@@ -59,11 +59,13 @@ class MerchandisesCrudController extends CrudController
 
         CRUD::setFromDb(); 
         
-        CRUD::removeField('banner');
-        CRUD::removeField('price');
+        CRUD::removeField('description');
+        CRUD::field('description')->type('textarea');
         
-
+        CRUD::removeField('price');
         CRUD::field('price')->type('number');
+
+        CRUD::removeField('banner');
         CRUD::field('banner')->type('upload')->withFiles();
     }
 

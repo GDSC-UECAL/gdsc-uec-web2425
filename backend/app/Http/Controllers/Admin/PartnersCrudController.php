@@ -58,6 +58,9 @@ class PartnersCrudController extends CrudController
         CRUD::setValidation(PartnersRequest::class);
         CRUD::setFromDb(); 
 
+        CRUD::removeField('description');
+        CRUD::field('description')->type('textarea');
+
         CRUD::removeField('logo');
         CRUD::field('logo')->type('upload')->withFiles();
     }
