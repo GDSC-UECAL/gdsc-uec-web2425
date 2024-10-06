@@ -18,7 +18,8 @@ class TeamsResource extends JsonResource
             'id' => $this->id, 
             'name' => $this->name,
             'role' => $this->role,
-            'image' => $this->image
+            'image' => $this->image,
+            'department_id' => $this->department_id
         ];
     }
 }
