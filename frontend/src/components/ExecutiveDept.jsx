@@ -1,7 +1,6 @@
 import React from 'react';
 import '../components/TeamsMain.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useNavigate } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap'; 
 import executiveCoverPic from '../assets/teams/exec.webp';
 import creativesoverPic from '../assets/teams/creatives.webp';
@@ -11,11 +10,6 @@ import ball1 from '../assets/teams/ball1.png';
 import square1 from '../assets/teams/square1.png'; 
 
 function TeamsMain() {
-    const navigate = useNavigate(); // Initialize the useNavigate hook
-
-    const handleExecutiveClick = () => {
-      navigate('/executive'); // Navigate to the executive page
-    };
     return (
         <Container fluid className="teamsContainer">
             <h1>Teams</h1>
@@ -29,7 +23,7 @@ function TeamsMain() {
 
                 {/* First Row of Images */}
                 <Row className="teamsRow d-flex justify-content-center mx-3 mt-3">
-                    <Col lg={6} sm={12} className="teamsBox m-3" onClick={handleExecutiveClick}>
+                    <Col lg={6} sm={12} className="teamsBox m-3">
                         <div className="teamsPic">
                             <img src={executiveCoverPic} alt="Executive Board" />
                             <div className="execOverlay">Executive Board</div>
@@ -45,22 +39,16 @@ function TeamsMain() {
 
                 {/* Second Row of Images */}
                 <Row className="d-flex justify-content-center mx-3">
-                    <Col lg={4} sm={12} className="teamsBox m-3">
+                    <Col lg={6} sm={12} className="teamsBox m-3">
                         <div className="teamsPic">
                             <img src={technologyCoverPic} alt="Technology Department" />
                             <div className="technologyDeptOverlay">Technology Department</div>
                         </div>
                     </Col>
-                    <Col lg={4} sm={12} className="teamsBox m-3">
+                    <Col lg={6} sm={12} className="teamsBox m-3">
                         <div className="teamsPic">
                             <img src={operationsCoverPic} alt="Operation Department" />
                             <div className="operationDeptOverlay">Operations Department</div>
-                        </div>
-                    </Col>
-                    <Col lg={4} sm={12} className="teamsBox m-3">
-                        <div className="teamsPic">
-                            <img src={operationsCoverPic} alt="Community Department" />
-                            <div className="communityDeptOverlay">Community Development Department</div>
                         </div>
                     </Col>
                 </Row>

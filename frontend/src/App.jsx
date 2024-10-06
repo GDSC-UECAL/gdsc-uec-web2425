@@ -13,6 +13,7 @@ import './components/ProductsCarousel.css';
 import './pages/Products.css';
 import Events from './pages/Events.jsx'
 import EventDetails from './components/EventDetails.jsx';
+import TeamsExecutive from './pages/TeamsExecutive.jsx'; 
 
 function App() {
   const [count, setCount] = useState(0)
@@ -29,6 +30,7 @@ function App() {
       <Route path='/teams' element = {<Teams></Teams>}/>
       <Route path='/home' element = {<Home></Home>}/>
       <Route path='/event_details' element = {<EventDetails></EventDetails>}/>
+      <Route path="/executive" element={<TeamsExecutive />} /> {/* Executive page */}
        {/*Delete after testing*/}
       <Route path='/apitest' element = {<APITest></APITest>}/>
 
