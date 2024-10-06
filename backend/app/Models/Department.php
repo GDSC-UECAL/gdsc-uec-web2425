@@ -12,4 +12,10 @@ class Department extends Model
     use HasFactory;
 
     protected $fillable = ['title', 'description'];
+
+    public function team()
+    {
+        return $this->hasOne(Teams::class);
+    }
+
 }

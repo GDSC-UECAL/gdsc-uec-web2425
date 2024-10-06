@@ -15,7 +15,8 @@ class TeamsController extends Controller
      */
     public function index()
     {
-        return TeamsResource::collection(Teams::all());
+        // Load the department relationship
+        return TeamsResource::collection(Teams::with('department')->get());
     }
     /**
      * Store a newly created resource in storage.
@@ -26,11 +27,10 @@ class TeamsController extends Controller
         return TeamsResource::make($team);
     }
 
-    /**
-     * Display the specified resource.
-     */
     public function show(Teams $team)
     {
+        // Load the department relationship
+        $team->load('department');
         return TeamsResource::make($team);
     }
 
