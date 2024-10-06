@@ -13,10 +13,11 @@ return new class extends Migration
     {
         Schema::create('teams', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name')->nullable();
             $table->string('role');
             $table->string('image');
-            //$table->foreign('department_id')->references('id')->on('department');
+            //$table->integer('department_id')->nullable();
+            //$table->foreign('department_id')->references('id')->on('departments')->onDelete('cascade');;
             $table->timestamps();
         });
     }

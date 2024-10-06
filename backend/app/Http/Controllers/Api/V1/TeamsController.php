@@ -17,29 +17,21 @@ class TeamsController extends Controller
     {
         return TeamsResource::collection(Teams::all());
     }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
     /**
      * Store a newly created resource in storage.
      */
     public function store(StoreTeamsRequest $request)
     {
-        //
+        $team = Teams::create($request->validated());
+        return TeamsResource::make($team);
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Teams $teams)
+    public function show(Teams $team)
     {
-        return TeamsResource::make($teams);
+        return TeamsResource::make($team);
     }
 
     /**
