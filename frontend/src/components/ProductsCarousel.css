@@ -11,6 +11,8 @@
   justify-content: center;
   padding: 30px 10px;
   font-family: 'DM Sans', sans-serif;
+  text-align: center;
+  margin: auto;
 }
 
 .rdbtn[type=radio] {

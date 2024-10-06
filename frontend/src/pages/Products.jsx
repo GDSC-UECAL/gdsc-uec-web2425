@@ -7,16 +7,17 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap is imported
 
 
 function Products() {
-    return(
+    return (
         <>
-            <h1>Merchandises</h1>
-            <Merchandises></Merchandises>
-            <h1>Products</h1>
-            <ProductsCarousel/>
-            
-            
-            
-            
+            <div className="prodcontainer">
+                <h1>Merchandises</h1>
+                <Merchandises></Merchandises>
+                <h1>Products</h1>
+                <ProductsCarousel />
+            </div>
+
+
+
         </>
     );
 };
