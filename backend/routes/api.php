@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('v1')->group(function (){
+    Route::apiResource('teams', ProductsController::class);
     Route::apiResource('products', ProductsController::class);
     Route::apiResource('partners', PartnersController::class);
     Route::apiResource('carousel', CarouselController::class);
