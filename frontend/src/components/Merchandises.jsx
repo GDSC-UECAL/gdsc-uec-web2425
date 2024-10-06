@@ -1,5 +1,5 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap is imported
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 import '../components/Merchandises.css';
 import FRONT1 from '../assets/products/FRONT1.jpg';
 
@@ -13,9 +13,9 @@ function Card({ image, title, text, buttonText, link }) {
         alt="Card"
       />
       <div className="card-body text-start">
-        <h5 className="card-title">{title}</h5>
-        <p className="card-text">{text}</p>
-        <a href={link} className="btn btn-primary">
+        <h5 className="card-title" style={{ marginTop: '-5px' }}>{title}</h5>
+        <p className="card-text" style={{ marginTop: '-5px' }}>{text}</p>
+        <a href={link} className="btn btn-primary button1" style={{ marginTop: '-5px' }}>
           {buttonText}
         </a>
       </div>
@@ -25,7 +25,7 @@ function Card({ image, title, text, buttonText, link }) {
 
 function Merchandises() {
   return (
-    <div className="container mt-4 no-margin-padding">
+    <div className="container mt-4 no-margin-padding merchContainer">
       <div className="row g-5"> {/* Add gap here */}
         <div className="col-lg-4 col-md-4 col-sm-6"> {/* Responsive columns */}
           <Card

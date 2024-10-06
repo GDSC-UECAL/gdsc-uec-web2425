@@ -11,11 +11,12 @@ function Products() {
     return (
         <>
             <div className="prodcontainer">
-                <h1>Merchandises</h1>
-                <Merchandises></Merchandises>
-                <h1>Products</h1>
-                <ProductsCarousel />
+            <h1 style={{ marginTop: '150px' }}>Merchandises</h1>
+            <Merchandises />
+            <h1 style={{ marginTop: '50px' }}>Products</h1>
+            <ProductsCarousel />
             </div>
+
 
 
 
