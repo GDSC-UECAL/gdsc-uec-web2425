@@ -1,7 +1,7 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100%;
+  height: auto;
+  margin: 0 ;
   text-align: center;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .body-div{
-  height: 700px;
+
   background-color: grey;
 }
 

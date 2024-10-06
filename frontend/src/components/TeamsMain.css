@@ -1,0 +1,233 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.teamsContainer {
+    display: flex; /* Enables flexbox for alignment */
+    flex-direction: column; /* Aligns children in a column */
+    /*border: 1px solid black;*/
+    margin-top: 150px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Set specific weight if needed */
+}
+
+.teamsRow {
+   
+    margin-top: 120px;
+   
+}
+
+.squareLeft,
+.squareRight{
+    position: absolute;
+    top: 650px; /* Adjust top for larger screens */
+    width: 180px;
+    height: auto;
+    z-index: 1; /* Default z-index */
+    transition: width 0.3s ease;
+    filter: drop-shadow(4px 8px 10px rgba(0, 0, 0, 0.3));
+}
+.squareRight{
+    right: 30px;
+    rotate: 180deg;
+}
+
+.ball-left,
+.ball-right{
+    position: absolute;
+    top: 150px; /* Adjust top for larger screens */
+    width: 180px;
+    height: auto;
+    z-index: 1; /* Default z-index */
+    transition: width 0.3s ease;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+}
+
+@media (max-width: 568px) {
+    .ball-left,
+    .ball-right {
+        z-index: 1; /* Maintain visibility */
+        width: 90px;
+    }
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .ball-left,
+    .ball-right {
+        z-index: 1; /* Maintain visibility */
+        
+    }
+
+    .teamsBox {
+        position: relative;
+        z-index: 2; /* Ensure the images stack above the balls */
+        
+    }
+}
+
+/* Position the left ball */
+.ball-left {
+    left: 30px; /* Adjust left position */
+}
+/* Position the right ball */
+.ball-right {
+    right: 30px; /* Adjust right position */
+}
+
+
+.ball-2left {
+    left: 220px;
+}
+
+.ball-2right{
+    right: 220px;
+}
+
+.ball-2left,
+.ball-2right{
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+    position: absolute;
+    top: 300px; /* Adjust top for larger screens */
+    width: 100px;
+    height: auto;
+    z-index: 1; /* Default z-index */
+}
+
+
+.teamsBox {
+    position: relative;
+    height: 250px;
+    max-width: 400px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Add smooth shadow */
+    transition: box-shadow 0.3s ease; /* Add smooth transition */
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.teamsBox:hover {
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+}
+
+.teamsPic {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.teamsPic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.execOverlay {  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(158, 4, 4, 0.5); /* Semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1; /* Ensure overlay is above image */
+    padding: 0;  /* Ensure no padding inside overlay */
+    margin: 0; /* Ensures text appears above the image */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.execOverlay:hover{
+    background-color: rgba(137, 2, 2, 0.5);
+}
+
+.creativesOverlay {  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 148, 50, 0.5); /* Semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1; /* Ensure overlay is above image */
+    padding: 0;  /* Ensure no padding inside overlay */
+    margin: 0; /* Ensures text appears above the image */
+    font-weight: 600;
+}
+
+.creativesOverlay:hover{
+    background-color: rgba(5, 105, 35, 0.5);
+}
+
+.technologyDeptOverlay {  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 78, 226, 0.5); /* Semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1; /* Ensure overlay is above image */
+    padding: 0;  /* Ensure no padding inside overlay */
+    margin: 0; /* Ensures text appears above the image */
+    font-weight: 600;
+}
+.technologyDeptOverlay:hover{
+    background-color: rgba(7, 53, 159, 0.5);
+}
+
+.operationDeptOverlay {  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(173, 176, 7, 0.5); /* Semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1; /* Ensure overlay is above image */
+    padding: 0;  /* Ensure no padding inside overlay */
+    margin: 0; /* Ensures text appears above the image */
+    font-weight: 600;
+}
+
+.operationDeptOverlay:hover{
+    background-color: rgba(128, 130, 6, 0.5);
+}
+
+.teamsPic img {
+    position: relative;
+    z-index: 0; /* Makes sure the image stays below the overlay */
+}
