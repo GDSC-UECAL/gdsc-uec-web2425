@@ -38,14 +38,16 @@
   width: 100%;                  /* Make it responsive */
 }
 
-/* Event details */
 .event-details {
-  width: 100%;                  /* Take up full width of the container */
-  padding: 20px;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  max-width: 480px;             /* Restrict maximum width inside event details */
+  display: flex;
+  flex-direction: column;         /* Arrange content in a column */
+  justify-content: flex-start;    /* Align content to the top */
+  align-items: flex-start;        /* Align content to the left */
+  padding: 20px;                  /* Optional padding */
+  text-align: left;               /* Align text to the left */
+  width: 100%;
 }
+
 
 /* Right-side flexible container */
 .flexible-container {
