@@ -19,7 +19,7 @@ class TeamsFactory extends Factory
         return [
             'name' => fake()->sentence(),
             'role' => fake()->sentence(),
-            'image' => fake()->sentence(),
+            'image' => fake()->sentence()
         ];
     }
 }

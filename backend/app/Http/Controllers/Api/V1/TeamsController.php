@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Api\V1;
 
 use App\Models\Teams;
+use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreTeamsRequest;
 use App\Http\Requests\UpdateTeamsRequest;
+use App\Http\Resources\TeamsResource;
 
 class TeamsController extends Controller
 {
@@ -13,7 +15,7 @@ class TeamsController extends Controller
      */
     public function index()
     {
-        return Teams::all();
+        return TeamsResource::collection(Teams::all());
     }
 
     /**
@@ -37,7 +39,7 @@ class TeamsController extends Controller
      */
     public function show(Teams $teams)
     {
-        //
+        return TeamsResource::make($teams);
     }
 
     /**
