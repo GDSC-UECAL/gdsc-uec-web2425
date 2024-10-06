@@ -25,10 +25,13 @@ class PartnersRequest extends FormRequest
     public function rules()
     {
         return [
-            // 'name' => 'required|min:5|max:255'
+            'name' => 'required|string|max:255',
+            'description' => 'required|string',
+            'logo' => 'required|file|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'link' => 'required|url|max:255',
         ];
     }
-
+    
     /**
      * Get the validation attributes that apply to the request.
      *

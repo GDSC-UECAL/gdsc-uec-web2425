@@ -25,9 +25,13 @@ class SpeakersRequest extends FormRequest
     public function rules()
     {
         return [
-            // 'name' => 'required|min:5|max:255'
+            'events_id' => 'required|integer|exists:events,id', 
+            'name' => 'required|string|max:255',
+            'role' => 'required|string|max:255',
+            'image' => 'required|file|mimes:jpeg,png,jpg,gif,svg|max:2048', 
         ];
     }
+    
 
     /**
      * Get the validation attributes that apply to the request.
