@@ -158,7 +158,7 @@ function Home() {
   <div className="wider-container mx-auto" style={{ maxWidth: "90vw" }}>
   <div className="row justify-content-center  gx-4 gy-4">
     {[...Array(16)].map((_, index) => (
-      <div key={index} className="col-3 col-sm-1 col-md-2">
+      <div key={index} className="col-3 col-sm-3 col-md-1">
         <div className="partnership-item" 
           style={{
             transition: 'transform 0.3s ease-in-out',
