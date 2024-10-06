@@ -56,3 +56,77 @@
   border-radius: 10px;
   object-fit: cover;
 }
+
+.bell{
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: auto;
+  height: auto;
+  z-index: 1; 
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+}
+
+.ball1left, .ball1right{
+filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+  position: absolute;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.ball1right{
+  right: 250px;
+  top: 120px; 
+}
+
+.ball1left {
+left: 120px;
+top: 160px; 
+}
+
+.square1{
+position: absolute;
+top: 10px;
+right: 0px;
+width: auto;
+height: auto;
+z-index: 1;
+filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+}
+
+.nextRight{
+  position: absolute;
+  bottom: 50%;
+  right: -70px; /* depende kung saan mo ilalagay yung buttons na to*/
+  width: auto;
+  height: auto;
+  z-index: 1; 
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+}
+
+.nextLeft{
+  position: absolute;
+  bottom: 50%;
+  left: -70px; /* depende kung saan mo ilalagay yung buttons na to*/
+  width: auto;
+  height: auto;
+  z-index: 1; 
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+}
+
+/* KENNY YUNG rightLineProjects tsaka yellowHeadProjects magkasama, same sa leftLineProjects refer ka na lang sa positioning dun sa figma*/
+
+.yellowHeadProjects{
+
+}
+.rightLineProjects{
+
+}
+
+.redHeadProjects{
+
+}
+.leftLineProjects{
+  
+}

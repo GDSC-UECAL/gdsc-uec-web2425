@@ -8,6 +8,9 @@ import ball1left from '../assets/products/ball1left.png';
 import square1 from '../assets/products/square1.png';
 import line from '../assets/products/line.png';
 import redHead from '../assets/products/redHead.png';
+import leftArrow from '../assets/products/leftArrow.png';
+import nextLeft from '../assets/products/nextLeft.png'
+import nextRight from '../assets/products/nextRight.png'
 
 
 // Card Component
@@ -33,16 +36,19 @@ function Card({ image, title, text, buttonText, link }) {
 function Merchandises() {
   return (
     <>
-      {/* Decorative Ball Image at the top-left */}
+      {/* Images */}
       <img src={bell} alt="" className="bell"/>
       <img src={ball1right} alt="" className="ball1right"/>
       <img src={ball1left} alt="" className="ball1left"/>
       <img src={square1} alt="" className="square1"/>
       <img src={line} alt="" className="line"/>
       <img src={redHead} alt="" className="redHead"/>
+      <img src={leftArrow} alt="" className="leftArrow"/>
 
-      {/* Your main content */}
+      {/* Main Content */}
       <div className="container mt-4 no-margin-padding merchContainer">
+      <img src={nextLeft} alt="" className="nextLeft"/>
+      <img src={nextRight} alt="" className="nextRight"/>
         <div className="row g-5">
           <div className="col-lg-4 col-md-4 col-sm-6">
             <Card
