@@ -1,7 +1,9 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap is imported
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 import '../components/Merchandises.css';
 import FRONT1 from '../assets/products/FRONT1.jpg';
+import { Container, Row, Col } from 'react-bootstrap'; 
+
 
 // Card Component
 function Card({ image, title, text, buttonText, link }) {
@@ -25,9 +27,9 @@ function Card({ image, title, text, buttonText, link }) {
 
 function Merchandises() {
   return (
-    <div className="container mt-4 no-margin-padding">
-      <div className="row g-5"> {/* Add gap here */}
-        <div className="col-lg-4 col-md-4 col-sm-6"> {/* Responsive columns */}
+    <Container fluid className="merchContainer">
+      <Row className="teamsRow d-flex justify-content-center mx-3 mt-3"> 
+        <Col lg={3} sm={6} className="">
           <Card
             image={FRONT1}
             title="GDSC UEC T-Shirt"
@@ -35,8 +37,8 @@ function Merchandises() {
             buttonText="Order"
             link="#"
           />
-        </div>
-        <div className="col-lg-4 col-md-4 col-sm-6">
+        </Col>
+        <Col lg={3} sm={6} className="">
           <Card
             image={FRONT1}
             title="GDSC UEC T-Shirt"
@@ -44,8 +46,8 @@ function Merchandises() {
             buttonText="Order"
             link="#"
           />
-        </div>
-        <div className="col-lg-4 col-md-4 col-sm-6">
+        </Col>
+        <Col lg={3} sm={6} className="">
           <Card
             image={FRONT1}
             title="GDSC UEC T-Shirt"
@@ -53,9 +55,9 @@ function Merchandises() {
             buttonText="Order"
             link="#"
           />
-        </div>
-      </div>
-    </div>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
