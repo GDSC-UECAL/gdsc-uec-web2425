@@ -13,6 +13,7 @@
   font-family: 'DM Sans', sans-serif;
   text-align: center;
   margin: auto;
+    place-content: center;
 }
 
 .rdbtn[type=radio] {

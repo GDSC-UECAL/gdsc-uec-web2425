@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('role');
-            $table->string(column: 'image');
-            $table->integer(column: 'did');
+            $table->string('image');
+            //$table->foreign('department_id')->references('id')->on('department');
             $table->timestamps();
         });
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
 use App\Models\Teams;
 use App\Http\Requests\StoreTeamsRequest;
@@ -13,7 +13,7 @@ class TeamsController extends Controller
      */
     public function index()
     {
-        //
+        return Teams::all();
     }
 
     /**
