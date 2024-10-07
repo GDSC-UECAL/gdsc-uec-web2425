@@ -1,15 +1,4 @@
-.texts{
-    font: 'Poppins';
-    font-weight: 400;
-}
-
-.texts a{
-    font: 'Poppins';
-    font-weight: 400;
-    color: black;
-}
-
-.texts a{
+.a link{
     text-decoration: none;
+    color:azure;
 }
-
