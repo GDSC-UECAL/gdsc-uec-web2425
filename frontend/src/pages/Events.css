@@ -1,5 +1,55 @@
+#event-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.event-image {
+    position: absolute;
+    height: auto;
+    animation: move 3s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.cube {
+    width: 25vw;
+    bottom: 2.5%;
+    left: 15%;
+}
+
+.ball {
+    width: 30vw;
+    top: 5%;
+    right: 10%;
+}
+
+.vector1 {
+    width: 30vw;
+    top: 25%;
+    left: -5%;
+}
+
+.vector2 {
+    width: 20vw;
+    bottom: 15%;
+    right: -5%;
+}
+
 #event-main h1 {
-    text-align: left;
     margin-top: 10%;
     margin-bottom: 2.5%;
     font-size: 5vw;
@@ -9,6 +59,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 40px;
+    width: 80vw;
 }
 
 #event-container div {
@@ -45,10 +96,35 @@
     display: flex;
     border: none;
     margin-top: 30px;
-    justify-content:end;
+    width: 80vw;
+    justify-content: flex-end;
 }
 
 @media (max-width: 767px) {
+    .cube {
+        width: 50vw;
+        bottom: 20%;
+        left: 2.5%;
+    }
+    
+    .ball {
+        width: 50vw;
+        top: 8%;
+        right: 2.5%;
+    }
+    
+    .vector1 {
+        width: 50vw;
+        top: 30%;
+        left: -5%;
+    }
+    
+    .vector2 {
+        width: 50vw;
+        bottom: 30%;
+        right: -5%;
+    }    
+
     #event-main h1 {
         margin-top: 30%;
         margin-bottom: 5%;
