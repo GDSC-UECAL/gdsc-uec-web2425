@@ -57,47 +57,48 @@
   object-fit: cover;
 }
 
-.bell{
-  position: absolute;
-  top: 10px;
-  left: 0px;
-  width: auto;
-  height: auto;
-  z-index: 1; 
-  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+  /* FOR PICTURES */
+.bellCar{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: auto;
+    height: auto;
+    z-index: 1; 
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
-.ball1left, .ball1right{
-filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+.ball1leftCar, .ball1rightCar{
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+    position: absolute;
+    width: auto;
+    height: auto;
+    z-index: 1;
+}
+
+.ball1rightCar{
+    right: 250px;
+    top: 120px; 
+}
+
+.ball1leftCar {
+  left: 120px;
+  top: 160px; 
+}
+
+.square1Car{
   position: absolute;
+  top: 10px;
+  right: 0px;
   width: auto;
   height: auto;
   z-index: 1;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
-.ball1right{
-  right: 250px;
-  top: 120px; 
-}
-
-.ball1left {
-left: 120px;
-top: 160px; 
-}
-
-.square1{
-position: absolute;
-top: 10px;
-right: 0px;
-width: auto;
-height: auto;
-z-index: 1;
-filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
-}
-
-.nextRight{
+.nextRightCar{
   position: absolute;
-  bottom: 50%;
+  bottom: 40%;
   right: -70px; /* depende kung saan mo ilalagay yung buttons na to*/
   width: auto;
   height: auto;
@@ -105,9 +106,9 @@ filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
-.nextLeft{
+.nextLeftCar{
   position: absolute;
-  bottom: 50%;
+  bottom: 40%;
   left: -70px; /* depende kung saan mo ilalagay yung buttons na to*/
   width: auto;
   height: auto;
@@ -115,18 +116,64 @@ filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
-/* KENNY YUNG rightLineProjects tsaka yellowHeadProjects magkasama, same sa leftLineProjects refer ka na lang sa positioning dun sa figma*/
-
-.yellowHeadProjects{
-
+.yellowHeadProjectsCar{
+  position: absolute;
+  bottom: 125px;
+  right: 240px;
+  width: auto;
+  height: auto;
+  z-index: 1; 
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
-.rightLineProjects{
-
+.rightLineProjectsCar{
+  position: absolute;
+  bottom: 100px;
+  right: 0px;
+  width: auto;
+  height: auto;
+  z-index: 1; 
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
-.redHeadProjects{
-
+.redHeadProjectsCar{
+  position: absolute;
+  top: 430px;
+  left: 176px;
+  width: auto;
+  height: auto;
+  z-index: 1; 
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
-.leftLineProjects{
-  
+.leftLineProjectsCar{
+  position: absolute;
+  top: 400px;
+  left: 0px;
+  width: auto;
+  height: auto;
+  z-index: 1; 
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+}
+
+.elements {
+  animation: float 8s ease-in-out infinite;
+}
+
+.elements1 {
+  animation: float 14s ease-in-out infinite;
+}
+
+.elements2 {
+  animation: float 20s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+      transform: translateY(0px);
+  }
+  50% {
+      transform: translateY(-30px); /* Slightly less for a gentler effect */
+  }
+  100% {
+      transform: translateY(0px);
+  }
 }

@@ -46,7 +46,7 @@ function Merchandises() {
       <img src={leftArrow} alt="" className="leftArrow elements2"/>
 
       {/* Main Content */}
-      <div className="container mt-4 no-margin-padding merchContainer">
+      <div className="container mt-4 no-margin-padding marginBottomCard " style={{marginBottom:'100px'}}>
       <img src={nextLeft} alt="" className="nextLeft"/>
       <img src={nextRight} alt="" className="nextRight"/>
         <div className="row g-5">

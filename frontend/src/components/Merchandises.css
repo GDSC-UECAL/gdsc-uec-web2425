@@ -7,6 +7,10 @@
     margin: 0 -50px;
   }
   
+.marginBottomCard{
+ margin-bottom: 100px;
+}
+
   .custom-card img {
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
@@ -42,7 +46,7 @@
   /* FOR PICTURES */
 .bell{
     position: absolute;
-    top: 10px;
+    top: 850px;
     left: 0px;
     width: auto;
     height: auto;
@@ -59,18 +63,18 @@
 }
 
 .ball1right{
-    right: 250px;
-    top: 120px; 
+    right: 350px;
+    top: 970px; 
 }
 
 .ball1left {
-  left: 120px;
-  top: 160px; 
+  left: 50px;
+  top: 1550px; 
 }
 
 .square1{
   position: absolute;
-  top: 10px;
+  top: 920px;
   right: 0px;
   width: auto;
   height: auto;
@@ -80,7 +84,7 @@
 
 .line{
   position: absolute;
-  top: 400px;
+  top: 1220px;
   left: 0px;
   width: auto;
   height: auto;
@@ -90,7 +94,7 @@
 
 .redHead{
   position: absolute;
-  top: 430px;
+  top: 1250px;
   left: 130px;
   width: auto;
   height: auto;
@@ -100,7 +104,7 @@
 
 .leftArrow{
   position: absolute;
-  bottom: 100px;
+  top: 1500px;
   right: 0px;
   width: auto;
   height: auto;

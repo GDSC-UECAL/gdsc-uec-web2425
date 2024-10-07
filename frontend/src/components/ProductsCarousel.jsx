@@ -70,6 +70,16 @@ function ProductsCarousel() {
   };
 
   return (
+    <>
+    <img src={bell} alt="" className="bellCar elements"/>
+    <img src={ball1left} alt="" className="ball1leftCar elements2"/>
+    <img src={ball1right} alt="" className="ball1rightCar elements2"/>
+    <img src={square1} alt="" className="square1Car elements1"/>
+    <img src={redHeadProjects} alt="" className="redHeadProjectsCar elements1"/>
+    <img src={leftLineProjects} alt="" className="leftLineProjectsCar elements1"/>
+    <img src={yellowHeadProjects} alt="" className="yellowHeadProjectsCar elements2"/>
+    <img src={rightLineProjects} alt="" className="rightLineProjectsCar elements2"/>
+    
     <div className="carouselcontainer">
       <div className="container">
         {products.map((_, index) => (
@@ -85,6 +95,8 @@ function ProductsCarousel() {
         ))}
 
         <div className="cards">
+        <img src={nextRight} alt="" className="nextRightCar"/>
+        <img src={nextLeft} alt="" className="nextLeftCar"/>
           {products.map((product, index) => (
             <label
               key={index}
@@ -99,6 +111,7 @@ function ProductsCarousel() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
