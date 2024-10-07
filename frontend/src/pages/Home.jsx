@@ -26,11 +26,19 @@ import members_ico from '../assets/common/members_ico.png';
 import events_ico from '../assets/common/events_ico.png';
 import products_ico from '../assets/common/products_ico.png';
 import partners_ico from '../assets/common/partners_ico.png';
-import HomeBulletin from "../components/HomeBulletin.jsx"
-
+import HomeBulletin from "../components/HomeBulletin.jsx";
+import emailjs from '@emailjs/browser';
 
 
 function Home() {
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    alert("Your response has been recorded.");
+
+    emailjs.sendForm('service_lnprdde', 'template_5sbuxy9', e.target, 't4VFBtZ0Uuc-J9l1U')
+  }
+
   const [count, setCount] = useState(0)
 
   return (
@@ -239,19 +247,24 @@ function Home() {
                   Feel free to reach out!
                 </h2>
                 
-                <form className="mt-4 px-5 text-start">
+                
+
+
+                <form className="mt-4 px-5 text-start" onSubmit={sendEmail}>
                   <div className="mb-3">
-                    <label htmlFor="email" className="form-label">Email:</label>
+                    <label htmlFor="emailFrom" className="form-label">Email:</label>
                     <input 
+                      name="email_from"
                       type="email" 
                       className="form-control" 
-                      id="email" 
+                      id="email_from" 
                       placeholder="Enter your email" 
                     />
                   </div>
                   <div className="mb-3">
                     <label htmlFor="subject" className="form-label">Subject:</label>
                     <input 
+                      name="subject"
                       type="text" 
                       className="form-control" 
                       id="subject" 
@@ -261,6 +274,7 @@ function Home() {
                   <div className="mb-3">
                     <label htmlFor="message" className="form-label">Message:</label>
                     <textarea 
+                      name='message'
                       className="form-control" 
                       id="message" 
                       rows="3" 
