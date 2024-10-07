@@ -72,6 +72,17 @@
   top: 1550px; 
 }
 
+.bigBall{
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+    position: absolute;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    right: 100px;
+    top: 850px;
+}
+
+
 .square1{
   position: absolute;
   top: 1420px;

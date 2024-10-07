@@ -11,6 +11,7 @@ import redHead from '../assets/products/redHead.png';
 import leftArrow from '../assets/products/leftArrow.png';
 import nextLeft from '../assets/products/nextLeft.png'
 import nextRight from '../assets/products/nextRight.png'
+import bigBall from '../assets/products/bigBall.png'
 
 
 // Card Component
@@ -38,7 +39,7 @@ function Merchandises() {
     <>
       {/* Images */}
       <img src={bell} alt="" className="bell elements"/>
-      <img src={ball1right} alt="" className="ball1right elements1"/>
+      <img src={bigBall} alt="" className="bigBall elements1"/>
       <img src={ball1left} alt="" className="ball1left elements1"/>
       <img src={square1} alt="" className="square1 elements"/>
       <img src={line} alt="" className="line elements2"/>
