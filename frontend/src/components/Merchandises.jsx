@@ -37,13 +37,13 @@ function Merchandises() {
   return (
     <>
       {/* Images */}
-      <img src={bell} alt="" className="bell"/>
-      <img src={ball1right} alt="" className="ball1right"/>
-      <img src={ball1left} alt="" className="ball1left"/>
-      <img src={square1} alt="" className="square1"/>
-      <img src={line} alt="" className="line"/>
-      <img src={redHead} alt="" className="redHead"/>
-      <img src={leftArrow} alt="" className="leftArrow"/>
+      <img src={bell} alt="" className="bell elements"/>
+      <img src={ball1right} alt="" className="ball1right elements1"/>
+      <img src={ball1left} alt="" className="ball1left elements1"/>
+      <img src={square1} alt="" className="square1 elements"/>
+      <img src={line} alt="" className="line elements2"/>
+      <img src={redHead} alt="" className="redHead elements2"/>
+      <img src={leftArrow} alt="" className="leftArrow elements2"/>
 
       {/* Main Content */}
       <div className="container mt-4 no-margin-padding merchContainer">

@@ -128,3 +128,27 @@
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
+.elements {
+  animation: float 8s ease-in-out infinite;
+}
+
+.elements1 {
+  animation: float 14s ease-in-out infinite;
+}
+
+.elements2 {
+  animation: float 20s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+      transform: translateY(0px);
+  }
+  50% {
+      transform: translateY(-30px); /* Slightly less for a gentler effect */
+  }
+  100% {
+      transform: translateY(0px);
+  }
+}
+
