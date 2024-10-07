@@ -18,9 +18,9 @@ function Navbar() {
                             <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
                             <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
-                        <div className="offcanvas-body d-flex justify-content-between">
+                        <div className="offcanvas-body d-flex flex-column align-items-center flex-md-row justify-content-between">
                             {/* Navigation Links */}
-                            <ul className="navbar-nav justify-content-start flex-grow-1 pe-3">
+                            <ul className="navbar-nav flex-column flex-md-row justify-content-start flex-grow-1 pe-3">
                                 <li className="nav-item">
                                     <Link className="nav-link mx-lg-2" aria-current="page" to="/home">Home</Link>
                                 </li>
@@ -28,7 +28,7 @@ function Navbar() {
                                     <Link className="nav-link mx-lg-2" to="/about">About</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link mx-lg-2" to='/products'>Product</Link>
+                                    <Link className="nav-link mx-lg-2" to="/products">Product</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link mx-lg-2" to="/teams">Teams</Link>
@@ -37,9 +37,13 @@ function Navbar() {
                                     <Link className="nav-link mx-lg-2" to="/events">Events</Link>
                                 </li>
                             </ul>
-                            
-                            <button className="button2" type="button" href="http://localhost:8000/admin/">Register</button>
+
+                            {/* Register Link */}
+                            <div className="register d-flex justify-content-bottom align-items-center justify-content-md-end mt-3 mt-md-0">
+                                <Link className="nav-link mx-lg-2" to="/#">Register</Link>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </nav>

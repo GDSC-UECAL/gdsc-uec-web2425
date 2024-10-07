@@ -2,3 +2,21 @@
     text-decoration: none;
     color:azure;
 }
+
+.footer1{
+    box-shadow:  0px 0px 15px hsl(0, 0%, 80%);
+}
+
+.footer1 img{
+    width: 8%;
+    height: auto;
+}
+
+.a1{
+    color: hsl(0, 0%, 80%);
+    text-decoration: none;
+}
+
+.register a{
+    color: rgb(194, 26, 118);
+}
