@@ -2,6 +2,17 @@ import React, { useEffect, useState } from 'react';
 import laptopic from '../assets/products/laptopic.png';
 import '../components/ProductsCarousel.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap is imported
+import bell from '../assets/products/bell.png';
+import ball1right from '../assets/products/ball1right.png';
+import ball1left from '../assets/products/ball1left.png';
+import square1 from '../assets/products/square1.png';
+import nextLeft from '../assets/products/nextLeft.png'
+import nextRight from '../assets/products/nextRight.png'
+import redHeadProjects from '../assets/products/redHeadProjects.png'
+import yellowHeadProjects from '../assets/products/yellowHeadProjects.png'
+import leftLineProjects from '../assets/products/leftLineProjects.png'
+import rightLineProjects from '../assets/products/rightLineProjects.png'
+
 
 function ProductsCarousel() {
   const [products, setProducts] = useState([]);

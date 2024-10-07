@@ -2,14 +2,14 @@ import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import '../components/ExecutiveDept.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col } from 'react-bootstrap'; 
 import executiveCoverPic from '../assets/teams/exec.webp';
+import { Container, Row, Col } from 'react-bootstrap'; 
 import maamAbaya from '../assets/teams/maamAbaya.png';
 
-function ExecutiveDept() {
+function TechnologyDept() {
     const location = useLocation();
     const navigate = useNavigate();
-    const activeDepartment = location.state?.activeDepartment || 'Executive';
+    const activeDepartment = location.state?.activeDepartment || 'Technology';
 
     // Define custom colors for each department
     const departmentColors = {
@@ -32,13 +32,13 @@ function ExecutiveDept() {
             <Row className="position-relative">
                 <img src={executiveCoverPic} alt="Executive Board" className="execCover mb-3" />
                 {/* Overlay */}
-                <div className="execOverlay"></div>
+                <div className="techOverlay"></div>
                 
             </Row>
             <Row className="teamsText">
                 <div className='text-align-center'>
-                    <h1 className='deptheader my-3'>{activeDepartment} Board</h1>
-                    <h5 className='deptOverview mt-3 px-5'>Oversees strategic direction and decision-making, ensuring organizational goals are met effectively and efficiently, while continually evaluating and adapting to emerging opportunities.</h5>
+                    <h1 className='deptheader my-3'>{activeDepartment} Department</h1>
+                    <h5 className='deptOverview mt-3 px-5'>Empowers members through educational materials and workshops, fostering innovation and technical expertise within the community.</h5>
                 </div>
             </Row>
             <Row className='teamsOption'>
@@ -107,21 +107,21 @@ function ExecutiveDept() {
                 <Col>
                     <img src={maamAbaya} alt="Members" className="membersPic" />
                     <h4 className='memberName'>Shiela Abaya</h4>
-                    <h5 className='execMember'>Organization Adviser</h5>
+                    <h5 className='techMember'>Organization Adviser</h5>
                 </Col>
                 <Col>
                     <img src={maamAbaya} alt="Members" className="membersPic" />
                     <h4 className='memberName'>Shiela Abaya</h4>
-                    <h5 className='execMember'>Organization Adviser</h5>
+                    <h5 className='techMember'>Organization Adviser</h5>
                 </Col>
                 <Col>
                     <img src={maamAbaya} alt="Members" className="membersPic" />
                     <h4 className='memberName'>Shiela Abaya</h4>
-                    <h5 className='execMember'>Organization Adviser</h5>
+                    <h5 className='techMember'>Organization Adviser</h5>
                 </Col>
             </Row>
         </Container>
     );
 }
 
-export default ExecutiveDept;
+export default TechnologyDept;

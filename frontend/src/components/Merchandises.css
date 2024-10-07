@@ -59,7 +59,7 @@
 }
 
 .ball1right{
-    right: 350px;
+    right: 250px;
     top: 120px; 
 }
 
@@ -97,3 +97,34 @@
   z-index: 1; 
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
+
+.leftArrow{
+  position: absolute;
+  bottom: 100px;
+  right: 0px;
+  width: auto;
+  height: auto;
+  z-index: 1; 
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+}
+
+.nextRight{
+  position: absolute;
+  bottom: 50%;
+  right: -70px;
+  width: auto;
+  height: auto;
+  z-index: 1; 
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+}
+
+.nextLeft{
+  position: absolute;
+  bottom: 50%;
+  left: -70px;
+  width: auto;
+  height: auto;
+  z-index: 1; 
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+}
+

@@ -1,21 +1,15 @@
-import React from 'react';
-import TeamsMain from '../components/TeamsMain.jsx';
+import React, { useState } from 'react';
+import ExecutiveDept from '../components/ExecutiveDept.jsx';
 import '../components/TeamsMain.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col } from 'react-bootstrap'; 
 
 function TeamsExecutive() {
-    return(
-        <>  
-        <Container fluid className="teamsContainer">
-            <h1>Executive Department</h1>
-        </Container>
-            
-            
-          
-            
-        </>
+    const [activeOption, setActiveOption] = useState('Executive');
 
+    return (
+        <div>
+            <ExecutiveDept activeOption={activeOption} setActiveOption={setActiveOption} />
+        </div>
     );
 };
 
