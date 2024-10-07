@@ -20,3 +20,22 @@
 .register a{
     color: rgb(194, 26, 118);
 }
+
+.texts a{
+    color: black;
+    text-decoration: none;
+}
+
+.texts a:hover{
+    color: hsl(0, 0%, 70%);
+}
+
+.logos img{
+    width: 7%;
+    height: auto;
+}
+
+.logos1 img{
+    width: 7%;
+    height: auto;
+}
