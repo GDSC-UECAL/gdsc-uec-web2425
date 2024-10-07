@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-dark text-white pt-4" style={{ maxWidth: "100vw" }}>
       <div className="wider-container mx-auto" style={{ maxWidth: "90vw" }}>
-        <div className="row">
+        <div className="row text-start">
         <div className="pb-3"><img src={logo} alt="Logo" style={{ maxWidth: "20vw" }}/></div>
           <div className="col-md-7 pb-3">
             <h5>Google Developer Student Clubs</h5>
@@ -50,7 +50,7 @@ const Footer = () => {
 
         <hr className="bg-white" />
 
-        <div className="d-flex justify-content-between align-items-center">
+        <div className="d-flex justify-content-between text-start align-items-center">
           <div>
             <p className="mb-0">
               Google Developer Student Clubs - University of the East @ All rights reserved. 2024
