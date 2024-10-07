@@ -36,12 +36,12 @@ function TeamsMain() {
     };
 
     return (
-        <Container fluid className="teamsContainer">
-            <h1 style={{fontSize: '90px', marginTop: '30px'}}>Teams</h1>
-            <img src={ball1} alt="Decorative Ball" className="ball-left" />
-            <img src={ball1} alt="Decorative Ball" className="ball-2left" />
-            <img src={ball1} alt="Decorative Ball" className="ball-right" />
-            <img src={ball1} alt="Decorative Ball" className="ball-2right" />
+        <Container fluid className="teamsContainer mb-5">
+            <h1 style={{fontSize: '90px', marginTop: '30px', zIndex:'3'}}>Teams</h1>
+            <img src={ball1} alt="Decorative Ball" className="elements ball-left" />
+            <img src={ball1} alt="Decorative Ball" className="elements1 ball-2left" />
+            <img src={ball1} alt="Decorative Ball" className="elements2 ball-right" />
+            <img src={ball1} alt="Decorative Ball" className="elements ball-2right" />
 
             {/* First Row of Images */}
             <Row className="teamsRow d-flex justify-content-center mx-3 mt-3">
@@ -81,8 +81,8 @@ function TeamsMain() {
                 </Col>
             </Row>
 
-            <img src={square1} alt="Decorative Triangle" className="squareLeft" />
-            <img src={square1} alt="Decorative Triangle" className="squareRight" />
+            <img src={square1} alt="Decorative Triangle" className="elements squareLeft" />
+            <img src={square1} alt="Decorative Triangle" className="elements squareRight" />
         </Container>
     );
 }

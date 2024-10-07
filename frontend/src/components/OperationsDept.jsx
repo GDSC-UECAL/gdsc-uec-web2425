@@ -30,7 +30,7 @@ function OperationsDept() {
     return (
         <Container fluid className="teamsContainer">
             <Row className="position-relative">
-                <img src={executiveCoverPic} alt="Executive Board" className="execCover mb-3" />
+                <img src={executiveCoverPic} alt="Executive Board" className="teamCover mb-3" />
                 {/* Overlay */}
                 <div className="operOverlay"></div>
                 
@@ -42,7 +42,7 @@ function OperationsDept() {
                 </div>
             </Row>
             <Row className='teamsOption'>
-                <Col>
+                <Col className='option'>
                     <a
                         style={{
                             color: activeDepartment === 'Executive' ? departmentColors['Executive'] : 'black',
@@ -54,7 +54,7 @@ function OperationsDept() {
                         Executive
                     </a>
                 </Col>
-                <Col>
+                <Col className='option'>
                     <a
                         style={{
                             color: activeDepartment === 'Operations' ? departmentColors['Operations'] : 'black',
@@ -66,7 +66,7 @@ function OperationsDept() {
                         Operations
                     </a>
                 </Col>
-                <Col>
+                <Col className='option'>
                     <a
                         style={{
                             color: activeDepartment === 'Technology' ? departmentColors['Technology'] : 'black',
@@ -78,7 +78,7 @@ function OperationsDept() {
                         Technology
                     </a>
                 </Col>
-                <Col>
+                <Col className='option'>
                     <a
                         style={{
                             color: activeDepartment === 'Creatives' ? departmentColors['Creatives'] : 'black',
@@ -90,7 +90,7 @@ function OperationsDept() {
                         Creatives
                     </a>
                 </Col>
-                <Col>
+                <Col className='option'>
                     <a
                         style={{
                             color: activeDepartment === 'Community Development' ? departmentColors['Community Development'] : 'black',
@@ -104,17 +104,17 @@ function OperationsDept() {
                 </Col>
             </Row>
             <Row className='teamMembers'>
-                <Col>
+                <Col lg={4}>
                     <img src={maamAbaya} alt="Members" className="membersPic" />
                     <h4 className='memberName'>Shiela Abaya</h4>
                     <h5 className='operMember'>Organization Adviser</h5>
                 </Col>
-                <Col>
+                <Col lg={4}>
                     <img src={maamAbaya} alt="Members" className="membersPic" />
                     <h4 className='memberName'>Shiela Abaya</h4>
                     <h5 className='operMember'>Organization Adviser</h5>
                 </Col>
-                <Col>
+                <Col lg={4}>
                     <img src={maamAbaya} alt="Members" className="membersPic" />
                     <h4 className='memberName'>Shiela Abaya</h4>
                     <h5 className='operMember'>Organization Adviser</h5>

@@ -1,29 +1,30 @@
-.execCover{
-    height: 400px;
-    object-fit: cover;
-}
-
-.teamsContainer{
+.teamsContainer {
     margin-top: 110px;
 }
 
-.execCover {
-    width: 100%; /* Ensures the image takes up the full width */
-    height: 400px; /* Set your specific height */
-    object-fit: cover; /* Ensures the image covers the set height proportionally */
+/* Team cover image: fully responsive */
+.teamCover {
+    width: 100%; /* Image takes up full width */
+    max-height: 400px; /* Max height for large screens */
+    object-fit: cover;
     display: block;
-    position: relative; /* Relative positioning to work with the overlay */
+    position: relative;
     margin: 0;
     padding: 0;
 }
 
-.execOverlay {
+/* Exec overlay: align with the actual image height */
+.execOverlay,
+.techOverlay,
+.operOverlay,
+.creativesOverlay,
+.commOverlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 400px; /* Same height as the image */
-    background-color: rgba(116, 1, 1, 0.5); /* Semi-transparent black overlay */
+    max-height: 400px;
+    background-color: rgba(116, 1, 1, 0.5); /* Default to execOverlay color */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,138 +33,240 @@
     font-weight: bold;
     z-index: 2; /* Ensure overlay is above the image */
     text-align: center;
+    pointer-events: none; /* Allow clicks to pass through the overlay */
 }
 
-.techOverlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 400px; /* Same height as the image */
-    background-color: rgba(14, 78, 226, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    z-index: 2; /* Ensure overlay is above the image */
-    text-align: center;
+/* Specific background colors for each overlay */
+.techOverlay {
+    background-color: rgba(11, 47, 131, 0.5); /* Blue */
 }
 
-.operOverlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 400px; /* Same height as the image */
-    background-color: rgb(244, 180, 0, 0.5);
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    z-index: 2; /* Ensure overlay is above the image */
-    text-align: center;
+.operOverlay {
+    background-color: rgba(244, 180, 0, 0.5); /* Yellow */
 }
 
-.creativesOverlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 400px; /* Same height as the image */
-    background-color: rgba(8, 148, 50, 0.5);  
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    z-index: 2; /* Ensure overlay is above the image */
-    text-align: center;
+.creativesOverlay {
+    background-color: rgba(8, 148, 50, 0.5); /* Green */
 }
 
-.commOverlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 400px; /* Same height as the image */
-    background-color: rgba(119, 5, 111, 0.5);   
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    z-index: 2; /* Ensure overlay is above the image */
-    text-align: center;
+.commOverlay {
+    background-color: rgba(119, 5, 111, 0.5); /* Purple */
 }
 
-.deptheader{
+/* Ensure the overlay height matches the image dynamically */
+.teamCover + .execOverlay,
+.teamCover + .techOverlay,
+.teamCover + .operOverlay,
+.teamCover + .creativesOverlay,
+.teamCover + .commOverlay {
+    height: 100%; /* Remove fixed height and let it adapt */
+}
+
+/* Adjust the height of the image for smaller screens */
+@media (max-width: 768px) {
+    .teamCover,
+    .execOverlay,
+    .techOverlay,
+    .operOverlay,
+    .creativesOverlay,
+    .commOverlay {
+        max-height: 300px; /* Reduce max height for tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    .teamCover,
+    .execOverlay,
+    .techOverlay,
+    .operOverlay,
+    .creativesOverlay,
+    .commOverlay {
+        max-height: 200px; /* Reduce max height for mobile devices */
+    }
+}
+
+
+.deptheader {
     font-size: 60px;
     padding-bottom: 10px;
 }
 
-.deptOverview{
+/* Smaller font sizes for tablet screens */
+@media (max-width: 768px) {
+    .deptheader {
+        font-size: 40px; /* Adjust font size for tablets */
+    }
+}
+
+/* Smaller font sizes for mobile screens */
+@media (max-width: 576px) {
+    .deptheader {
+        font-size: 30px; /* Adjust font size for mobiles */
+    }
+}
+
+/* Responsive typography for department overview */
+.deptOverview {
     font-size: 20px;
     font-weight: 500;
     text-align: center;
     border-bottom: 1px solid black;
     padding-bottom: 30px;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
-.teamsOption{
+/* Adjust padding and font size for tablets */
+@media (max-width: 768px) {
+    .deptOverview {
+        font-size: 18px;
+        padding-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+/* Adjust padding and font size for mobile screens */
+@media (max-width: 576px) {
+    .deptOverview {
+        font-size: 16px;
+        padding-bottom: 15px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+.teamsOption {
+    display: flex;
+    justify-content: space-between; /* Distribute space between columns */
+    text-align: center;
     font-size: 20px;
-    font-weight: 500;
-    padding-top: 10px;
-    
 }
 
-.membersPic{
-    width: 200px;
+.teamsOption .option {
+    flex: 1; /* Ensure each column takes up equal width */
+    max-width: 20%; /* Limit width to 20% */
+    padding-bottom: 10px; /* Add space below each option */
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .teamsOption {
+        flex-wrap: wrap; /* Stack the columns when the screen size is smaller */
+        font-size: 18px;
+    }
+    .teamsOption .option {
+        flex: 1 1 50%; /* Stack two columns per row on smaller screens */
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .teamsOption .option {
+        flex: 1 1 100%; /* Stack one column per row on very small screens */
+        font-size: 16px;
+        max-width: 100%;
+    }
+}
+
+.teamMembers {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-between; /* Add space between members */
+}
+
+.membersPic {
+    width: 100%; /* Make images responsive */
+    max-width: 200px; /* Set a max width */
     height: auto;
     object-fit: contain;
     border-radius: 5px;
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); 
-    margin-bottom: 20px;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+    
 }
 
-.memberName{
+.memberName {
     font-size: 22px;
     font-weight: 600;
+    text-align: center; /* Center align the member name */
+    margin-top: 20px;
 }
 
-.teamMembers{
-    margin-top: 30px;
-}
-.execMember{
+.execMember {
     font-size: 18px;
     font-weight: 400;
-    color: #DB4437;
-}
-.techMember{
-    font-size: 18px;
-    font-weight: 400;
-    color: #4285F4;
+    color: #DB4437; /* Red color for Executive members */
+    text-align: center; /* Center align the member role */
+    
 }
 
-.operMember{
+.techMember {
     font-size: 18px;
     font-weight: 400;
-    color: #F4B400;
+    color: #4285F4; /* Blue color for Technology members */
+    text-align: center;
 }
 
-.creatMember{
+.operMember {
     font-size: 18px;
     font-weight: 400;
-    color: #0F9D58;
+    color: #F4B400; /* Yellow color for Operations members */
+    text-align: center;
 }
 
-.commMember{
+.creatMember {
     font-size: 18px;
     font-weight: 400;
-    color: #611DE6;
+    color: #0F9D58; /* Green color for Creatives members */
+    text-align: center;
 }
 
+.commMember {
+    font-size: 18px;
+    font-weight: 400;
+    color: #611DE6; /* Purple color for Community Development members */
+    text-align: center;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .membersPic {
+        max-width: 150px; /* Reduce image size for tablets */
+    }
+
+    .memberName {
+        font-size: 20px; /* Adjust font size for member names */
+        margin-top: 15px;
+    }
+
+    .execMember,
+    .techMember,
+    .operMember,
+    .creatMember,
+    .commMember {
+        font-size: 16px; /* Adjust font size for roles */
+        margin-top: -10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .membersPic {
+        max-width: 120px; /* Further reduce size for mobile */
+    }
+
+    .memberName {
+        font-size: 18px; /* Adjust font size for member names */
+        margin-top: 10px;
+    }
+
+    .execMember,
+    .techMember,
+    .operMember,
+    .creatMember,
+    .commMember {
+        font-size: 14px; /* Adjust font size for roles */
+        margin-top: -5px;
+    }
+}
