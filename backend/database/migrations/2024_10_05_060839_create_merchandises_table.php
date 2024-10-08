@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('merchandises', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->date('date');
-            $table->string('description');
-            $table->float('price');
-            $table->string('banner');
+            $table->string('title')->nullable();
+            $table->date('date')->nullable();
+            $table->string('description')->nullable();
+            $table->float('price')->nullable();
+            $table->string('banner')->nullable();            
             $table->timestamps();
         });
     }

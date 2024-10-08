@@ -16,9 +16,9 @@ return new class extends Migration
             $table->foreignId('events_id') 
                   ->constrained() 
                   ->onDelete('cascade');
-            $table->string('name');
-            $table->string('role');
-            $table->string('image');
+            $table->string('name')->nullable();
+            $table->string('role')->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
