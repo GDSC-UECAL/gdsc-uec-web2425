@@ -58,5 +58,20 @@
   padding: 10px;                     /* Padding inside the containers */
   border-radius: 5px;                /* Slight rounding of corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  display: flex;                     /* Make the container a flexbox */
+  justify-content: center;           /* Center content horizontally */
+  align-items: center;               /* Center content vertically */
+  min-height: 100px;                 /* Minimum height for visibility */
+  background-size: cover;            /* Background size to cover */
+  background-position: center;       /* Center the background image */
 }
 
+.background-image {
+  color: white;                      /* Set text color to contrast the image */
+}
+
+.container-text {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}

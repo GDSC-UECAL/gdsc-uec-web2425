@@ -1,11 +1,11 @@
 [
     { "id": 1, "content": "Content for Container 1" },
-    { "id": 2, "content": "Content for Container 2" },
+    { "id": 2, "content": "Container 2", "backgroundImage": "image2", "text": "Text on Image 2" },
     { "id": 3, "content": "Content for Container 3" },
-    { "id": 4, "content": "Content for Container 4" },
+    { "id": 4, "content": "Container 4", "backgroundImage": "image4", "text": "Text on Image 4" },
     { "id": 5, "content": "Content for Container 5" },
-    { "id": 6, "content": "Content for Container 6" },
+    { "id": 6, "content": "Container 6", "backgroundImage": "image6", "text": "Text on Image 6" },
     { "id": 7, "content": "Content for Container 7" },
-    { "id": 8, "content": "Content for Container 8" }
+    { "id": 8, "content": "Container 8", "backgroundImage": "image8", "text": "Text on Image 8" }
   ]
   
