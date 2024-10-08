@@ -23,10 +23,14 @@ import vecE from '../assets/common/vector_e.png';
 import vecF from '../assets/common/vector_f.png';
 import vecG from '../assets/common/vector_g.png';
 import vecH from '../assets/common/vector_h.png';
+import "../components/Aboutuscarousel.css";
+import Aboutuscarousel from '../components/Aboutuscarousel.jsx';
+
 
 function About() {
   return (
     <>
+    
       <div className="Landing" style={{ width: '100%', height: '100vh', position: 'relative', overflowX: 'clip', margin: '0px', padding: '0px' }}>
 
         <img className="testimg" style={{ width: '7%', left: '22vw', top: '10vh', position: 'absolute', float: 'right' }} src={el2} />
@@ -54,7 +58,11 @@ function About() {
           </div>
         </div>
       </div>
+      <Aboutuscarousel/>
       
+
+
+
     </>
   );
 }
