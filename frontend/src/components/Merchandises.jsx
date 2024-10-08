@@ -32,11 +32,11 @@ function Card({ image, title, text, price}) {
             {title}
           </h5>
         </div>
-        <p style={{ fontWeight: 'bold', marginTop: '-5px', marginLeft: '1rem' }}>
+        <p style={{ fontWeight: 'bold', color:'#611DE6'}}>
             ₱{price}
         </p>
-        <p className="card-text" style={{ marginTop: '-5px' }}>{text}</p>
-        <a href="#" className="btn button1" style={{ marginTop: '-5px' }}>
+        <p className="card-text" style={{ marginTop: '-10px' }}>{text}</p>
+        <a href="#" className="btn button1" style={{ marginTop: '-5px'}}>
           Order
         </a>
       </div>

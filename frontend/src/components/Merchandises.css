@@ -47,29 +47,26 @@
     flex-grow: 1;
   }
 
-  .btn{
-    color: black;
-    background-color: white;
-  }
+
   .button1 {
     background-color:rgb(132, 57, 147);
     color: black;
     transition: background-color 0.3s ease, color 0.3s ease; /* Transition for button2 */
-    border-color: rgb(132, 57, 147);
+    border-color: #611DE6;
     z-index: -2;
   }
   
   .button1:hover {
-    background-color: rgb(132, 57, 147); /* Change background color on hover */
+    background-color: #611DE6; /* Change background color on hover */
     color: white; /* Change text color on hover */
-    border-color: rgb(132, 57, 147);
+    border-color: #611DE6;
   }
 
 
   /* FOR PICTURES */
 .bell{
     position: absolute;
-    top: 850px;
+    top: 800px;
     left: 0px;
     width: auto;
     height: auto;
@@ -111,7 +108,7 @@
 .square1{
   position: absolute;
   top: 1420px;
-  right: 0px;
+  right: -20px;
   width: auto;
   height: auto;
   z-index: -2;
@@ -120,7 +117,7 @@
 
 .line{
   position: absolute;
-  top: 1270px;
+  top: 1200px;
   left: 0px;
   width: auto;
   height: auto;
@@ -130,7 +127,7 @@
 
 .redHead{
   position: absolute;
-  top: 1300px;
+  top: 1230px;
   left: 130px;
   width: auto;
   height: auto;
@@ -140,7 +137,7 @@
 
 .leftArrow{
   position: absolute;
-  top: 1200px;
+  top: 1150px;
   right: 0px;
   width: auto;
   height: auto;
