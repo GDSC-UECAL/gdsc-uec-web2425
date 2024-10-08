@@ -29,7 +29,7 @@
   margin: auto;
   transition: transform .4s ease, opacity .4s ease, z-index .4s ease;
   cursor: pointer;
-
+  text-decoration: none;
 
 }
 
@@ -49,6 +49,7 @@
   height: auto;
   padding-bottom: 50%;
   padding-top: 5%;
+  text-decoration: none;
 }
 
 .eventpic {
@@ -170,10 +171,29 @@
 }
 
 .txtinside{
-  margin-top: -35%;
+  margin-top: -28%;
+  color: white;
+  font-weight: 700;
+  font-size: 35px;
+  text-decoration: none;
+
+}
+.txtinsidea{
+  text-decoration: none;
 }
 
+.txtinside2{
+  margin-top: -3%;
+  color: white;
+  font-weight: 700;
+  font-size: 19px;
+  text-decoration: none;
 
+
+}
+.txtinside2a{
+  text-decoration: none;
+}
 
 
 

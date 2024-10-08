@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import laptopic from '../assets/products/laptopic.png';
 import laptopic2 from '../assets/products/laptopic2.png';
+import laptopic3 from '../assets/products/laptopic3.png';
+import laptopic4 from '../assets/products/laptopic4.png';
+import laptopic5 from '../assets/products/laptopic5.png';
 import '../components/ProductsCarousel.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import bell from '../assets/products/bell.png';
@@ -20,14 +23,14 @@ function ProductsCarousel() {
 
   useEffect(() => {
     const fetchedProducts = [
-      { id: 1, image: laptopic2, alt: 'laptop' },
-      { id: 2, image: laptopic2, alt: 'laptop' },
-      { id: 3, image: laptopic2, alt: 'laptop' },
-      { id: 4, image: laptopic, alt: 'laptop' },
-      { id: 5, image: laptopic, alt: 'laptop' },
-      { id: 6, image: laptopic, alt: 'laptop' },
-      { id: 7, image: laptopic, alt: 'laptop' },
-      { id: 8, image: laptopic, alt: 'laptop' },
+      { id: 1, banner: laptopic4, alt: 'laptop', title: 'Hellooooo1', link: "https://github.com/Velsariaa", description:"description here" },
+      { id: 2, banner: laptopic4, alt: 'laptop', title: 'Hellooooo2', link: "https://github.com/Velsariaa", description:"description here" },
+      { id: 3, banner: laptopic4, alt: 'laptop', title: 'Hellooooo3', link: "https://github.com/Velsariaa", description:"description here" },
+      { id: 4, banner: laptopic4, alt: 'laptop', title: 'Hellooooo4', link: "https://github.com/Velsariaa", description:"description here" },
+      { id: 5, banner: laptopic4, alt: 'laptop', title: 'Hellooooo5', link: "https://github.com/Velsariaa", description:"description here" },
+      { id: 6, banner: laptopic4, alt: 'laptop', title: 'Hellooooo6', link: "https://github.com/Velsariaa", description:"description here" },
+      { id: 7, banner: laptopic4, alt: 'laptop', title: 'Hellooooo7', link: "https://github.com/Velsariaa", description:"description here" },
+      { id: 8, banner: laptopic4, alt: 'laptop', title: 'Hellooooo8', link: "https://github.com/Velsariaa", description:"description here" },
     ];
     setProducts(fetchedProducts);
   }, []);
@@ -125,19 +128,35 @@ function ProductsCarousel() {
               style={{ cursor: 'pointer' }}
             />
             {/* Product Cards */}
-            {products.map((product, index) => (
-              <label
-                key={index}
-                className="prodcard"
-                htmlFor={`itemm-${index + 1}`}
-                id={`song-${index + 1}`}
-                style={getTransformStyles(index)}
-              >
-                
-                <img className="eventpic" src={product.image} alt={product.alt} />
-                <div className='txtinside'>Hello Hlelo</div>
-              </label>
-            ))}
+            {products.map((product, index) => {
+              const isActive = activeIndex === index;
+
+              return (
+                <label
+                  key={index}
+                  className="prodcard"
+                  htmlFor={`itemm-${index + 1}`}
+                  id={`song-${index + 1}`}
+                  style={getTransformStyles(index)}
+                >
+                  {/* Wrap only the content of the active product with <a> */}
+                  {isActive ? (
+                    <a className='txtinsidea' href={product.link} target="_blank" rel="noopener noreferrer" style={{ display: 'block', width: '100%', height: '100%'}}>
+                      <img className="eventpic" src={product.banner} alt={product.alt} />
+                      <div className='txtinside'><p>{product.title}</p></div>
+                      <div className='txtinside2'><p>{product.description}</p></div>
+                    </a>
+                  ) : (
+                    <>
+                      <img className="eventpic" src={product.banner} alt={product.alt} />
+                      <div className='txtinside'><p>{product.title}</p></div>
+                      <div className='txtinside2'><p>{product.description}</p></div>
+                    </>
+                  )}
+                </label>
+              );
+            })}
+
           </div>
         </div>
       </div>
