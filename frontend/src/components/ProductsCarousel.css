@@ -30,7 +30,6 @@
   transition: transform .4s ease, opacity .4s ease, z-index .4s ease;
   cursor: pointer;
   text-decoration: none;
-
 }
 
 .container {
@@ -43,12 +42,12 @@
   position: relative;
 }
 
-.cards {
+.cardscon {
   position: relative;
   width: 100%;
   height: auto;
-  padding-bottom: 50%;
-  padding-top: 5%;
+  margin-top: 4%;
+  padding: 0% 0% 33% 0%;
   text-decoration: none;
 }
 
@@ -66,7 +65,7 @@
     left: 0px;
     width: auto;
     height: auto;
-    z-index: -1; 
+    z-index: -2; 
     filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
@@ -75,19 +74,19 @@
     position: absolute;
     width: auto;
     height: auto;
-    z-index: -1;
+    z-index: -2;
 }
 
 .ball1rightCar{
     right: 250px;
     top: 120px; 
-    z-index: -1;
+    z-index: -2;
 }
 
 .ball1leftCar {
   left: 120px;
   top: 160px; 
-  z-index: -1;
+  z-index: -2;
 }
 
 .square1Car{
@@ -97,13 +96,13 @@
   width: auto;
   height: auto;
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
-  z-index: -1;
+  z-index: -2;
 }
 
 .nextRightCar {
   position: absolute;
-  bottom: 47%;
-  right: -50px; /* Adjust based on button placement */
+  bottom: 30%;
+  right: -47px; /* Adjust based on button placement */
   width: auto;
   height: auto;
   z-index: 1;
@@ -119,8 +118,8 @@
 
 .nextLeftCar{
   position: absolute;
-  bottom: 47%;
-  left: -50px; /* depende kung saan mo ilalagay yung buttons na to*/
+  bottom: 30%;
+  left: -47px; /* depende kung saan mo ilalagay yung buttons na to*/
   width: auto;
   height: auto;
   z-index: 1; 
@@ -140,7 +139,7 @@
   right: 240px;
   width: auto;
   height: auto;
-  z-index: -1; 
+  z-index: -2; 
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 .rightLineProjectsCar{
@@ -149,7 +148,7 @@
   right: 0px;
   width: auto;
   height: auto;
-  z-index: -1; 
+  z-index: -2; 
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
@@ -159,7 +158,7 @@
   left: 176px;
   width: auto;
   height: auto;
-  z-index: -1; 
+  z-index: -2; 
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 .leftLineProjectsCar{
@@ -168,7 +167,7 @@
   left: 0px;
   width: auto;
   height: auto;
-  z-index: -1; 
+  z-index: -2; 
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 

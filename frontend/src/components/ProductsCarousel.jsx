@@ -65,13 +65,13 @@ function ProductsCarousel() {
     } else if (index === previousIndex) {
       return {
         transform: `translateX(-40%) scale(0.8)`,
-        opacity: 0.6,
+        opacity: 1,
         zIndex: 2,
       };
     } else if (index === nextIndex) {
       return {
         transform: `translateX(40%) scale(0.8)`,
-        opacity: 0.6,
+        opacity: 1,
         zIndex: 2,
       };
     } else {
@@ -111,7 +111,7 @@ function ProductsCarousel() {
             />
           ))}
 
-          <div className="cards">
+          <div className="cardscon">
             {/* Left and Right Buttons for navigation */}
             <img
               src={nextLeft}

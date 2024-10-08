@@ -113,7 +113,7 @@ function Merchandises() {
 
         <div className="row g-5">
           {currentCards.length > 0 && currentCards.map((card, index) => (
-            <div className="col-lg-4 col-md-4 col-sm-6" key={index}>
+            <div className="col-4" key={index}>
               <Card
                 text={card.title}
                 image={card.banner}
