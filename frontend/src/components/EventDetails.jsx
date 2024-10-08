@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './EventDetails.css';
 import teach from '../assets/events/teach.png';
+import additionalData from '../assets/data/additionalData.json'; // Adjust the path as necessary
 
 const EventDetails = () => {
   const event = {
@@ -10,6 +11,14 @@ const EventDetails = () => {
     location: 'Tech Convention Center, San Francisco, CA',
     description: 'Join us for a day full of learning and networking with the brightest minds in the React community. This event will feature talks from top developers and hands-on workshops to enhance your React skills.',
   };
+
+  // If you need to fetch the data dynamically, you can use useEffect
+  const [containers, setContainers] = useState([]);
+
+  useEffect(() => {
+    // You can also fetch the JSON data here if it's stored on a server
+    setContainers(additionalData); // Use the imported data directly
+  }, []);
 
   return (
     <div className="event-details-page">
@@ -40,14 +49,9 @@ const EventDetails = () => {
         {/* Right-side flexible container */}
         <div className="flexible-container">
           <div className="flexible-content-container">
-            {/* Additional containers in 2 rows and 4 columns */}
-            {[...Array(8)].map((_, index) => (
-              <div key={index} className="additional-container">
-                <h2>Additional Content {index + 1}</h2>
-                <p>
-                  This is additional content container {index + 1}. You can place any
-                  content here.
-                </p>
+            {containers.map((container) => (
+              <div key={container.id} className="additional-container">
+                {container.content} {/* Display content from the JSON data */}
               </div>
             ))}
           </div>
