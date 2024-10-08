@@ -44,7 +44,7 @@ function Merchandises() {
     {
       image: Shirt,
       title: "GDSC UEC T-Shirt",
-      text: "A black t-shirt with a minimal printed GDSC logo",
+      text: "A black t-shirt with the GDSC logo",
       buttonText: "Order",
       link: "#",
     },
