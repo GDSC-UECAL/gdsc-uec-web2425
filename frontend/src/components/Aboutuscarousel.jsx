@@ -111,7 +111,7 @@ function Aboutuscarousel() {
                     {products.map((_, index) => (
                         <input
                             key={index}
-                            className="rdbtn"
+                            className="rdbtn2"
                             type="radio"
                             name="slider"
                             id={`itemm-${index + 1}`}
@@ -142,17 +142,17 @@ function Aboutuscarousel() {
                             return (
                                 <label
                                     key={index}
-                                    className="prodcard"
+                                    className="prodcard2"
                                     htmlFor={`itemm-${index + 1}`}
                                     id={`song-${index + 1}`}
                                     style={getTransformStyles(index)}
                                 >
                                     {/* Wrap only the content of the active product with <a> */}
                                     {isActive ? (
-                                        <img className="eventpic" src={product.banner} alt={product.alt} />
+                                        <img className="eventpic2" src={product.banner} alt={product.alt} />
                                     ) : (
                                         <>
-                                        <img className="eventpic" src={product.banner} alt={product.alt} />
+                                        <img className="eventpic2" src={product.banner} alt={product.alt} />
                                         </>
                                     )}
                                 </label>

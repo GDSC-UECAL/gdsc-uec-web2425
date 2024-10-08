@@ -18,11 +18,11 @@
   place-content: center;
 
 }
-.rdbtn[type=radio] {
+.rdbtn2[type=radio] {
   display: none;
 }
 
-.prodcard {
+.prodcard2 {
   position: absolute;
   width: 60%;
   height: auto;
@@ -36,7 +36,6 @@
 
 
 .cardscon2 {
- 
   position: relative;
   width: 100%;
   height: auto;
@@ -45,7 +44,7 @@
   text-decoration: none;
 }
 
-.eventpic {
+.eventpic2 {
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -53,51 +52,7 @@
 }
 
   /* FOR PICTURES */
-.bellCar{
-    position: absolute;
-    top: 10px;
-    left: 0px;
-    width: auto;
-    height: auto;
-    z-index: -2; 
-    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
-}
 
-.ball1leftCar, .ball1rightCar, .ball2leftCar{
-  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
-    position: absolute;
-    width: auto;
-    height: auto;
-    z-index: -2;
-}
-
-.ball1rightCar{
-    right: 250px;
-    top: 120px; 
-    z-index: -2;
-}
-
-.ball1leftCar {
-  left: 120px;
-  top: 280px; 
-  z-index: -2;
-}
-
-.ball2leftCar {
-  left: 340px;
-  top: 900px; 
-  z-index: -2;
-}
-
-.square1Car{
-  position: absolute;
-  top: 10px;
-  right: 0px;
-  width: auto;
-  height: auto;
-  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
-  z-index: -2;
-}
 
 .nextRightCar2 {
   position: absolute;
@@ -131,93 +86,3 @@
   opacity: 0.75;
 }
 
-
-.yellowHeadProjectsCar{
-  position: absolute;
-  bottom: 75px;
-  right: 160px;
-  width: auto;
-  height: auto;
-  z-index: -2; 
-  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
-}
-.rightLineProjectsCar{
-  position: absolute;
-  bottom: 50px;
-  right: -80px;
-  width: auto;
-  height: auto;
-  z-index: -2; 
-  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
-}
-
-.redHeadProjectsCar{
-  position: absolute;
-  top: 750px;
-  left: 134px;
-  width: auto;
-  height: auto;
-  z-index: -2; 
-  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
-}
-.leftLineProjectsCar{
-  position: absolute;
-  top: 720px;
-  left: -45px;
-  width: auto;
-  height: auto;
-  z-index: -2; 
-  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
-}
-
-.elements {
-  animation: float 8s ease-in-out infinite;
-}
-
-.elements1 {
-  animation: float 14s ease-in-out infinite;
-}
-
-.elements2 {
-  animation: float 20s ease-in-out infinite;
-}
-
-.txtinside{
-  margin-top: -28%;
-  color: white;
-  font-weight: 700;
-  font-size: 35px;
-  text-decoration: none;
-
-}
-.txtinsidea{
-  text-decoration: none;
-}
-
-.txtinside2{
-  margin-top: -3%;
-  color: white;
-  font-weight: 700;
-  font-size: 19px;
-  text-decoration: none;
-
-
-}
-.txtinside2a{
-  text-decoration: none;
-}
-
-
-
-
-@keyframes float {
-  0% {
-      transform: translateY(0px);
-  }
-  50% {
-      transform: translateY(-30px); /* Slightly less for a gentler effect */
-  }
-  100% {
-      transform: translateY(0px);
-  }
-}
