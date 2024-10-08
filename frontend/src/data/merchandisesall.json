@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "title": "Rem iste dolorum possimus quo laboriosam.",
+        "date": "1999-02-27",
+        "description": "Culpa laborum harum aut qui qui facere.",
+        "price": 635.47,
+        "banner": "Qui enim voluptatum odit qui id sit.",
+        "timestamps": true
+    },
+    {
+        "id": 2,
+        "title": "Cumque voluptatem aliquid illo deserunt.",
+        "date": "1995-07-30",
+        "description": "Repellendus consectetur reprehenderit quia repellat deserunt fugiat.",
+        "price": 764.35,
+        "banner": "Sit error harum velit mollitia.",
+        "timestamps": true
+    },
+    {
+        "id": 3,
+        "title": "Iure illum ab quo impedit architecto totam debitis.",
+        "date": "2004-05-19",
+        "description": "Sunt assumenda est soluta quia.",
+        "price": 50.93,
+        "banner": "Sapiente non ea provident magnam.",
+        "timestamps": true
+    },
+    {
+        "id": 4,
+        "title": "Quidem quod in et voluptatum eius necessitatibus.",
+        "date": "2021-08-22",
+        "description": "Occaecati qui aliquam velit est.",
+        "price": 239.62,
+        "banner": "Rerum molestiae sunt non et aliquid maxime molestiae.",
+        "timestamps": true
+    },
+    {
+        "id": 5,
+        "title": "Ad harum quod voluptatem asperiores praesentium ipsa.",
+        "date": "2008-03-20",
+        "description": "Qui illum veniam ab.",
+        "price": 740.94,
+        "banner": "Sit quae qui minima rerum alias.",
+        "timestamps": true
+    },
+    {
+        "id": 6,
+        "title": "Nesciunt quia id numquam dolorum.",
+        "date": "2011-01-16",
+        "description": "Quisquam iste cupiditate pariatur quidem velit molestias.",
+        "price": 547.11,
+        "banner": "Sint necessitatibus placeat quo asperiores.",
+        "timestamps": true
+    },
+    {
+        "id": 7,
+        "title": "Vitae repellat cupiditate aliquid et repudiandae nesciunt.",
+        "date": "1984-07-19",
+        "description": "Nam et earum ad sunt enim dolor impedit.",
+        "price": 807.03,
+        "banner": "Ut maxime consequatur excepturi non sit.",
+        "timestamps": true
+    },
+    {
+        "id": 8,
+        "title": "Esse perferendis ex natus maxime.",
+        "date": "1984-05-25",
+        "description": "Eaque dolores ducimus veniam non.",
+        "price": 438.93,
+        "banner": "Corrupti et magnam ipsam.",
+        "timestamps": true
+    },
+    {
+        "id": 9,
+        "title": "Doloremque libero consequatur quia.",
+        "date": "2021-02-01",
+        "description": "Temporibus earum nihil alias quaerat autem.",
+        "price": 308.76,
+        "banner": "Ab atque ducimus nemo ducimus.",
+        "timestamps": true
+    },
+    {
+        "id": 10,
+        "title": "Et et autem omnis excepturi alias expedita.",
+        "date": "1984-07-05",
+        "description": "Enim ut inventore recusandae sunt.",
+        "price": 146.67,
+        "banner": "Ut tenetur voluptatem a molestiae veritatis.",
+        "timestamps": true
+    }
+]

@@ -64,7 +64,7 @@
     left: 0px;
     width: auto;
     height: auto;
-    z-index: 1; 
+    z-index: -1; 
     filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
@@ -73,17 +73,19 @@
     position: absolute;
     width: auto;
     height: auto;
-    z-index: 1;
+    z-index: -1;
 }
 
 .ball1rightCar{
     right: 250px;
     top: 120px; 
+    z-index: -1;
 }
 
 .ball1leftCar {
   left: 120px;
   top: 160px; 
+  z-index: -1;
 }
 
 .square1Car{
@@ -92,8 +94,8 @@
   right: 0px;
   width: auto;
   height: auto;
-  z-index: 1;
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+  z-index: -1;
 }
 
 .nextRightCar{
@@ -122,7 +124,7 @@
   right: 240px;
   width: auto;
   height: auto;
-  z-index: 1; 
+  z-index: -1; 
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 .rightLineProjectsCar{
@@ -131,7 +133,7 @@
   right: 0px;
   width: auto;
   height: auto;
-  z-index: 1; 
+  z-index: -1; 
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
@@ -141,7 +143,7 @@
   left: 176px;
   width: auto;
   height: auto;
-  z-index: 1; 
+  z-index: -1; 
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 .leftLineProjectsCar{
@@ -150,7 +152,7 @@
   left: 0px;
   width: auto;
   height: auto;
-  z-index: 1; 
+  z-index: -1; 
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
@@ -165,6 +167,15 @@
 .elements2 {
   animation: float 20s ease-in-out infinite;
 }
+
+.txtinside{
+  margin-top: -35%;
+}
+
+
+
+
+
 
 @keyframes float {
   0% {
