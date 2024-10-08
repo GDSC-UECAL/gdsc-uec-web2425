@@ -2,20 +2,20 @@ import React, { useState, useEffect } from 'react';
 import '../components/TeamsComponent.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import defaultImage from '../assets/teams/exec.webp'; // Default department image
+import defaultImage from '../assets/teams/exec.webp'; 
 
 const TeamsComponent = () => {
-    const [teams, setTeams] = useState([]);  // Initialize as an empty array
-    const [activeDepartment, setActiveDepartment] = useState('Executive');
+    const [teams, setTeams] = useState([]);  
+    const [activeDepartment, setActiveDepartment] = useState('Executive Board');
     const [loading, setLoading] = useState(true);
 
-    // Fetch data from backend on component mount
+    
     useEffect(() => {
         const fetchDepartments = async () => {
             try {
-                const response = await fetch('http://localhost:8000/api/v1/teams'); // Replace with your actual API endpoint
+                const response = await fetch('http://localhost:8000/api/v1/teams');
                 const result = await response.json();
-                setTeams(result.data || []); // Ensure teams is set to an array
+                setTeams(result.data || []); 
                 setLoading(false);
             } catch (error) {
                 console.error('Error fetching departments:', error);
@@ -30,56 +30,21 @@ const TeamsComponent = () => {
     };
 
     if (loading) {
-        return <div>Loading...</div>; // Display a loading state while fetching data
+        return <div>Loading...</div>; 
     }
 
-    // Find the active department's details
+
+    const uniqueDepartments = Array.from(new Set(teams.map(team => team.department.title)));
+
+
     const activeDept = teams.find(team => team.department.title === activeDepartment);
-    // const teamss = activeDept ? activeDept.teamss : [];
     const color = activeDept?.department?.color || '#000'; // Fallback color
     const overlayColor = activeDept?.department?.overlayColor || 'rgba(0,0,0,0.5)';
     const overview = activeDept?.department?.description || '';
+    const members = teams.filter(member => member.department.title === activeDepartment); // Get members of the active department
 
     return (
         <Container fluid className="teamsContainer">
-            {/* Map over teams and conditionally display each department */}
-            {
-                teams.map((team, index) => {
-                    if (team.department.title === 'Executive') {
-                        return (
-                            <div key={index}>
-                                <h1>Executive Board</h1>
-                            </div>
-                        );
-                    } else if (team.department.title === 'Operations') {
-                        return (
-                            <div key={index}>
-                                <h1>Operations Department</h1>
-                            </div>
-                        );
-                    } else if (team.department.title === 'Technology') {
-                        return (
-                            <div key={index}>
-                                <h1>Technology Department</h1>
-                            </div>
-                        );
-                    } else if (team.department.title === 'Community Development') {
-                        return (
-                            <div key={index}>
-                                <h1>Community Development Department</h1>
-                            </div>
-                        );
-                    } else if (team.department.title === 'Creatives') {
-                        return (
-                            <div key={index}>
-                                <h1>Creatives Board</h1>
-                            </div>
-                        );
-                    }
-                    return null;
-                })
-            }
-
             {/* Department image and overlay */}
             <Row className="position-relative">
                 <img src={defaultImage} alt={`${activeDepartment} Board`} className="teamCover mb-3" />
@@ -94,100 +59,40 @@ const TeamsComponent = () => {
                 </div>
             </Row>
 
-            {/* Department Options */}
+            {/* Department Options (Pseudo-navbar) */}
             <Row className="teamsOption">
-                {teams.map((team, index) => (
+                {uniqueDepartments.map((department, index) => (
                     <Col key={index} className="option">
                         <a
                             style={{
-                                color: activeDepartment === team.department.title ? color : 'black',
-                                borderBottom: activeDepartment === team.department.title ? `4px solid ${color}` : 'none',
+                                color: activeDepartment === department ? color : 'black',
+                                borderBottom: activeDepartment === department ? `4px solid ${color}` : 'none',
                                 cursor: 'pointer'
                             }}
-                            onClick={() => handleOptionClick(team.department.title)}
+                            onClick={() => handleOptionClick(department)}
                         >
-                            {team.department.title}
+                            {department}
                         </a>
                     </Col>
                 ))}
             </Row>
 
-           {/* Team Members */}
-           <Row className="teamMembers">
-                {teams.map((team, index) => {
-                    // Render header and members only for the appropriate department
-                    const { title } = team.department;
-
-                    if (title === 'Executive') {
-                        return (
-                            <React.Fragment key={index}>
-                                <h1>Executive Board</h1>
-                                {teams.filter(member => member.department.title === 'Executive').map((member, memberIndex) => (
-                                    <Col lg={4} key={memberIndex}>
-                                        <img src={`http://localhost:8000/storage/${member.image}`} alt={member.name} className="membersPic" />
-                                        <h4 className="memberName">{member.name}</h4>
-                                        <h5 className="execMember">{member.role}</h5>
-                                    </Col>
-                                ))}
-                            </React.Fragment>
-                        );
-                    } else if (title === 'Operations') {
-                        return (
-                            <React.Fragment key={index}>
-                                <h1>Operations Department</h1>
-                                {teams.filter(member => member.department.title === 'Operations').map((member, memberIndex) => (
-                                    <Col lg={4} key={memberIndex}>
-                                        <img src={`http://localhost:8000/storage/${member.image}`} alt={member.name} className="membersPic" />
-                                        <h4 className="memberName">{member.name}</h4>
-                                        <h5 className="execMember">{member.role}</h5>
-                                    </Col>
-                                ))}
-                            </React.Fragment>
-                        );
-                    } else if (title === 'Technology') {
-                        return (
-                            <React.Fragment key={index}>
-                                <h1>Technology Department</h1>
-                                {teams.filter(member => member.department.title === 'Technology').map((member, memberIndex) => (
-                                    <Col lg={4} key={memberIndex}>
-                                        <img src={`http://localhost:8000/storage/${member.image}`} alt={member.name} className="membersPic" />
-                                        <h4 className="memberName">{member.name}</h4>
-                                        <h5 className="execMember">{member.role}</h5>
-                                    </Col>
-                                ))}
-                            </React.Fragment>
-                        );
-                    } else if (title === 'Community Development') {
-                        return (
-                            <React.Fragment key={index}>
-                                <h1>Community Development Department</h1>
-                                {teams.filter(member => member.department.title === 'Community Development').map((member, memberIndex) => (
-                                    <Col lg={4} key={memberIndex}>
-                                        <img src={`http://localhost:8000/storage/${member.image}`} alt={member.name} className="membersPic" />
-                                        <h4 className="memberName">{member.name}</h4>
-                                        <h5 className="execMember">{member.role}</h5>
-                                    </Col>
-                                ))}
-                            </React.Fragment>
-                        );
-                    } else if (title === 'Creatives') {
-                        return (
-                            <React.Fragment key={index}>
-                                <h1>Creatives Board</h1>
-                                {teams.filter(member => member.department.title === 'Creatives').map((member, memberIndex) => (
-                                    <Col lg={4} key={memberIndex}>
-                                        <img src={`http://localhost:8000/storage/${member.image}`} alt={member.name} className="membersPic" />
-                                        <h4 className="memberName">{member.name}</h4>
-                                        <h5 className="execMember">{member.role}</h5>
-                                    </Col>
-                                ))}
-                            </React.Fragment>
-                        );
-                    }
-                    return null; // Return null for non-matching departments
-                })}
+            {/* Team Members */}
+            <Row className="teamMembers">
+                {members.length > 0 ? (
+                    members.map((member, memberIndex) => (
+                        <Col lg={4} key={memberIndex} className="text-center mb-4">
+                            <img src={`http://localhost:8000/storage/${member.image}`} alt={member.name} className="membersPic" />
+                            <h4 className="memberName">{member.name}</h4>
+                            <h5 className="execMember">{member.role}</h5>
+                        </Col>
+                    ))
+                ) : (
+                    <Col className="text-center">
+                        <p>No members found for this department.</p>
+                    </Col>
+                )}
             </Row>
-
         </Container>
     );
 };
