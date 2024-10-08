@@ -66,11 +66,12 @@
   /* FOR PICTURES */
 .bell{
     position: absolute;
-    top: 800px;
-    left: 0px;
+    top: 1200px;
+    right: 0px;
     width: auto;
     height: auto;
     z-index: -2;
+    rotate: 180deg;
     filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
@@ -107,40 +108,44 @@
 
 .square2{
   position: absolute;
-  top: 1350px;
-  right: 0px;
+  top: 750px;
+  left: 0px;
   width: auto;
   height: auto;
   z-index: -2;
+  rotate: 180deg;
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
 .line{
   position: absolute;
-  top: 1200px;
-  left: 0px;
+  top: 1400px;
+  left: -100px;
   width: auto;
   height: auto;
+  rotate: 0deg;
   z-index: -2; 
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
 .redHead{
   position: absolute;
-  top: 1230px;
-  left: 130px;
+  top: 1430px;
+  left: 30px;
   width: auto;
   height: auto;
   z-index: -2; 
+  rotate: 0deg;
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
 .leftArrow{
   position: absolute;
-  top: 1150px;
-  right: 0px;
+  top: 1000px;
+  right: -50px;
   width: auto;
   height: auto;
+  rotate: 300deg;
   z-index: -2;
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }

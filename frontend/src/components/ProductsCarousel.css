@@ -85,7 +85,7 @@
 
 .ball1leftCar {
   left: 120px;
-  top: 160px; 
+  top: 780px; 
   z-index: -2;
 }
 
@@ -136,7 +136,7 @@
 .yellowHeadProjectsCar{
   position: absolute;
   bottom: 125px;
-  right: 240px;
+  right: 160px;
   width: auto;
   height: auto;
   z-index: -2; 
@@ -145,7 +145,7 @@
 .rightLineProjectsCar{
   position: absolute;
   bottom: 100px;
-  right: 0px;
+  right: -80px;
   width: auto;
   height: auto;
   z-index: -2; 
@@ -155,7 +155,7 @@
 .redHeadProjectsCar{
   position: absolute;
   top: 430px;
-  left: 176px;
+  left: 76px;
   width: auto;
   height: auto;
   z-index: -2; 
@@ -164,7 +164,7 @@
 .leftLineProjectsCar{
   position: absolute;
   top: 400px;
-  left: 0px;
+  left: -100px;
   width: auto;
   height: auto;
   z-index: -2; 

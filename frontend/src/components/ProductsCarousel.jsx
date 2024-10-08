@@ -67,18 +67,21 @@ function ProductsCarousel({ image, title, link, description }) {
         transform: `translateX(0) scale(1)`,
         opacity: 1,
         zIndex: 3,
+        
       };
     } else if (index === previousIndex) {
       return {
         transform: `translateX(-40%) scale(0.8)`,
         opacity: 1,
         zIndex: 2,
+        filter: 'blur(2px)',
       };
     } else if (index === nextIndex) {
       return {
         transform: `translateX(40%) scale(0.8)`,
         opacity: 1,
         zIndex: 2,
+        filter: 'blur(2px)',
       };
     } else {
       return {
