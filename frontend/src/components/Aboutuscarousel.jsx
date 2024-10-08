@@ -15,11 +15,11 @@ function Aboutuscarousel() {
 
     useEffect(() => {
         const fetchedProducts = [
-            { id: 1, banner: pic1 , alt: 'laptop', title: 'Hellooooo1', link: "https://github.com/Velsariaa", description: "description here" },
-            { id: 2, banner: pic2, alt: 'laptop', title: 'Hellooooo2', link: "https://github.com/Velsariaa", description: "description here" },
-            { id: 3, banner: pic3, alt: 'laptop', title: 'Hellooooo3', link: "https://github.com/Velsariaa", description: "description here" },
-            { id: 4, banner: pic4, alt: 'laptop', title: 'Hellooooo3', link: "https://github.com/Velsariaa", description: "description here" },
-            { id: 5, banner: pic2, alt: 'laptop', title: 'Hellooooo3', link: "https://github.com/Velsariaa", description: "description here" },
+            { id: 1, banner: pic1, alt: 'laptop'},
+            { id: 2, banner: pic2, alt: 'laptop'},
+            { id: 3, banner: pic3, alt: 'laptop'},
+            { id: 4, banner: pic4, alt: 'laptop'},
+            { id: 5, banner: pic2, alt: 'laptop'},
         ];
         setProducts(fetchedProducts);
     }, []);
@@ -147,7 +147,7 @@ function Aboutuscarousel() {
                                     id={`song-${index + 1}`}
                                     style={getTransformStyles(index)}
                                 >
-                                    {/* Wrap only the content of the active product with <a> */}
+                                    
                                     {isActive ? (
                                         <img className="eventpic2" src={product.banner} alt={product.alt} />
                                     ) : (

@@ -32,8 +32,8 @@
   transition: transform .4s ease, opacity .4s ease, z-index .4s ease;
   cursor: pointer;
   text-decoration: none;
+  
 }
-
 
 .cardscon2 {
   position: relative;
@@ -42,6 +42,7 @@
   margin-top: 4%;
   padding: 0% 0% 33% 0%;
   text-decoration: none;
+
 }
 
 .eventpic2 {
