@@ -6,12 +6,15 @@
     flex-direction: column;
     margin: 0 -50px;
   }
-  
+  .elementsdiv{
+    max-width: 100%;
+    overflow-x: hidden;
+    
+  }
   .custom-card {
     position: relative; /* Allow relative positioning for child elements */
     overflow: visible; /* Ensure the shadow is visible */
   }
-  
   .card-img-top {
     border-radius: 8px; /* Optional: Rounded corners for the image */
     width: 100%; /* Make the image take the full width of the card */

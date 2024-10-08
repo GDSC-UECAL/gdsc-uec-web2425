@@ -7,13 +7,10 @@ function Footer() {
             <div className="container-fluid">
                 <div className="texts row text-center">
                     <div className="col-12 col-md-6 mb-2">
-                        <img src="src/assets/common/gdsc_logo.png" alt="" />
+                        <img src="src/assets/common/gdsc_logo.png" alt="GDSC Logo" />
                     </div>
-                    <div className="col-12 col-md-6 mb-2">
-
-                    </div>
-                    <div className="col-12 col-md-2 mb-2 text-start">
-                    </div>
+                    <div className="col-12 col-md-6 mb-2"></div>
+                    <div className="col-12 col-md-2 mb-2 text-start"></div>
                     <div className="col-12 col-md-4 mb-2 text-start">
                         <h6>Google Developer Student Clubs</h6>
                         <p>University of the East - Caloocan</p>
@@ -23,67 +20,69 @@ function Footer() {
                     </div>
                     <div className="col-12 col-md-1 mb-2 text-start">
                         <h6>Home</h6>
-                        <a href="">Welcome</a> <br />
-                        <a href="">Bulletin</a> <br />
-                        <a href="">Partners</a>
+                        <a href="#">Welcome</a> <br />
+                        <a href="#">Bulletin</a> <br />
+                        <a href="#">Partners</a>
                     </div>
                     <div className="col-12 col-md-1 mb-2 text-start">
                         <h6>About</h6>
-                        <a href="">What is GDSC?</a> <br />
-                        <a href="">Igma Kadima</a> <br />
-                        <a href="">Mission & Vision</a> <br />
-                        <a href="">Departments</a> <br />
-                        <a href="">GDSC Chapters</a> <br />
+                        <a href="#">What is GDSC?</a> <br />
+                        <a href="#">Igma Kadima</a> <br />
+                        <a href="#">Mission & Vision</a> <br />
+                        <a href="#">Departments</a> <br />
+                        <a href="#">GDSC Chapters</a> <br />
                     </div>
                     <div className="col-12 col-md-1 mb-2 text-start">
                         <h6>Products</h6>
-                        <a href="">Projects</a> <br />
-                        <a href="">Merchandise</a> <br />
+                        <a href="#">Projects</a> <br />
+                        <a href="#">Merchandise</a> <br />
                     </div>
                     <div className="col-12 col-md-1 mb-2 text-start">
                         <h6>Team</h6>
-                        <a href="">Executives</a> <br />
-                        <a href="">Operations</a> <br />
-                        <a href="">Technology</a> <br />
-                        <a href="">Creatives</a> <br />
+                        <a href="#">Executives</a> <br />
+                        <a href="#">Operations</a> <br />
+                        <a href="#">Technology</a> <br />
+                        <a href="#">Creatives</a> <br />
                     </div>
                     <div className="col-12 col-md-1 mb-2 text-start">
                         <h6>Events</h6>
-                        <a href="">All Events</a> <br />
-
+                        <a href="#">All Events</a> <br />
                     </div>
                     <div className="col-12 col-md-12 mb-2">
                         <hr />
                     </div>
 
-                    <div className="col-12 col-md-2 mb-2">
-                    </div>
+                    <div className="col-12 col-md-2 mb-2"></div>
 
                     <div className="col-12 col-md-6 mb-2 text-start">
-                        <h6>Google Developer Student Clubs - University of the East Caloocan © All Rights Reserved.
-                        </h6>
+                        <h6>Google Developer Student Clubs - University of the East Caloocan © All Rights Reserved.</h6>
                     </div>
 
-                    <div className="col-12 col-md-1 mb-2 text-start">
-                        
-                    </div>
-                   
-                    <div className="logos col-12 col-md-2 mb-2 text-end ">
-                    <a href=""><img src="src/assets/common/fb.png"/></a>&nbsp; &nbsp;
-                    <a href=""><img src="src/assets/common/discord.png"/></a>&nbsp; &nbsp;
-                    <a href=""><img src="src/assets/common/linkedin.png"/></a>&nbsp; &nbsp;
-                    <a href=""><img src="src/assets/common/github.png"/></a>&nbsp; &nbsp;
-                    <a href=""><img src="src/assets/common/manage.png"/></a>&nbsp;
+                    <div className="col-12 col-md-1 mb-2 text-start"></div>
+
+                    <div className="logos col-12 col-md-2 mb-2 text-end">
+                        <a href="https://www.facebook.com/gdscuecaloocan" target="_blank" rel="noopener noreferrer">
+                            <img src="src/assets/common/fb.png" alt="Facebook" />
+                        </a>&nbsp; &nbsp;
+                        <a href="https://discord.gg/wJpMUprKSp" target="_blank" rel="noopener noreferrer">
+                            <img src="src/assets/common/discord.png" alt="Discord" />
+                        </a>&nbsp; &nbsp;
+                        <a href="https://www.linkedin.com/company/gdsc-ue/" target="_blank" rel="noopener noreferrer">
+                            <img src="src/assets/common/linkedin.png" alt="LinkedIn" />
+                        </a>&nbsp; &nbsp;
+                        <a href="https://github.com/GDSC-UECAL/gdsc-uec-web2425" target="_blank" rel="noopener noreferrer">
+                            <img src="src/assets/common/github.png" alt="GitHub" />
+                        </a>&nbsp; &nbsp;
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img src="src/assets/common/manage.png" alt="Manage" />
+                        </a>&nbsp;
                     </div>
 
-                    <div className="col-12 col-md-1 mb-2 text-start">
-                        
-                    </div>
-
+                    <div className="col-12 col-md-1 mb-2 text-start"></div>
                 </div>
-
             </div>
         </footer>
-    )
+    );
 }
-export default Footer
+
+export default Footer;

@@ -86,6 +86,7 @@ function Merchandises() {
   return (
     <>
       {/* Images */}
+      <div className="elementsdiv">
       <img src={bell} alt="" className="bell elements" />
       <img src={bigBall} alt="" className="bigBall elements1" />
       <img src={ball1left} alt="" className="ball1left elements1" />
@@ -93,7 +94,7 @@ function Merchandises() {
       <img src={line} alt="" className="line elements2" />
       <img src={redHead} alt="" className="redHead elements2" />
       <img src={leftArrow} alt="" className="leftArrow elements2" />
-
+      </div>
       {/* Main Content */}
       <div className="container mt-4 no-margin-padding marginBottomCard" style={{ marginBottom: '100px' }}>
         {/* Left and Right Navigation Buttons */}

@@ -3,7 +3,9 @@
 * {
   box-sizing: border-box;
 }
-
+body{
+  overflow-x: hidden;
+}
 .carouselcontainer {
   width: 100%;
   display: flex;
@@ -15,11 +17,14 @@
   margin: auto;
   place-content: center;
 }
-
 .rdbtn[type=radio] {
   display: none;
 }
-
+.elementsdiv{
+  max-width: 100%;
+  overflow-x: hidden;
+  
+}
 .prodcard {
   position: absolute;
   width: 60%;
@@ -40,6 +45,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+
 }
 
 .cardscon {

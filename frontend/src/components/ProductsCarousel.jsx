@@ -95,6 +95,7 @@ function ProductsCarousel({ image, title, link, description }) {
 
   return (
     <>
+      <div className="elementsdiv">
       {/* Background Elements */}
       <img src={bell} alt="" className="bellCar elements" />
       <img src={ball1left} alt="" className="ball1leftCar elements2" />
@@ -104,7 +105,7 @@ function ProductsCarousel({ image, title, link, description }) {
       <img src={leftLineProjects} alt="" className="leftLineProjectsCar elements1" />
       <img src={yellowHeadProjects} alt="" className="yellowHeadProjectsCar elements2" />
       <img src={rightLineProjects} alt="" className="rightLineProjectsCar elements2" />
-
+      </div>
       <div className="carouselcontainer">
         <div className="container">
           {/* Radio Buttons for direct selection */}
