@@ -1,123 +1,58 @@
 {
     "data": [
         {
-            "name": "Omnis unde dolores asperiores nostrum eveniet at.",
-            "role": "Voluptate aut ullam vitae.",
-            "image": "Neque distinctio excepturi numquam placeat autem voluptatum.",
+            "id": 1,
+            "name": "John Doe",
+            "role": "Chief Executive Officer",
+            "image": "john_doe.png",
             "department": {
                 "id": 1,
-                "title": "Accusantium tempore distinctio ut fuga ut at voluptatem.",
-                "description": "Eum iusto necessitatibus omnis quo fuga magni."
+                "title": "Executive",
+                "description": "The top-level decision-making body of the organization."
             }
         },
         {
-            "name": "Fugiat animi eos ut sit sunt esse.",
-            "role": "Blanditiis ea omnis facere sit qui cupiditate id et.",
-            "image": "Deleniti dolorum sapiente nihil et et.",
+            "id": 2,
+            "name": "Jane Smith",
+            "role": "Creative Director",
+            "image": "jane_smith.png",
             "department": {
-                "id": 1,
-                "title": "Accusantium tempore distinctio ut fuga ut at voluptatem.",
-                "description": "Eum iusto necessitatibus omnis quo fuga magni."
+                "id": 2,
+                "title": "Creatives",
+                "description": "Responsible for design, branding, and overall creative direction."
             }
         },
         {
-            "name": "Reiciendis et laborum quam accusantium dignissimos qui.",
-            "role": "Enim omnis dolorem est ut eveniet.",
-            "image": "Distinctio aliquam iste facilis dolor a enim.",
+            "id": 3,
+            "name": "Michael Johnson",
+            "role": "Lead Developer",
+            "image": "michael_johnson.png",
             "department": {
-                "id": 1,
-                "title": "Accusantium tempore distinctio ut fuga ut at voluptatem.",
-                "description": "Eum iusto necessitatibus omnis quo fuga magni."
+                "id": 3,
+                "title": "Technology",
+                "description": "Oversees all technological development and innovation within the organization."
             }
         },
         {
-            "name": "Cumque at non eos perferendis ipsa.",
-            "role": "Sunt dolor quibusdam aut ex esse eum voluptatem.",
-            "image": "Labore qui soluta ducimus odio voluptatem qui.",
+            "id": 4,
+            "name": "Emily Davis",
+            "role": "Operations Manager",
+            "image": "emily_davis.png",
             "department": {
-                "id": 1,
-                "title": "Accusantium tempore distinctio ut fuga ut at voluptatem.",
-                "description": "Eum iusto necessitatibus omnis quo fuga magni."
+                "id": 4,
+                "title": "Operations",
+                "description": "Ensures the smooth day-to-day operations and logistics of the organization."
             }
         },
         {
-            "name": "Cum est necessitatibus vero sit ipsum nostrum.",
-            "role": "Autem velit odit totam illum et.",
-            "image": "Optio veniam doloremque itaque voluptatem et voluptatem.",
+            "id": 5,
+            "name": "Sarah Lee",
+            "role": "Community Outreach Coordinator",
+            "image": "sarah_lee.png",
             "department": {
-                "id": 1,
-                "title": "Accusantium tempore distinctio ut fuga ut at voluptatem.",
-                "description": "Eum iusto necessitatibus omnis quo fuga magni."
-            }
-        },
-        {
-            "name": "Sed et quos in et placeat veritatis quo.",
-            "role": "Delectus nulla ipsam dolores dolores ipsum.",
-            "image": "Perferendis nemo id error quis aut.",
-            "department": {
-                "id": 1,
-                "title": "Accusantium tempore distinctio ut fuga ut at voluptatem.",
-                "description": "Eum iusto necessitatibus omnis quo fuga magni."
-            }
-        },
-        {
-            "name": "Perferendis provident repudiandae hic laudantium ad aliquam qui ut.",
-            "role": "Quae quam harum aut eligendi.",
-            "image": "Et tempore distinctio voluptatibus et et voluptatem ea.",
-            "department": {
-                "id": 1,
-                "title": "Accusantium tempore distinctio ut fuga ut at voluptatem.",
-                "description": "Eum iusto necessitatibus omnis quo fuga magni."
-            }
-        },
-        {
-            "name": "Voluptas magnam quo perferendis odit.",
-            "role": "A dignissimos ut rerum ea.",
-            "image": "Laboriosam quisquam corporis voluptates.",
-            "department": {
-                "id": 1,
-                "title": "Accusantium tempore distinctio ut fuga ut at voluptatem.",
-                "description": "Eum iusto necessitatibus omnis quo fuga magni."
-            }
-        },
-        {
-            "name": "Illo accusamus perferendis cupiditate eius vero itaque distinctio.",
-            "role": "Minus consequatur quia soluta temporibus sint unde est.",
-            "image": "Animi molestiae dicta assumenda ut.",
-            "department": {
-                "id": 1,
-                "title": "Accusantium tempore distinctio ut fuga ut at voluptatem.",
-                "description": "Eum iusto necessitatibus omnis quo fuga magni."
-            }
-        },
-        {
-            "name": "Qui placeat optio omnis in ab asperiores odit.",
-            "role": "Quia similique sunt quae odit.",
-            "image": "Et molestiae dolorem dolorem sit dolor.",
-            "department": {
-                "id": 1,
-                "title": "Accusantium tempore distinctio ut fuga ut at voluptatem.",
-                "description": "Eum iusto necessitatibus omnis quo fuga magni."
-            }
-        },
-        {
-            "name": "Voluptates quasi blanditiis sunt nisi qui accusantium blanditiis.",
-            "role": "Amet explicabo ad velit consequatur inventore ipsa enim odit.",
-            "image": "Vel minus iste iste blanditiis harum quidem facilis.",
-            "department": {
-                "id": 1,
-                "title": "Accusantium tempore distinctio ut fuga ut at voluptatem.",
-                "description": "Eum iusto necessitatibus omnis quo fuga magni."
-            }
-        },
-        {
-            "name": "Facilis voluptas aliquid dolores accusantium voluptatem natus repellendus.",
-            "role": "Voluptatem blanditiis quia voluptatum tenetur.",
-            "image": "Voluptatum a cum et et nam vel.",
-            "department": {
-                "id": 1,
-                "title": "Accusantium tempore distinctio ut fuga ut at voluptatem.",
-                "description": "Eum iusto necessitatibus omnis quo fuga magni."
+                "id": 5,
+                "title": "Community Development",
+                "description": "Focuses on community engagement, partnerships, and outreach programs."
             }
         }
     ]
