@@ -13,11 +13,7 @@ import './components/ProductsCarousel.css';
 import './pages/Products.css';
 import Events from './pages/Events.jsx'
 import EventDetails from './components/EventDetails.jsx';
-import TeamsExecutive from './pages/TeamsExecutive.jsx'; 
-import TeamsTechnology from './pages/TeamsTechnology.jsx';
-import TeamsOperations from './pages/TeamsOperations.jsx';
-import TeamsCreatives from './pages/TeamsCreatives.jsx';
-import TeamsCommunity from './pages/TeamsCommunity.jsx';
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -34,11 +30,7 @@ function App() {
       <Route path='/teams' element = {<Teams></Teams>}/>
       <Route path='/home' element = {<Home></Home>}/>
       <Route path='/event_details' element = {<EventDetails></EventDetails>}/>
-      <Route path="/executive" element={<TeamsExecutive />} /> 
-      <Route path="/technology" element={<TeamsTechnology />} />
-      <Route path="/operations" element={<TeamsOperations />} />
-      <Route path="/creatives" element={<TeamsCreatives />} />
-      <Route path="/community-development" element={<TeamsCommunity />} />
+      
 
        {/*Delete after testing*/}
       <Route path='/apitest' element = {<APITest></APITest>}/>
