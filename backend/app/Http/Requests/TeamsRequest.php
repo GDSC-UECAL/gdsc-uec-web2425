@@ -25,7 +25,10 @@ class TeamsRequest extends FormRequest
     public function rules()
     {
         return [
-            // 'name' => 'required|min:5|max:255'
+            'name' => 'required|string|max:255',  
+            'role' => 'required|string|max:255',  
+            'image' => 'required|file|mimes:jpeg,png,jpg,gif,svg|max:2048', 
+            'department_id' => 'required|exists:departments,id',
         ];
     }
 

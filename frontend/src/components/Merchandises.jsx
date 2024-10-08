@@ -17,9 +17,8 @@ import EllipseRed from '../assets/products/EllipseRed.png';
 import EllipseYellow from '../assets/products/EllipseYellow.png';
 import EllipseBlue from '../assets/products/EllipseBlue.png';
 
-
 // Card Component
-function Card({ image, title, text, buttonText, link }) {
+function Card({ image, title, text, buttonText, link, price }) {
   return (
     <div className="card custom-card no-margin-padding">
       <img
@@ -28,7 +27,14 @@ function Card({ image, title, text, buttonText, link }) {
         alt="Card"
       />
       <div className="card-body text-start">
-        <h5 className="card-title" style={{ marginTop: '-5px' }}>{title}</h5>
+        <div className="d-flex justify-content-between align-items-center">
+          <h5 className="card-title" style={{ marginTop: '-5px' }}>
+            {title}
+          </h5>
+          <p style={{ fontWeight: 'bold', marginTop: '-5px', marginLeft: '1rem' }}>
+            ₱{price}
+          </p>
+        </div>
         <p className="card-text" style={{ marginTop: '-5px' }}>{text}</p>
         <a href={link} className="btn button1" style={{ marginTop: '-5px' }}>
           {buttonText}
@@ -37,6 +43,8 @@ function Card({ image, title, text, buttonText, link }) {
     </div>
   );
 }
+
+
 
 function Merchandises() {
   // Cards data
@@ -47,6 +55,7 @@ function Merchandises() {
       text: "A black t-shirt with the GDSC logo",
       buttonText: "Order",
       link: "#",
+      price: "500", // Price in pesos
     },
     {
       image: Lanyard,
@@ -54,6 +63,7 @@ function Merchandises() {
       text: "A cool lanyard to hold your ID or keys",
       buttonText: "Order",
       link: "#",
+      price: "250", // Price in pesos
     },
     {
       image: Tote,
@@ -61,6 +71,7 @@ function Merchandises() {
       text: "A trendy tote bag with the GDSC logo",
       buttonText: "Order",
       link: "#",
+      price: "300", // Price in pesos
     },
   ];
 
@@ -126,6 +137,7 @@ function Merchandises() {
                 text={card.text}
                 buttonText={card.buttonText}
                 link={card.link}
+                price={card.price} // Pass the price here
               />
             </div>
           ))}
