@@ -75,14 +75,14 @@ function ProductsCarousel({banner, title, link, description }) {
         transform: `translateX(-40%) scale(0.8)`,
         opacity: 1,
         zIndex: 2,
-        filter: 'blur(2px)',
+        filter: 'blur(3px)',
       };
     } else if (index === nextIndex) {
       return {
         transform: `translateX(40%) scale(0.8)`,
         opacity: 1,
         zIndex: 2,
-        filter: 'blur(2px)',
+        filter: 'blur(3px)',
       };
     } else {
       return {
