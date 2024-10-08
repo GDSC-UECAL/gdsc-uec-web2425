@@ -13,7 +13,7 @@
   font-family: 'DM Sans', sans-serif;
   text-align: center;
   margin: auto;
-    place-content: center;
+  place-content: center;
 }
 
 .rdbtn[type=radio] {
@@ -48,6 +48,7 @@
   width: 100%;
   height: auto;
   padding-bottom: 50%;
+  padding-top: 5%;
 }
 
 .eventpic {
