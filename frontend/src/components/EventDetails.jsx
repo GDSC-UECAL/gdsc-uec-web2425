@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './EventDetails.css';
 import teach from '../assets/events/teach.png';
+import rec21 from '../assets/events/rec21.png'; // Import the image here
 import additionalData from '../assets/data/additionalData.json'; // Adjust the path as necessary
 
 const EventDetails = () => {
@@ -12,11 +13,17 @@ const EventDetails = () => {
     description: 'Join us for a day full of learning and networking with the brightest minds in the React community. This event will feature talks from top developers and hands-on workshops to enhance your React skills.',
   };
 
-  // If you need to fetch the data dynamically, you can use useEffect
+  // Map for the images
+  const backgroundImages = {
+    image2: rec21, // Assign the imported image here
+    image4: rec21, // You can change these to different images as needed
+    image6: rec21,
+    image8: rec21,
+  };
+
   const [containers, setContainers] = useState([]);
 
   useEffect(() => {
-    // You can also fetch the JSON data here if it's stored on a server
     setContainers(additionalData); // Use the imported data directly
   }, []);
 
@@ -50,8 +57,22 @@ const EventDetails = () => {
         <div className="flexible-container">
           <div className="flexible-content-container">
             {containers.map((container) => (
-              <div key={container.id} className="additional-container">
-                {container.content} {/* Display content from the JSON data */}
+              <div
+                key={container.id}
+                className={`additional-container ${container.backgroundImage ? 'background-image' : ''}`}
+                style={{
+                  backgroundImage: container.backgroundImage
+                    ? `url(${backgroundImages[container.backgroundImage]})`
+                    : 'none',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                }}
+              >
+                {container.backgroundImage ? (
+                  <span className="container-text">{container.text}</span>
+                ) : (
+                  container.content
+                )}
               </div>
             ))}
           </div>
