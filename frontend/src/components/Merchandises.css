@@ -7,6 +7,24 @@
     margin: 0 -50px;
   }
   
+  .custom-card {
+    position: relative; /* Allow relative positioning for child elements */
+    overflow: visible; /* Ensure the shadow is visible */
+  }
+  
+  .card-img-top {
+    border-radius: 8px; /* Optional: Rounded corners for the image */
+    width: 100%; /* Make the image take the full width of the card */
+    background-color: rgba(135, 133, 133, 0.19);
+    z-index: 1; /* Ensure the image is on top */
+  }
+  
+  .card-body {
+    background-color: #ffffff; /* Keep the card body white */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 8px; /* Optional: Rounded corners for the body */
+  }
+  
 .marginBottomCard{
  margin-bottom: 100px;
 }
@@ -29,9 +47,13 @@
     flex-grow: 1;
   }
 
+  .btn{
+    color: black;
+    background-color: white;
+  }
   .button1 {
     background-color:rgb(132, 57, 147);
-    color: white;
+    color: black;
     transition: background-color 0.3s ease, color 0.3s ease; /* Transition for button2 */
     border-color: rgb(132, 57, 147);
   }
@@ -131,6 +153,7 @@
   height: auto;
   z-index: 1; 
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease; /* Add smooth transition for scaling */
 }
 
 .nextLeft{
@@ -141,7 +164,20 @@
   height: auto;
   z-index: 1; 
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease; /* Add smooth transition for scaling */
 }
+
+.nextLeft:hover {
+  transform: scale(1.15); /* Apply scale on hover */
+  opacity: 0.75;
+}
+
+.nextRight:hover {
+  transform: scale(1.15); /* Apply scale on hover */
+  opacity: 0.75;
+}
+
+
 
 .elements {
   animation: float 8s ease-in-out infinite;

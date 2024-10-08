@@ -10,7 +10,12 @@ import leftArrow from '../assets/products/leftArrow.png';
 import nextLeft from '../assets/products/nextLeft.png';
 import nextRight from '../assets/products/nextRight.png';
 import bigBall from '../assets/products/bigBall.png';
-
+import Shirt from '../assets/products/Shirt.png';
+import Lanyard from '../assets/products/Lanyard.png';
+import Tote from '../assets/products/Tote.png';
+import EllipseRed from '../assets/products/EllipseRed.png';
+import EllipseYellow from '../assets/products/EllipseYellow.png';
+import EllipseBlue from '../assets/products/EllipseBlue.png';
 
 
 function Card({ image, title, text, price}) {
@@ -22,7 +27,14 @@ function Card({ image, title, text, price}) {
         alt="Card"
       />
       <div className="card-body text-start">
-        <h5 className="card-title" style={{ marginTop: '-5px' }}>{title}</h5>
+        <div className="d-flex justify-content-between align-items-center">
+          <h5 className="card-title" style={{ marginTop: '-5px' }}>
+            {title}
+          </h5>
+          <p style={{ fontWeight: 'bold', marginTop: '-5px', marginLeft: '1rem' }}>
+            ₱{price}
+          </p>
+        </div>
         <p style={{ fontWeight: 'bold', marginTop: '-5px', marginLeft: '1rem' }}>
             ₱{price}
         </p>
@@ -34,6 +46,8 @@ function Card({ image, title, text, price}) {
     </div>
   );
 }
+
+
 
 function Merchandises() {
 
