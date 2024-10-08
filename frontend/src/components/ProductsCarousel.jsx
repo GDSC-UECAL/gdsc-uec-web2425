@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import laptopic from '../assets/products/laptopic.png';
+import laptopic2 from '../assets/products/laptopic2.png';
 import '../components/ProductsCarousel.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import bell from '../assets/products/bell.png';
@@ -19,9 +20,9 @@ function ProductsCarousel() {
 
   useEffect(() => {
     const fetchedProducts = [
-      { id: 1, image: laptopic, alt: 'laptop' },
-      { id: 2, image: laptopic, alt: 'laptop' },
-      { id: 3, image: laptopic, alt: 'laptop' },
+      { id: 1, image: laptopic2, alt: 'laptop' },
+      { id: 2, image: laptopic2, alt: 'laptop' },
+      { id: 3, image: laptopic2, alt: 'laptop' },
       { id: 4, image: laptopic, alt: 'laptop' },
       { id: 5, image: laptopic, alt: 'laptop' },
       { id: 6, image: laptopic, alt: 'laptop' },
@@ -132,7 +133,9 @@ function ProductsCarousel() {
                 id={`song-${index + 1}`}
                 style={getTransformStyles(index)}
               >
+                
                 <img className="eventpic" src={product.image} alt={product.alt} />
+                <div className='txtinside'>Hello Hlelo</div>
               </label>
             ))}
           </div>
