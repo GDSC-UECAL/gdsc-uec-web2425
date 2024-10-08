@@ -31,9 +31,6 @@ function Card({ image, title, text, price}) {
           <h5 className="card-title" style={{ marginTop: '-5px' }}>
             {title}
           </h5>
-          <p style={{ fontWeight: 'bold', marginTop: '-5px', marginLeft: '1rem' }}>
-            ₱{price}
-          </p>
         </div>
         <p style={{ fontWeight: 'bold', marginTop: '-5px', marginLeft: '1rem' }}>
             ₱{price}
