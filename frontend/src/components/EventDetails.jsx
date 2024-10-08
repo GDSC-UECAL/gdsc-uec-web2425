@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './EventDetails.css';
+import teach from '../assets/events/teach.png';
+import additionalData from '../assets/data/additionalData.json'; // Adjust the path as necessary
 
 const EventDetails = () => {
   const event = {
@@ -10,18 +12,28 @@ const EventDetails = () => {
     description: 'Join us for a day full of learning and networking with the brightest minds in the React community. This event will feature talks from top developers and hands-on workshops to enhance your React skills.',
   };
 
+  // If you need to fetch the data dynamically, you can use useEffect
+  const [containers, setContainers] = useState([]);
+
+  useEffect(() => {
+    // You can also fetch the JSON data here if it's stored on a server
+    setContainers(additionalData); // Use the imported data directly
+  }, []);
+
   return (
     <div className="event-details-page">
-      <div className="event-details-column"> {/* Flex column for event details and image */}
-        {/* Image container */}
-        <div className="image-container">
-          <img 
-            src="https://via.placeholder.com/300x200" // Replace with your image URL
-            alt="Event"
-            style={{ width: '100%', height: 'auto' }} // Make the image responsive
-          />
-        </div>
+      {/* Image container */}
+      <div className="image-container">
+        <img 
+          src={teach} 
+          alt="Event"
+          style={{ width: '100%', height: 'auto' }} 
+          className="image"
+        />
+      </div>
 
+      {/* Event details and flexible container side by side */}
+      <div className="event-details-flex-container">
         {/* Event details container */}
         <div className="event-details-container">
           <div className="event-details">
@@ -33,17 +45,16 @@ const EventDetails = () => {
             <p className="event-description">{event.description}</p>
           </div>
         </div>
-      </div>
 
-      {/* Right-side flexible container */}
-      <div className="flexible-container">
-        {/* New content container inside flexible container */}
-        <div className="flexible-content-container">
-          <h2>Additional Content</h2>
-          <p>
-            This container is added inside the flexible container. You can place any
-            content here, similar to the event details container.
-          </p>
+        {/* Right-side flexible container */}
+        <div className="flexible-container">
+          <div className="flexible-content-container">
+            {containers.map((container) => (
+              <div key={container.id} className="additional-container">
+                {container.content} {/* Display content from the JSON data */}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

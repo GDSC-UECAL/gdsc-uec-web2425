@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import '../components/Merchandises.css';
 import bell from '../assets/products/bell.png';
@@ -17,12 +17,12 @@ import EllipseRed from '../assets/products/EllipseRed.png';
 import EllipseYellow from '../assets/products/EllipseYellow.png';
 import EllipseBlue from '../assets/products/EllipseBlue.png';
 
-// Card Component
-function Card({ image, title, text, buttonText, link, price }) {
+
+function Card({ image, title, text, price}) {
   return (
     <div className="card custom-card no-margin-padding">
       <img
-        src={image}
+        src={`http://localhost:8000/storage/${image}`} 
         className="card-img-top"
         alt="Card"
       />
@@ -31,13 +31,13 @@ function Card({ image, title, text, buttonText, link, price }) {
           <h5 className="card-title" style={{ marginTop: '-5px' }}>
             {title}
           </h5>
-          <p style={{ fontWeight: 'bold', marginTop: '-5px', marginLeft: '1rem' }}>
-            ₱{price}
-          </p>
         </div>
+        <p style={{ fontWeight: 'bold', marginTop: '-5px', marginLeft: '1rem' }}>
+            ₱{price}
+        </p>
         <p className="card-text" style={{ marginTop: '-5px' }}>{text}</p>
-        <a href={link} className="btn button1" style={{ marginTop: '-5px' }}>
-          {buttonText}
+        <a href="#" className="btn button1" style={{ marginTop: '-5px' }}>
+          Order
         </a>
       </div>
     </div>
@@ -47,57 +47,40 @@ function Card({ image, title, text, buttonText, link, price }) {
 
 
 function Merchandises() {
-  // Cards data
-  const cardsData = [
-    {
-      image: Shirt,
-      title: "GDSC UEC T-Shirt",
-      text: "A black t-shirt with the GDSC logo",
-      buttonText: "Order",
-      link: "#",
-      price: "500", // Price in pesos
-    },
-    {
-      image: Lanyard,
-      title: "GDSC UEC Lanyard",
-      text: "A cool lanyard to hold your ID or keys",
-      buttonText: "Order",
-      link: "#",
-      price: "250", // Price in pesos
-    },
-    {
-      image: Tote,
-      title: "GDSC UEC Tote Bag",
-      text: "A trendy tote bag with the GDSC logo",
-      buttonText: "Order",
-      link: "#",
-      price: "300", // Price in pesos
-    },
-  ];
 
-  // State to track the current starting index of the cards
+  const [merchandises, setMerchandises] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:8000/api/v1/merchandises')
+      .then(response => response.json())
+      .then(data => {
+        setMerchandises(data.data);
+      })
+      .catch(error => console.error('Error fetching events:', error));
+  }, []);
+
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Function to go to the previous card
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? cardsData.length - 1 : prevIndex - 1
+      prevIndex === 0 ? merchandises.length - 1 : prevIndex - 1
     );
   };
 
-  // Function to go to the next card
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === cardsData.length - 1 ? 0 : prevIndex + 1
+      prevIndex === merchandises.length - 1 ? 0 : prevIndex + 1
     );
   };
 
-  // Get the current cards to display based on the currentIndex
-  const currentCards = [
-    cardsData[currentIndex],
-    cardsData[(currentIndex + 1) % cardsData.length],
-    cardsData[(currentIndex + 2) % cardsData.length],
-  ];
+  const currentCards = merchandises.length
+    ? [
+        merchandises[currentIndex],
+        merchandises[(currentIndex + 1) % merchandises.length],
+        merchandises[(currentIndex + 2) % merchandises.length],
+      ]
+    : [];
 
   return (
     <>
@@ -129,15 +112,13 @@ function Merchandises() {
         />
 
         <div className="row g-5">
-          {currentCards.map((card, index) => (
+          {currentCards.length > 0 && currentCards.map((card, index) => (
             <div className="col-4" key={index}>
               <Card
-                image={card.image}
+                text={card.title}
+                image={card.banner}
                 title={card.title}
-                text={card.text}
-                buttonText={card.buttonText}
-                link={card.link}
-                price={card.price} // Pass the price here
+                price={card.price}
               />
             </div>
           ))}
