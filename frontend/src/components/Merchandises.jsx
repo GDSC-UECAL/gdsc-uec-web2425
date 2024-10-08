@@ -87,9 +87,8 @@ function Merchandises() {
     <>
       {/* Images */}
       <div className="elementsdiv">
-      <img src={bell} alt="" className="bell elements" />
+      <img src={bell} alt="" className="bell elements1" />
       <img src={bigBall} alt="" className="bigBall elements1" />
-      <img src={ball1left} alt="" className="ball1left elements1" />
       <img src={square2} alt="" className="square2 elements" />
       <img src={line} alt="" className="line elements2" />
       <img src={redHead} alt="" className="redHead elements2" />

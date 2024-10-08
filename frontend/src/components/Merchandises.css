@@ -90,7 +90,7 @@
 /* FOR PICTURES */
 .bell {
   position: absolute;
-  top: 1200px;
+  top: 900px;
   right: 0px;
   width: auto;
   height: auto;
@@ -115,8 +115,8 @@
 }
 
 .ball1left {
-  left: 50px;
-  top: 1550px;
+  left: 250px;
+  top: 900px;
   z-index: -2;
 }
 
@@ -126,14 +126,14 @@
   width: auto;
   height: auto;
   z-index: -2;
-  right: 100px;
+  left: 50px;
   top: 850px;
 }
 
 
 .square2 {
   position: absolute;
-  top: 750px;
+  top: 1300px;
   left: 0px;
   width: auto;
   height: auto;
@@ -144,8 +144,8 @@
 
 .line {
   position: absolute;
-  top: 1400px;
-  left: -50px;
+  top: 1200px;
+  left: 0px;
   width: auto;
   height: auto;
   rotate: 0deg;
@@ -155,22 +155,20 @@
 
 .redHead {
   position: absolute;
-  top: 1430px;
-  left: 75px;
+  top: 1230px;
+  left: 130px;
   width: auto;
   height: auto;
   z-index: -2;
-  rotate: 0deg;
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
 .leftArrow {
   position: absolute;
-  top: 1000px;
-  right: -47px;
+  top: 1550px;
+  right: 0px;
   width: auto;
   height: auto;
-  rotate: 300deg;
   z-index: -2;
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }

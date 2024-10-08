@@ -100,13 +100,12 @@ function ProductsCarousel({banner, title, link, description }) {
       {/* Background Elements */}
       <img src={bell} alt="" className="bellCar elements" />
       <img src={ball1left} alt="" className="ball1leftCar elements2" />
-      <img src={ball2left} alt="" className="ball2leftCar elements2" />
       <img src={ball1right} alt="" className="ball1rightCar elements2" />
       <img src={square1} alt="" className="square1Car elements1" />
-      <img src={redHeadProjects} alt="" className="redHeadProjectsCar elements1" />
-      <img src={leftLineProjects} alt="" className="leftLineProjectsCar elements1" />
-      <img src={yellowHeadProjects} alt="" className="yellowHeadProjectsCar elements2" />
-      <img src={rightLineProjects} alt="" className="rightLineProjectsCar elements2" />
+      <img src={redHeadProjects} alt="" className="redHeadProjectsCar elements2" />
+      <img src={leftLineProjects} alt="" className="leftLineProjectsCar elements2" />
+      <img src={yellowHeadProjects} alt="" className="yellowHeadProjectsCar elements" />
+      <img src={rightLineProjects} alt="" className="rightLineProjectsCar elements" />
       </div>
       <div className="carouselcontainer">
         <div className="container">

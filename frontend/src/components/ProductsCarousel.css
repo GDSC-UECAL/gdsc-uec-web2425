@@ -74,14 +74,8 @@
 }
 
 .ball1leftCar {
-  left: 120px;
-  top: 280px; 
-  z-index: -2;
-}
-
-.ball2leftCar {
-  left: 340px;
-  top: 900px; 
+  left: 400px;
+  top: 230px; 
   z-index: -2;
 }
 
@@ -131,8 +125,8 @@
 
 .yellowHeadProjectsCar{
   position: absolute;
-  bottom: 75px;
-  right: 160px;
+  bottom: 130px;
+  right: 235px;
   width: auto;
   height: auto;
   z-index: -2; 
@@ -140,8 +134,8 @@
 }
 .rightLineProjectsCar{
   position: absolute;
-  bottom: 50px;
-  right: -80px;
+  bottom: 100px;
+  right: 0px;
   width: auto;
   height: auto;
   z-index: -2; 
@@ -150,8 +144,8 @@
 
 .redHeadProjectsCar{
   position: absolute;
-  top: 750px;
-  left: 134px;
+  top: 450px;
+  left: 175px;
   width: auto;
   height: auto;
   z-index: -2; 
@@ -159,8 +153,8 @@
 }
 .leftLineProjectsCar{
   position: absolute;
-  top: 720px;
-  left: -45px;
+  top: 420px;
+  left: 0px;
   width: auto;
   height: auto;
   z-index: -2; 
