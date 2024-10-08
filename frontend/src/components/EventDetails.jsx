@@ -1,5 +1,6 @@
 import React from 'react';
 import './EventDetails.css';
+import teach from '../assets/events/teach.png';
 
 const EventDetails = () => {
   const event = {
@@ -12,16 +13,18 @@ const EventDetails = () => {
 
   return (
     <div className="event-details-page">
-      <div className="event-details-column"> {/* Flex column for event details and image */}
-        {/* Image container */}
-        <div className="image-container">
-          <img 
-            src="https://via.placeholder.com/300x200" // Replace with your image URL
-            alt="Event"
-            style={{ width: '100%', height: 'auto' }} // Make the image responsive
-          />
-        </div>
+      {/* Image container */}
+      <div className="image-container">
+        <img 
+          src={teach} 
+          alt="Event"
+          style={{ width: '100%', height: 'auto' }} 
+          className="image"
+        />
+      </div>
 
+      {/* Event details and flexible container side by side */}
+      <div className="event-details-flex-container">
         {/* Event details container */}
         <div className="event-details-container">
           <div className="event-details">
@@ -33,17 +36,21 @@ const EventDetails = () => {
             <p className="event-description">{event.description}</p>
           </div>
         </div>
-      </div>
 
-      {/* Right-side flexible container */}
-      <div className="flexible-container">
-        {/* New content container inside flexible container */}
-        <div className="flexible-content-container">
-          <h2>Additional Content</h2>
-          <p>
-            This container is added inside the flexible container. You can place any
-            content here, similar to the event details container.
-          </p>
+        {/* Right-side flexible container */}
+        <div className="flexible-container">
+          <div className="flexible-content-container">
+            {/* Additional containers in 2 rows and 4 columns */}
+            {[...Array(8)].map((_, index) => (
+              <div key={index} className="additional-container">
+                <h2>Additional Content {index + 1}</h2>
+                <p>
+                  This is additional content container {index + 1}. You can place any
+                  content here.
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
