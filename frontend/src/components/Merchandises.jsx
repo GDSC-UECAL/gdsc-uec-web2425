@@ -96,7 +96,7 @@ function Merchandises() {
       <img src={leftArrow} alt="" className="leftArrow elements2" />
       </div>
       {/* Main Content */}
-      <div className="container mt-4 no-margin-padding marginBottomCard" style={{ marginBottom: '100px' }}>
+      <div className="container mt-4 marginBottomCard" style={{ marginBottom: '100px' }}>
         {/* Left and Right Navigation Buttons */}
         <img
           src={nextLeft}
