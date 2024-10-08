@@ -5,6 +5,7 @@
     margin: 50px;
     position: relative;
     z-index: 1;
+    min-height: calc(100vh - 60px - 40px);
 }
 
 .event-image {
@@ -100,6 +101,25 @@
     justify-content: flex-end;
 }
 
+#event-button button {
+    background-color: #611de6;
+    border: none;
+    transition: background-color 0.2s;
+    width: '100px';
+    color: white;
+}
+
+#event-button button:hover {
+    background-color: rgb(185, 110, 255);
+    color: white;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #event-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 767px) {
     .cube {
         width: 50vw;
@@ -131,7 +151,7 @@
     }
 
     #event-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); 
         grid-gap: 10px;
     }
 }

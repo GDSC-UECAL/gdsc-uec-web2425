@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import "./Events.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import cube from '../assets/common/6.png';
 import ball from "../assets/common/1.png";
 import vector1 from '../assets/common/vector_c.png';
@@ -42,7 +41,7 @@ function Events() {
                 </div>
                 {!showAllEvents && (
                     <div id="event-button">
-                        <button className="btn btn-primary text-white" onClick={handleShowAll}>See More</button>
+                        <button onClick={handleShowAll}>See More</button>
                     </div>
                 )}
             </main>
