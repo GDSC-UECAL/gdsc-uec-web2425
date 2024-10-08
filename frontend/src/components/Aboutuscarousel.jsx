@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import '../components/Aboutuscarousel.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import laptopic4 from '../assets/products/laptopic4.png';
+import pic1 from '../assets/teams/exec.webp'
+import pic2 from '../assets/teams/creatives.webp'
+import pic3 from '../assets/teams/operations.webp'
+import pic4 from '../assets/teams/technology.webp'
 import nextLeft from '../assets/products/nextLeft.png';
 import nextRight from '../assets/products/nextRight.png';
 
@@ -12,14 +15,11 @@ function Aboutuscarousel() {
 
     useEffect(() => {
         const fetchedProducts = [
-            { id: 1, banner: laptopic4, alt: 'laptop', title: 'Hellooooo1', link: "https://github.com/Velsariaa", description: "description here" },
-            { id: 2, banner: laptopic4, alt: 'laptop', title: 'Hellooooo2', link: "https://github.com/Velsariaa", description: "description here" },
-            { id: 3, banner: laptopic4, alt: 'laptop', title: 'Hellooooo3', link: "https://github.com/Velsariaa", description: "description here" },
-            { id: 4, banner: laptopic4, alt: 'laptop', title: 'Hellooooo4', link: "https://github.com/Velsariaa", description: "description here" },
-            { id: 5, banner: laptopic4, alt: 'laptop', title: 'Hellooooo5', link: "https://github.com/Velsariaa", description: "description here" },
-            { id: 6, banner: laptopic4, alt: 'laptop', title: 'Hellooooo6', link: "https://github.com/Velsariaa", description: "description here" },
-            { id: 7, banner: laptopic4, alt: 'laptop', title: 'Hellooooo7', link: "https://github.com/Velsariaa", description: "description here" },
-            { id: 8, banner: laptopic4, alt: 'laptop', title: 'Hellooooo8', link: "https://github.com/Velsariaa", description: "description here" },
+            { id: 1, banner: pic1 , alt: 'laptop', title: 'Hellooooo1', link: "https://github.com/Velsariaa", description: "description here" },
+            { id: 2, banner: pic2, alt: 'laptop', title: 'Hellooooo2', link: "https://github.com/Velsariaa", description: "description here" },
+            { id: 3, banner: pic3, alt: 'laptop', title: 'Hellooooo3', link: "https://github.com/Velsariaa", description: "description here" },
+            { id: 4, banner: pic4, alt: 'laptop', title: 'Hellooooo3', link: "https://github.com/Velsariaa", description: "description here" },
+            { id: 5, banner: pic2, alt: 'laptop', title: 'Hellooooo3', link: "https://github.com/Velsariaa", description: "description here" },
         ];
         setProducts(fetchedProducts);
     }, []);

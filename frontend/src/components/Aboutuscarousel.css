@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  
 }
 
 .carouselcontainer2 {
@@ -101,7 +102,7 @@
 .nextRightCar2 {
   position: absolute;
   bottom: 30%;
-  right: 220px; /* Adjust based on button placement */
+  right: 20vh; /* Adjust based on button placement */
   width: auto;
   height: auto;
   z-index: 6;
@@ -114,11 +115,10 @@
   opacity: 0.75;
 }
 
-
 .nextLeftCar2{
   position: absolute;
   bottom: 30%;
-  left: 220px; /* depende kung saan mo ilalagay yung buttons na to*/
+  left: 20vh; /* depende kung saan mo ilalagay yung buttons na to*/
   width: auto;
   height: auto;
   z-index: 6; 

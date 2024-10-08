@@ -138,17 +138,20 @@
   color: white;
 }
 
-.text-together,
-.text-we-discover,
-.text-future {
-  font-size: 100px;
+.text-whatis {
+  font-size: 70px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   color: rgba(44, 44, 44, 0.95);
   width: 100vw;
   position: relative;
 }
-
+.normaltext{
+    font-size:30px;
+    width: 70vw;
+    position: relative;
+    left: 30vh;
+}
 @media (max-width: 1200px) {
   .text-together,
   .text-we-discover,
