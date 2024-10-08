@@ -1,5 +1,5 @@
 import React from 'react';
-import ExecutiveDept from '../components/ExecutiveDept.jsx';
+import TeamsComponent from '../components/TeamsComponent.jsx';
 import '../components/TeamsMain.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -7,7 +7,7 @@ function Teams() {
     return(
         <>  
         
-            <ExecutiveDept/>
+            <TeamsComponent/>
           
             
         </>

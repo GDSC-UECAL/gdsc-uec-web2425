@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../components/ExecutiveDept.css';
+import '../components/TeamsComponent.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap'; 
 import defaultImage from '../assets/teams/exec.webp'; // Default department image
@@ -48,7 +48,7 @@ const departments = {
     }
 };
 
-function ExecutiveDept() {
+function TeamsComponent() {
     const [activeDepartment, setActiveDepartment] = useState('Executive');
 
     const handleOptionClick = (department) => {
@@ -101,4 +101,4 @@ function ExecutiveDept() {
     );
 }
 
-export default ExecutiveDept;
+export default TeamsComponent;
