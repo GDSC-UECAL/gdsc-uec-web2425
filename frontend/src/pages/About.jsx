@@ -33,22 +33,27 @@ function About() {
     
       <div className="Landing" style={{ width: '100%', height: '100vh', position: 'relative', overflowX: 'clip', margin: '0px', padding: '0px' }}>
 
-        <img className="testimg" style={{ width: '7%', left: '22vw', top: '10vh', position: 'absolute', float: 'right' }} src={el2} />
-        <img className="testimg" style={{ width: '5%', left: '70vw', top: '15vh', position: 'absolute', float: 'right' }} src={el7} />
-        <img className="testimg" style={{ width: '4%', left: '40vw', top: '27vh', position: 'absolute', float: 'right' }} src={el11} />
-        <img className="testimg" style={{ width: '10%', left: '47vw', top: '27vh', position: 'absolute', float: 'right' }} src={el4} />
-        <img className="testimg" style={{ width: '2%', left: '75vw', top: '37vh', position: 'absolute', float: 'right' }} src={el1} />
-        <img className="testimg" style={{ width: '8%', left: '42vw', top: '14vh', position: 'absolute', float: 'right' }} src={el10} />
-        <img className="testimg" style={{ width: '13%', left: '12vw', top: '27vh', position: 'absolute', float: 'right' }} src={el12} />
-        <img className="testimg" style={{ width: '6%', left: '0vw', top: '24vh', position: 'absolute', float: 'right' }} src={el3} />
-        <img className="testimg" style={{ width: '3%', left: '10vw', top: '19vh', position: 'absolute', float: 'right' }} src={el4} />
-        <img className="testimg" style={{ width: '5%', left: '80vw', top: '35vh', position: 'absolute', float: 'right' }} src={el5} />
-        <img className="testimg" style={{ width: '9%', left: '92vw', top: '25vh', position: 'absolute', float: 'right' }} src={el6} />
-        <img className="testimg" style={{ width: '10%', left: '80vw', top: '10vh', position: 'absolute', float: 'right' }} src={el8} />
-        <img style={{ width: '34%', left: '65.4vw', top: '24.5vh', position: 'absolute', float: 'right' }} src={el13} />
-        <img style={{ width: '18%', left: '53.8vw', top: '18vh', position: 'absolute', float: 'right' }} src={el5} />
-        <img style={{ width: '34%', left: '0.1vw', top: '24.5vh', position: 'absolute', float: 'right' }} src={el14} />
-        <img style={{ width: '17%', left: '27vw', top: '18vh', position: 'absolute', float: 'right' }} src={el9} />
+        <img className="testimg" style={{ width: '7%', left: '22vw', top: '15vh', position: 'absolute', float: 'right', animation: 'float 10s linear infinite'}} src={el2} />
+        <img className="testimg" style={{ width: '5%', left: '70vw', top: '18vh', position: 'absolute', float: 'right', animation: 'float1 16s linear infinite' }} src={el7} />
+        <img className="testimg" style={{ width: '4%', left: '40vw', top: '32vh', position: 'absolute', float: 'right', animation: 'float 20s linear infinite' }} src={el11} />
+        <img className="testimg" style={{ width: '10%', left: '47vw', top: '31vh', position: 'absolute', float: 'right', animation: 'float1 15s linear infinite' }} src={el4} />
+        <img className="testimg" style={{ width: '2%', left: '75vw', top: '30vh', position: 'absolute', float: 'right', animation: 'float 13s linear infinite' }} src={el1} />
+        <img className="testimg" style={{ width: '8%', left: '42vw', top: '19vh', position: 'absolute', float: 'right', animation: 'float1 12s linear infinite' }} src={el10} />
+        <img className="testimg" style={{ width: '13%', left: '12vw', top: '29vh', position: 'absolute', float: 'right', animation: 'float 11s linear infinite' }} src={el12} />
+        <img className="testimg" style={{ width: '6%', left: '0vw', top: '29vh', position: 'absolute', float: 'right', animation: 'float1 10s linear infinite' }} src={el3} />
+        <img className="testimg" style={{ width: '3%', left: '10vw', top: '24vh', position: 'absolute', float: 'right', animation: 'float 9s linear infinite' }} src={el12} />
+        <img className="testimg" style={{ width: '10%', left: '3vw', top: '24vh', position: 'absolute', float: 'right', animation: 'float1 14s linear infinite' }} src={el4} />
+        <img className="testimg" style={{ width: '3%', left: '3vw', top: '20vh', position: 'absolute', float: 'right', animation: 'float 7s linear infinite' }} src={el5} />
+        <img className="testimg" style={{ width: '20%', left: '25vw', top: '4vh', position: 'absolute', float: 'right', animation: 'float1 12s linear infinite' }} src={el7} />
+        <img className="testimg" style={{ width: '5%', left: '17vw', top: '20vh', position: 'absolute', float: 'right', animation: 'float 15s linear infinite' }} src={el10  } />
+        <img className="testimg" style={{ width: '5%', left: '80vw', top: '35vh', position: 'absolute', float: 'right', animation: 'float1 18s linear infinite' }} src={el5} />
+        <img className="testimg" style={{ width: '9%', left: '92vw', top: '30vh', position: 'absolute', float: 'right', animation: 'float 14s linear infinite' }} src={el6} />
+        <img className="testimg" style={{ width: '10%', left: '80vw', top: '15vh', position: 'absolute', float: 'right', animation: 'float1 17s linear infinite' }} src={el8} />
+        <img className="testimg" style={{ width: '7%', left: '60vw', top: '20vh', position: 'absolute', float: 'right', animation: 'float 9s linear infinite' }} src={el9} />
+        <img className="testimg" style={{ width: '15%', left: '84vw', top: '20vh', position: 'absolute', float: 'right', animation: 'float1 10s linear infinite' }} src={el1} />
+        <img style={{ width: '53%', left: '53.7vw', top: '15.5vh', position: 'absolute', float: 'right' }} src={el14} />
+        
+        <img style={{ width: '50%', left: '-3vw', top: '24.5vh', position: 'absolute', float: 'right' }} src={el13} />
 
         <div className="container-fluid p-0 position-relative" style={{ height: '95vh' }}>
           <div className="position-absolute w-100 h-100 d-flex flex-column justify-content-center">
