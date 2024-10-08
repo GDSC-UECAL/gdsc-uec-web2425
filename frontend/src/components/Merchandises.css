@@ -48,7 +48,7 @@
   }
 
   .btn{
-    color: black
+    color: black;
     background-color: white;
   }
   .button1 {
@@ -153,6 +153,7 @@
   height: auto;
   z-index: 1; 
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease; /* Add smooth transition for scaling */
 }
 
 .nextLeft{
@@ -163,7 +164,20 @@
   height: auto;
   z-index: 1; 
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease; /* Add smooth transition for scaling */
 }
+
+.nextLeft:hover {
+  transform: scale(1.15); /* Apply scale on hover */
+  opacity: 0.75;
+}
+
+.nextRight:hover {
+  transform: scale(1.15); /* Apply scale on hover */
+  opacity: 0.75;
+}
+
+
 
 .elements {
   animation: float 8s ease-in-out infinite;

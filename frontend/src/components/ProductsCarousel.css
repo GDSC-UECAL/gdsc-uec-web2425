@@ -100,25 +100,39 @@
   z-index: -1;
 }
 
-.nextRightCar{
+.nextRightCar {
   position: absolute;
-  bottom: 40%;
-  right: -70px; /* depende kung saan mo ilalagay yung buttons na to*/
+  bottom: 47%;
+  right: -50px; /* Adjust based on button placement */
   width: auto;
   height: auto;
-  z-index: 1; 
+  z-index: 1;
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease; /* Add smooth transition for scaling */
 }
+
+.nextRightCar:hover {
+  transform: scale(1.15); /* Apply scale on hover */
+  opacity: 0.75;
+}
+
 
 .nextLeftCar{
   position: absolute;
-  bottom: 40%;
-  left: -70px; /* depende kung saan mo ilalagay yung buttons na to*/
+  bottom: 47%;
+  left: -50px; /* depende kung saan mo ilalagay yung buttons na to*/
   width: auto;
   height: auto;
   z-index: 1; 
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease; /* Add smooth transition for scaling */
 }
+
+.nextLeftCar:hover {
+  transform: scale(1.15); /* Apply scale on hover */
+  opacity: 0.75;
+}
+
 
 .yellowHeadProjectsCar{
   position: absolute;
