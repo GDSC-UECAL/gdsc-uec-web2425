@@ -3,28 +3,22 @@
 * {
   box-sizing: border-box;
 }
-body{
-  overflow-x: hidden;
-}
+
 .carouselcontainer {
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 30px 10px;
   font-family: 'DM Sans', sans-serif;
   text-align: center;
-  margin: auto;
   place-content: center;
+
 }
 .rdbtn[type=radio] {
   display: none;
 }
-.elementsdiv{
-  max-width: 100%;
-  overflow-x: hidden;
-  
-}
+
 .prodcard {
   position: absolute;
   width: 60%;
@@ -37,16 +31,6 @@ body{
   text-decoration: none;
 }
 
-.container {
-  width: 100%;
-  max-width: 800px;
-  max-height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-
-}
 
 .cardscon {
   position: relative;
@@ -75,7 +59,7 @@ body{
     filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
-.ball1leftCar, .ball1rightCar{
+.ball1leftCar, .ball1rightCar, .ball2leftCar{
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
     position: absolute;
     width: auto;
@@ -91,7 +75,13 @@ body{
 
 .ball1leftCar {
   left: 120px;
-  top: 780px; 
+  top: 280px; 
+  z-index: -2;
+}
+
+.ball2leftCar {
+  left: 340px;
+  top: 900px; 
   z-index: -2;
 }
 
@@ -108,7 +98,7 @@ body{
 .nextRightCar {
   position: absolute;
   bottom: 30%;
-  right: -47px; /* Adjust based on button placement */
+  left: 1280px; /* Adjust based on button placement */
   width: auto;
   height: auto;
   z-index: 1;
@@ -125,7 +115,7 @@ body{
 .nextLeftCar{
   position: absolute;
   bottom: 30%;
-  left: -47px; /* depende kung saan mo ilalagay yung buttons na to*/
+  right: 1280px; /* depende kung saan mo ilalagay yung buttons na to*/
   width: auto;
   height: auto;
   z-index: 1; 
@@ -141,7 +131,7 @@ body{
 
 .yellowHeadProjectsCar{
   position: absolute;
-  bottom: 125px;
+  bottom: 75px;
   right: 160px;
   width: auto;
   height: auto;
@@ -150,7 +140,7 @@ body{
 }
 .rightLineProjectsCar{
   position: absolute;
-  bottom: 100px;
+  bottom: 50px;
   right: -80px;
   width: auto;
   height: auto;
@@ -160,8 +150,8 @@ body{
 
 .redHeadProjectsCar{
   position: absolute;
-  top: 430px;
-  left: 76px;
+  top: 750px;
+  left: 134px;
   width: auto;
   height: auto;
   z-index: -2; 
@@ -169,8 +159,8 @@ body{
 }
 .leftLineProjectsCar{
   position: absolute;
-  top: 400px;
-  left: -100px;
+  top: 720px;
+  left: -45px;
   width: auto;
   height: auto;
   z-index: -2; 

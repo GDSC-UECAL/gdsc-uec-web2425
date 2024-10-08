@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import bell from '../assets/products/bell.png';
 import ball1right from '../assets/products/ball1right.png';
 import ball1left from '../assets/products/ball1left.png';
+import ball2left from '../assets/products/ball1left.png';
 import square1 from '../assets/products/square1.png';
 import nextLeft from '../assets/products/nextLeft.png';
 import nextRight from '../assets/products/nextRight.png';
@@ -17,7 +18,7 @@ import yellowHeadProjects from '../assets/products/yellowHeadProjects.png';
 import leftLineProjects from '../assets/products/leftLineProjects.png';
 import rightLineProjects from '../assets/products/rightLineProjects.png';
 
-function ProductsCarousel({ image, title, link, description }) {
+function ProductsCarousel({banner, title, link, description }) {
   const [products, setProducts] = useState([]);
   const [activeIndex, setActiveIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false); // New state for transition
@@ -99,6 +100,7 @@ function ProductsCarousel({ image, title, link, description }) {
       {/* Background Elements */}
       <img src={bell} alt="" className="bellCar elements" />
       <img src={ball1left} alt="" className="ball1leftCar elements2" />
+      <img src={ball2left} alt="" className="ball2leftCar elements2" />
       <img src={ball1right} alt="" className="ball1rightCar elements2" />
       <img src={square1} alt="" className="square1Car elements1" />
       <img src={redHeadProjects} alt="" className="redHeadProjectsCar elements1" />

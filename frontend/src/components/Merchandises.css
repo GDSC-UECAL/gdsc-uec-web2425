@@ -1,115 +1,137 @@
+
 .custom-card {
-    border-radius: 5%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Permanent shadow at the bottom */
-    height: calc(100% - 30px); /* Reduce the card height by 50px */
-    display: flex;
-    flex-direction: column;
-    margin: 0 -50px;
-  }
-  .elementsdiv{
-    max-width: 100%;
-    overflow-x: hidden;
-    
-  }
-  .custom-card {
-    position: relative; /* Allow relative positioning for child elements */
-    overflow: visible; /* Ensure the shadow is visible */
-  }
-  .card-img-top {
-    border-radius: 8px; /* Optional: Rounded corners for the image */
-    width: 100%; /* Make the image take the full width of the card */
-    background-color: rgba(135, 133, 133, 0.19);
-    z-index: 1; /* Ensure the image is on top */
-  }
-  
-  .card-body {
-    background-color: #ffffff; /* Keep the card body white */
-    padding: 20px; /* Add padding for spacing */
-    border-radius: 8px; /* Optional: Rounded corners for the body */
-  }
-  
-.marginBottomCard{
- margin-bottom: 100px;
+  border-radius: 5%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  /* Permanent shadow at the bottom */
+  height: calc(100% - 30px);
+  /* Reduce the card height by 50px */
+  display: flex;
+  flex-direction: column;
+  margin: 0 -50px;
 }
 
-  .custom-card img {
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
-    border-radius: 5%;
-    margin-top: -10px;
-    width: 100%; /* Ensure the image takes the full width of the card */
-    height: auto; /* Maintain image aspect ratio */
-  }
+.custom-card {
+  margin: auto;
+  position: relative;
+  /* Allow relative positioning for child elements */
+  overflow: visible;
+  /* Ensure the shadow is visible */
+}
+
+.card-img-top {
+  border-radius: 8px;
+  /* Optional: Rounded corners for the image */
+  width: 100%;
+  /* Make the image take the full width of the card */
+  background-color: rgba(135, 133, 133, 0.19);
+  z-index: 1;
+  /* Ensure the image is on top */
+}
+
+.card-body {
+  background-color: #ffffff;
+  /* Keep the card body white */
+  padding: 20px;
+  /* Add padding for spacing */
+  border-radius: 8px;
+  /* Optional: Rounded corners for the body */
+}
+
+.container {
+  width: 100vw;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.marginBottomCard {
+  margin-bottom: 100px;
+}
+
+.custom-card img {
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border-radius: 5%;
+  margin-top: -10px;
+  width: 100%;
+  /* Ensure the image takes the full width of the card */
+  height: auto;
+  /* Maintain image aspect ratio */
+}
 
 .no-margin-padding {
-    margin: 0; 
-    padding: 0; 
-  }
-
-  .custom-card .card-body {
-    flex-grow: 1;
-  }
-
-
-  .button1 {
-    background-color:rgb(132, 57, 147);
-    color: black;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for button2 */
-    border-color: #611DE6;
-    z-index: -2;
-  }
-  
-  .button1:hover {
-    background-color: #611DE6; /* Change background color on hover */
-    color: white; /* Change text color on hover */
-    border-color: #611DE6;
-  }
-
-
-  /* FOR PICTURES */
-.bell{
-    position: absolute;
-    top: 1200px;
-    right: 0px;
-    width: auto;
-    height: auto;
-    z-index: -2;
-    rotate: 180deg;
-    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+  margin: 0;
+  padding: 0;
 }
 
-.ball1left, .ball1right{
+.custom-card .card-body {
+  flex-grow: 1;
+}
+
+
+.button1 {
+  background-color: rgb(132, 57, 147);
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Transition for button2 */
+  border-color: #611DE6;
+  z-index: -2;
+}
+
+.button1:hover {
+  background-color: #611DE6;
+  /* Change background color on hover */
+  color: white;
+  /* Change text color on hover */
+  border-color: #611DE6;
+}
+
+
+/* FOR PICTURES */
+.bell {
+  position: absolute;
+  top: 1200px;
+  right: 0px;
+  width: auto;
+  height: auto;
+  z-index: -2;
+  rotate: 180deg;
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
-    position: absolute;
-    width: auto;
-    height: auto;
-    z-index: -2;
 }
 
-.ball1right{
-    right: 150px;
-    top: 970px; 
-    z-index: -2;
+.ball1left,
+.ball1right {
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+  position: absolute;
+  width: auto;
+  height: auto;
+  z-index: -2;
+}
+
+.ball1right {
+  right: 150px;
+  top: 970px;
+  z-index: -2;
 }
 
 .ball1left {
   left: 50px;
-  top: 1550px; 
+  top: 1550px;
   z-index: -2;
 }
 
-.bigBall{
+.bigBall {
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
-    position: absolute;
-    width: auto;
-    height: auto;
-    z-index: -2;
-    right: 100px;
-    top: 850px;
+  position: absolute;
+  width: auto;
+  height: auto;
+  z-index: -2;
+  right: 100px;
+  top: 850px;
 }
 
 
-.square2{
+.square2 {
   position: absolute;
   top: 750px;
   left: 0px;
@@ -120,32 +142,32 @@
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
-.line{
+.line {
   position: absolute;
   top: 1400px;
-  left: -100px;
+  left: -50px;
   width: auto;
   height: auto;
   rotate: 0deg;
-  z-index: -2; 
+  z-index: -2;
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
-.redHead{
+.redHead {
   position: absolute;
   top: 1430px;
-  left: 30px;
+  left: 75px;
   width: auto;
   height: auto;
-  z-index: -2; 
+  z-index: -2;
   rotate: 0deg;
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
-.leftArrow{
+.leftArrow {
   position: absolute;
   top: 1000px;
-  right: -50px;
+  right: -47px;
   width: auto;
   height: auto;
   rotate: 300deg;
@@ -153,35 +175,39 @@
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
-.nextRight{
+.nextRight {
   position: absolute;
   bottom: 50%;
-  right: -70px;
+  left: 1380px;
   width: auto;
   height: auto;
-  z-index: 1; 
+  z-index: 1;
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
-  transition: transform 0.3s ease; /* Add smooth transition for scaling */
+  transition: transform 0.3s ease;
+  /* Add smooth transition for scaling */
 }
 
-.nextLeft{
+.nextLeft {
   position: absolute;
   bottom: 50%;
-  left: -70px;
+  right: 1380px;
   width: auto;
   height: auto;
-  z-index: 1; 
+  z-index: 1;
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
-  transition: transform 0.3s ease; /* Add smooth transition for scaling */
+  transition: transform 0.3s ease;
+  /* Add smooth transition for scaling */
 }
 
 .nextLeft:hover {
-  transform: scale(1.15); /* Apply scale on hover */
+  transform: scale(1.15);
+  /* Apply scale on hover */
   opacity: 0.75;
 }
 
 .nextRight:hover {
-  transform: scale(1.15); /* Apply scale on hover */
+  transform: scale(1.15);
+  /* Apply scale on hover */
   opacity: 0.75;
 }
 
@@ -201,13 +227,15 @@
 
 @keyframes float {
   0% {
-      transform: translateY(0px);
+    transform: translateY(0px);
   }
+
   50% {
-      transform: translateY(-30px); /* Slightly less for a gentler effect */
+    transform: translateY(-30px);
+    /* Slightly less for a gentler effect */
   }
+
   100% {
-      transform: translateY(0px);
+    transform: translateY(0px);
   }
 }
-
