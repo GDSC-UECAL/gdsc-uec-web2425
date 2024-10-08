@@ -105,10 +105,10 @@
 }
 
 
-.square1{
+.square2{
   position: absolute;
-  top: 1420px;
-  right: -20px;
+  top: 1350px;
+  right: 0px;
   width: auto;
   height: auto;
   z-index: -2;

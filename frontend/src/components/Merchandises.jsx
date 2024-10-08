@@ -4,6 +4,7 @@ import '../components/Merchandises.css';
 import bell from '../assets/products/bell.png';
 import ball1left from '../assets/products/ball1left.png';
 import square1 from '../assets/products/square1.png';
+import square2 from '../assets/products/square2.png';
 import line from '../assets/products/line.png';
 import redHead from '../assets/products/redHead.png';
 import leftArrow from '../assets/products/leftArrow.png';
@@ -88,7 +89,7 @@ function Merchandises() {
       <img src={bell} alt="" className="bell elements" />
       <img src={bigBall} alt="" className="bigBall elements1" />
       <img src={ball1left} alt="" className="ball1left elements1" />
-      <img src={square1} alt="" className="square1 elements" />
+      <img src={square2} alt="" className="square2 elements" />
       <img src={line} alt="" className="line elements2" />
       <img src={redHead} alt="" className="redHead elements2" />
       <img src={leftArrow} alt="" className="leftArrow elements2" />
