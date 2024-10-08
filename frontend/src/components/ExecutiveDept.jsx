@@ -2,40 +2,45 @@ import React, { useState } from 'react';
 import '../components/ExecutiveDept.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap'; 
-import executiveCoverPic from '../assets/teams/exec.webp';
-import maamAbaya from '../assets/teams/maamAbaya.png';
+import defaultImage from '../assets/teams/exec.webp'; // Default department image
+import maamAbaya from '../assets/teams/maamAbaya.png'; // Temporary member image
 
 const departments = {
     Executive: {
-        color: '#DB4437',
+        color: '#DB4437', // Red
+        overlayColor: 'rgba(116, 1, 1, 0.5)', // Matching red overlay
         overview: 'Oversees strategic direction and decision-making, ensuring organizational goals are met effectively and efficiently, while continually evaluating and adapting to emerging opportunities.',
         members: [
             { name: 'Shiela Abaya', role: 'Organization Adviser', img: maamAbaya }
         ]
     },
     Operations: {
-        color: '#F4B400',
+        color: '#F4B400', // Yellow
+        overlayColor: 'rgba(244, 180, 0, 0.5)', // Matching yellow overlay
         overview: 'Handles the daily operations to keep everything running smoothly.',
         members: [
             { name: 'John Doe', role: 'Operations Lead', img: maamAbaya }
         ]
     },
     Technology: {
-        color: '#4285F4',
+        color: '#4285F4', // Blue
+        overlayColor: 'rgba(11, 47, 131, 0.5)', // Matching blue overlay
         overview: 'Responsible for technological developments and maintaining the systems.',
         members: [
             { name: 'Jane Smith', role: 'Tech Lead', img: maamAbaya }
         ]
     },
     Creatives: {
-        color: '#0F9D58',
+        color: '#0F9D58', // Green
+        overlayColor: 'rgba(8, 148, 50, 0.5)', // Matching green overlay
         overview: 'Creates innovative designs and strategies to enhance brand visibility.',
         members: [
             { name: 'Chris Johnson', role: 'Creative Lead', img: maamAbaya }
         ]
     },
     'Community Development': {
-        color: '#611DE6',
+        color: '#611DE6', // Violet
+        overlayColor: 'rgba(119, 5, 111, 0.5)', // Matching violet overlay
         overview: 'Focuses on fostering relationships within the community and promoting growth.',
         members: [
             { name: 'Alex Brown', role: 'Community Lead', img: maamAbaya }
@@ -44,37 +49,22 @@ const departments = {
 };
 
 function ExecutiveDept() {
-    {/*const [activeDepartment, setActiveDepartment] = useState('Executive');
-    const [departmentData, setDepartmentData] = useState(null);
-
-    // Fetch department data from backend API
-    const fetchDepartmentData = async (department) => {
-        try {
-            const response = await axios.get(`/api/departments/${department.toLowerCase().replace(' ', '-')}`);
-            setDepartmentData(response.data);
-        } catch (error) {
-            console.error('Error fetching department data:', error);
-        }
-    };
-
-    // Fetch data for the initially active department
-    useEffect(() => {
-        fetchDepartmentData(activeDepartment);
-    }, [activeDepartment]);*/}
-
     const [activeDepartment, setActiveDepartment] = useState('Executive');
 
     const handleOptionClick = (department) => {
         setActiveDepartment(department);
     };
 
-    const { color, overview, members } = departments[activeDepartment];
+    const { color, overlayColor, overview, members } = departments[activeDepartment];
 
     return (
         <Container fluid className="teamsContainer">
             <Row className="position-relative">
-                <img src={executiveCoverPic} alt={`${activeDepartment} Board`} className="teamCover mb-3" />
-                <div className="execOverlay"></div>
+                {/* Default image used for all departments */}
+                <img src={defaultImage} alt={`${activeDepartment} Board`} className="teamCover mb-3" />
+                
+                {/* Dynamic overlay color */}
+                <div className="execOverlay" style={{ backgroundColor: overlayColor }}></div>
             </Row>
             <Row className="teamsText">
                 <div className="text-align-center">
@@ -101,7 +91,7 @@ function ExecutiveDept() {
             <Row className="teamMembers">
                 {members.map((member, index) => (
                     <Col lg={4} key={index}>
-                        <img src={member.img} alt={member.name} className="membersPic" />
+                        <img src={maamAbaya} alt={member.name} className="membersPic" />
                         <h4 className="memberName">{member.name}</h4>
                         <h5 className="execMember">{member.role}</h5>
                     </Col>
