@@ -17,30 +17,23 @@ import yellowHeadProjects from '../assets/products/yellowHeadProjects.png';
 import leftLineProjects from '../assets/products/leftLineProjects.png';
 import rightLineProjects from '../assets/products/rightLineProjects.png';
 
-function ProductsCarousel() {
+function ProductsCarousel({ image, title, link, description }) {
   const [products, setProducts] = useState([]);
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
-    const fetchedProducts = [
-      { id: 1, banner: laptopic4, alt: 'laptop', title: 'Hellooooo1', link: "https://github.com/Velsariaa", description:"description here" },
-      { id: 2, banner: laptopic4, alt: 'laptop', title: 'Hellooooo2', link: "https://github.com/Velsariaa", description:"description here" },
-      { id: 3, banner: laptopic4, alt: 'laptop', title: 'Hellooooo3', link: "https://github.com/Velsariaa", description:"description here" },
-      { id: 4, banner: laptopic4, alt: 'laptop', title: 'Hellooooo4', link: "https://github.com/Velsariaa", description:"description here" },
-      { id: 5, banner: laptopic4, alt: 'laptop', title: 'Hellooooo5', link: "https://github.com/Velsariaa", description:"description here" },
-      { id: 6, banner: laptopic4, alt: 'laptop', title: 'Hellooooo6', link: "https://github.com/Velsariaa", description:"description here" },
-      { id: 7, banner: laptopic4, alt: 'laptop', title: 'Hellooooo7', link: "https://github.com/Velsariaa", description:"description here" },
-      { id: 8, banner: laptopic4, alt: 'laptop', title: 'Hellooooo8', link: "https://github.com/Velsariaa", description:"description here" },
-    ];
-    setProducts(fetchedProducts);
+    fetch('http://localhost:8000/api/v1/products')
+      .then(response => response.json())
+      .then(data => {
+        setProducts(data.data);
+      })
+      .catch(error => console.error('Error fetching events:', error));
   }, []);
 
-  // Handle next button click (move to the next card)
   const handleNext = () => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % products.length);
   };
 
-  // Handle previous button click (move to the previous card)
   const handlePrev = () => {
     setActiveIndex((prevIndex) =>
       prevIndex === 0 ? products.length - 1 : prevIndex - 1
@@ -128,10 +121,8 @@ function ProductsCarousel() {
               style={{ cursor: 'pointer' }}
             />
             {/* Product Cards */}
-            {products.map((product, index) => {
-              const isActive = activeIndex === index;
-
-              return (
+            {products.length > 0 &&
+              products.map((product, index) => (
                 <label
                   key={index}
                   className="prodcard"
@@ -139,24 +130,43 @@ function ProductsCarousel() {
                   id={`song-${index + 1}`}
                   style={getTransformStyles(index)}
                 >
-                  {/* Wrap only the content of the active product with <a> */}
-                  {isActive ? (
-                    <a className='txtinsidea' href={product.link} target="_blank" rel="noopener noreferrer" style={{ display: 'block', width: '100%', height: '100%'}}>
-                      <img className="eventpic" src={product.banner} alt={product.alt} />
-                      <div className='txtinside'><p>{product.title}</p></div>
-                      <div className='txtinside2'><p>{product.description}</p></div>
+                  {activeIndex === index ? (
+                    <a
+                      className="txtinsidea"
+                      href={product.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ display: 'block', width: '100%', height: '100%' }}
+                    >
+                      <img
+                        className="eventpic"
+                        src={`http://localhost:8000/storage/${product.banner}`}
+                        alt={product.alt}
+                      />
+                      <div className="txtinside">
+                        <p>{product.title}</p>
+                      </div>
+                      <div className="txtinside2">
+                        <p>{product.description}</p>
+                      </div>
                     </a>
                   ) : (
                     <>
-                      <img className="eventpic" src={product.banner} alt={product.alt} />
-                      <div className='txtinside'><p>{product.title}</p></div>
-                      <div className='txtinside2'><p>{product.description}</p></div>
+                      <img
+                        className="eventpic"
+                        src={`http://localhost:8000/storage/${product.banner}`}
+                        alt={product.alt}
+                      />
+                      <div className="txtinside">
+                        <p>{product.title}</p>
+                      </div>
+                      <div className="txtinside2">
+                        <p>{product.description}</p>
+                      </div>
                     </>
                   )}
                 </label>
-              );
-            })}
-
+              ))}
           </div>
         </div>
       </div>
