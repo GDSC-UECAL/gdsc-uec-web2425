@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './Home.css'
 import el1 from '../assets/common/1.png';
 import el2 from '../assets/common/2.png';
@@ -31,7 +31,6 @@ import emailjs from '@emailjs/browser';
 
 
 function Home() {
-
   const sendEmail = (e) => {
     e.preventDefault();
     alert("Your response has been recorded.");
@@ -40,6 +39,16 @@ function Home() {
   }
 
   const [count, setCount] = useState(0)
+  const [partners, setPartners] = useState([]);
+  
+  useEffect(() => {
+    fetch('http://localhost:8000/api/v1/partners')
+      .then(response => response.json())
+      .then(data => {
+        setPartners(data.data);
+      })
+      .catch(error => console.error('Error fetching events:', error));
+  }, []);
 
   return (
     <>
@@ -198,23 +207,24 @@ function Home() {
   </div>
   <div className="wider-container mx-auto" style={{ maxWidth: "80vw" }}>
   <div className="row justify-content-center  gx-4 gy-4">
-    {[...Array(16)].map((_, index) => (
+    {partners.map((partner, index) => (
       <div key={index} className="col-3 col-sm-3 col-md-2 col-lg-2">
         <div className="partnership-item" 
           style={{
             transition: 'transform 0.3s ease-in-out',
             overflow: 'hidden',
           }}>
-          <img 
-            src={`https://via.placeholder.com/150?text=Partner${index + 1}`} 
-            alt={`Partner ${index + 1}`} 
-            className="img-fluid" 
-            style={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'contain',
-            }} 
-          />
+            <a href={partner.link}>
+              <img 
+                src={`http://localhost:8000/storage/${partner.logo}`}
+                className="img-fluid" 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain',
+                }} 
+              />
+            </a>
         </div>
       </div>
     ))}
