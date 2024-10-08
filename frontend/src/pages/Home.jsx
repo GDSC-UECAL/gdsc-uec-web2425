@@ -232,7 +232,7 @@ function Home() {
           <img
             src={gdsc_mascot}
             alt="Club"
-            style={{ width: '80vh', height: 'auto', objectFit: 'cover' }}
+            style={{ width: 'clamp(20rem, 35vw, 40vw)', height: 'auto', objectFit: 'cover' }}
           />
         </div>
         
