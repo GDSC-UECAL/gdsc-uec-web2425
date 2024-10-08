@@ -115,7 +115,7 @@ function Merchandises() {
           {currentCards.length > 0 && currentCards.map((card, index) => (
             <div className="col-4" key={index}>
               <Card
-                text={card.title}
+                text={card.description}
                 image={card.banner}
                 title={card.title}
                 price={card.price}
