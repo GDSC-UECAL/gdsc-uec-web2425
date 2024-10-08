@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "title": "Iste et aut et dolorum sit eos.",
+        "date": "2023-10-23",
+        "description": "Maiores dolor quia ea ut.",
+        "contributor": "Exercitationem et occaecati iste consequatur ut quia perspiciatis.",
+        "banner": "Sit molestiae accusamus quo voluptas.",
+        "link": "Qui quas ut reiciendis impedit id.",
+        "timestamps": true
+    },
+    {
+        "id": 2,
+        "title": "Ut nobis ipsa sint ad iste.",
+        "date": "1985-09-23",
+        "description": "Amet et enim qui distinctio nesciunt.",
+        "contributor": "Ea ex non nobis iure quibusdam soluta.",
+        "banner": "Dolorem eaque libero rerum est.",
+        "link": "Quo itaque est nemo ratione labore qui.",
+        "timestamps": true
+    },
+    {
+        "id": 3,
+        "title": "Alias magnam non dolorem blanditiis.",
+        "date": "2018-11-02",
+        "description": "Omnis non sed tenetur quis.",
+        "contributor": "Et excepturi sit sapiente dolores culpa.",
+        "banner": "Est est architecto quasi.",
+        "link": "Voluptatem dolorem alias voluptatum commodi error velit error a.",
+        "timestamps": true
+    },
+    {
+        "id": 4,
+        "title": "Rem quasi qui esse est ea.",
+        "date": "1994-01-05",
+        "description": "Veritatis quo nobis eveniet consequatur quisquam quisquam velit.",
+        "contributor": "Inventore quas voluptate placeat necessitatibus sint eos rem optio.",
+        "banner": "At quis debitis repudiandae repellat architecto aut.",
+        "link": "Incidunt ut aut perspiciatis in quaerat rem dolorem a.",
+        "timestamps": true
+    },
+    {
+        "id": 5,
+        "title": "Ullam consectetur excepturi fugiat.",
+        "date": "2008-05-31",
+        "description": "Quo nihil repellat est delectus.",
+        "contributor": "Illo cum labore quasi et occaecati.",
+        "banner": "Molestias veniam assumenda ut tenetur nulla dolorem.",
+        "link": "Vero quos eos repellat aliquam repellendus voluptatem ea veniam.",
+        "timestamps": true
+    },
+    {
+        "id": 6,
+        "title": "Blanditiis cupiditate cumque non.",
+        "date": "2005-04-07",
+        "description": "Et voluptas sint eligendi optio laborum illo.",
+        "contributor": "Autem hic et consequatur dolorem deleniti sit.",
+        "banner": "Hic voluptatibus dolorem ad est occaecati molestiae.",
+        "link": "Qui quo possimus in rem dolorum.",
+        "timestamps": true
+    },
+    {
+        "id": 7,
+        "title": "Molestiae ratione vel quod.",
+        "date": "1980-06-29",
+        "description": "Asperiores repellat fuga et sunt assumenda ut.",
+        "contributor": "Impedit eius velit unde non vero aspernatur omnis.",
+        "banner": "Rem et quia molestiae eum facilis.",
+        "link": "Nesciunt quia perferendis eum et blanditiis nesciunt.",
+        "timestamps": true
+    },
+    {
+        "id": 8,
+        "title": "Accusantium mollitia quaerat id quibusdam debitis ad et.",
+        "date": "2007-04-09",
+        "description": "Vel assumenda culpa sint libero.",
+        "contributor": "Autem nostrum debitis atque nulla qui.",
+        "banner": "Sunt sapiente et omnis.",
+        "link": "Velit ipsa ut et impedit pariatur commodi corporis.",
+        "timestamps": true
+    },
+    {
+        "id": 9,
+        "title": "Tenetur ipsam saepe sed quae expedita suscipit voluptatum et.",
+        "date": "1989-02-22",
+        "description": "Sit voluptatem placeat esse doloribus et consequatur blanditiis.",
+        "contributor": "Ab optio qui quae ab et quibusdam.",
+        "banner": "Aliquam harum inventore et et sit enim ut.",
+        "link": "Deleniti reprehenderit aperiam voluptatem veniam magnam eum est cupiditate.",
+        "timestamps": true
+    },
+    {
+        "id": 10,
+        "title": "Assumenda vitae ipsam iusto.",
+        "date": "1972-07-31",
+        "description": "Quasi ut quibusdam quia delectus.",
+        "contributor": "Mollitia sapiente laudantium distinctio qui harum praesentium.",
+        "banner": "Aut deleniti cum excepturi eveniet dignissimos.",
+        "link": "Harum nobis qui sit suscipit voluptates.",
+        "timestamps": true
+    }
+]
