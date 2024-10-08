@@ -56,9 +56,9 @@ class CarouselCrudController extends CrudController
     protected function setupCreateOperation()
     {
         CRUD::setValidation(CarouselRequest::class);
-        CRUD::setFromDb();
+        
 
-        CRUD::removeField('image');
+        CRUD::field('title')->type('text');
         CRUD::field('image')->type('upload')->withFiles();
     }
 

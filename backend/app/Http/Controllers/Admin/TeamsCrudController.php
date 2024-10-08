@@ -58,12 +58,10 @@ class TeamsCrudController extends CrudController
     protected function setupCreateOperation()
     {
         CRUD::setValidation(TeamsRequest::class);
-        CRUD::setFromDb(); // set fields from db columns.
 
-        CRUD::removeField('image');
+        CRUD::field('name')->type('text');
+        CRUD::field('role')->type('text');
         CRUD::field('image')->type('upload')->withFiles();
-
-        CRUD::removeField('department_id');
         CRUD::field('department_id')->type('select')->label('Department')->entity('department')->model(Department::class)->attribute('title'); 
 
         /**

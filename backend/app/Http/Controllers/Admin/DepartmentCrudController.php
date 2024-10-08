@@ -56,7 +56,9 @@ class DepartmentCrudController extends CrudController
     protected function setupCreateOperation()
     {
         CRUD::setValidation(DepartmentRequest::class);
-        CRUD::setFromDb(); // set fields from db columns.
+       
+        CRUD::field('title')->type('text');
+        CRUD::field('description')->type('textarea');
 
         /**
          * Fields can be defined using the fluent syntax:

@@ -57,15 +57,11 @@ class ProductsCrudController extends CrudController
     {
         CRUD::setValidation(ProductsRequest::class);
 
-        CRUD::setFromDb(); 
-
-        CRUD::removeField('description');
+        CRUD::field('title')->type('text');
+        CRUD::field('link')->type('text');
+        CRUD::field('date')->type('date');
         CRUD::field('description')->type('textarea');
-
-        CRUD::removeField('contributor');
         CRUD::field('contributor')->type('textarea');
-   
-        CRUD::removeField('banner');
         CRUD::field('banner')->type('upload')->withFiles();
     }
 

@@ -61,7 +61,6 @@ class EventsCrudController extends CrudController
         CRUD::field('date')->type('date');
         CRUD::field('description')->type('textarea');
         CRUD::field('location')->type('text');
-
         CRUD::field('banner')->type('upload')->withFiles();
          
     }

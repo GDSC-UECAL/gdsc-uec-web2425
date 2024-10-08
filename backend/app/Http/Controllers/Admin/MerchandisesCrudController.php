@@ -57,15 +57,10 @@ class MerchandisesCrudController extends CrudController
     {
         CRUD::setValidation(MerchandisesRequest::class);
 
-        CRUD::setFromDb(); 
-        
-        CRUD::removeField('description');
+        CRUD::field('title')->type('text');
+        CRUD::field('date')->type('date');
         CRUD::field('description')->type('textarea');
-        
-        CRUD::removeField('price');
         CRUD::field('price')->type('number');
-
-        CRUD::removeField('banner');
         CRUD::field('banner')->type('upload')->withFiles();
     }
 

@@ -56,12 +56,10 @@ class PartnersCrudController extends CrudController
     protected function setupCreateOperation()
     {
         CRUD::setValidation(PartnersRequest::class);
-        CRUD::setFromDb(); 
 
-        CRUD::removeField('description');
+        CRUD::field('name')->type('text');
+        CRUD::field('link')->type('text');
         CRUD::field('description')->type('textarea');
-
-        CRUD::removeField('logo');
         CRUD::field('logo')->type('upload')->withFiles();
     }
 

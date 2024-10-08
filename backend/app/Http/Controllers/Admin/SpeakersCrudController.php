@@ -57,11 +57,9 @@ class SpeakersCrudController extends CrudController
     protected function setupCreateOperation()
     {
         CRUD::setValidation(SpeakersRequest::class);
-        CRUD::setFromDb(); 
 
-        CRUD::removeField('events_id');
-        CRUD::removeField('image');
-        
+        CRUD::field('name')->type('text');
+        CRUD::field('role')->type('text');
         CRUD::field('events_id')->type('select')->label('Event')->entity('event')->model(Events::class)->attribute('title'); 
         CRUD::field('image')->type('upload')->withFiles();
     }
