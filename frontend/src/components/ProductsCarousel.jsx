@@ -20,6 +20,7 @@ import rightLineProjects from '../assets/products/rightLineProjects.png';
 function ProductsCarousel({ image, title, link, description }) {
   const [products, setProducts] = useState([]);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false); // New state for transition
 
   useEffect(() => {
     fetch('http://localhost:8000/api/v1/products')
@@ -31,13 +32,25 @@ function ProductsCarousel({ image, title, link, description }) {
   }, []);
 
   const handleNext = () => {
+    if (isTransitioning) return; // Prevent action if currently transitioning
+    setIsTransitioning(true);
     setActiveIndex((prevIndex) => (prevIndex + 1) % products.length);
+    
+    setTimeout(() => {
+      setIsTransitioning(false); // Reset transition state after delay
+    }, 400); // Delay in milliseconds
   };
 
   const handlePrev = () => {
+    if (isTransitioning) return; // Prevent action if currently transitioning
+    setIsTransitioning(true);
     setActiveIndex((prevIndex) =>
       prevIndex === 0 ? products.length - 1 : prevIndex - 1
     );
+
+    setTimeout(() => {
+      setIsTransitioning(false); // Reset transition state after delay
+    }, 400); // Delay in milliseconds
   };
 
   const handleRadioChange = (index) => {
