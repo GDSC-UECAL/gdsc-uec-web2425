@@ -27,7 +27,8 @@ class TeamsRequest extends FormRequest
         return [
             'name' => 'required|string|max:255',  
             'role' => 'required|string|max:255',  
-            'image' => 'required|file|mimes:jpeg,png,jpg,gif,svg|max:2048', 
+            'image' => 'required|file|mimes:jpeg,png,jpg,gif,svg', 
+            'link' => 'nullable|url|max:255',
             'department_id' => 'required|exists:departments,id',
         ];
     }

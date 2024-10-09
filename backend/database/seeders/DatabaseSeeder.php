@@ -23,12 +23,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        Teams::factory(12)->create();
-        Partners::factory(10)->create();
-        Products::factory(10)->create();
-        Carousel::factory(10)->create();        
-        Department::factory(10)->create();
-        Events::factory(10)->create();
-        Merchandises::factory(10)->create();
+        // Teams::factory(12)->create();
+        // Partners::factory(10)->create();
+        // Products::factory(10)->create();
+        // Carousel::factory(10)->create();        
+        // Department::factory(10)->create();
+        // Events::factory(10)->create();
+        // Merchandises::factory(10)->create();
     }
 }

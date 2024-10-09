@@ -1,4 +1,8 @@
-
+.merchTitle{
+  margin-top: 210px;
+  margin-bottom: 50px;
+  font-size: 100px;
+}
 .custom-card {
   border-radius: 5%;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -116,13 +120,13 @@
   height: auto;
   z-index: -2;
   left: 50px;
-  top: 850px;
+  top: 950px;
 }
 
 
 .square2 {
   position: absolute;
-  top: 1300px;
+  top: 1450px;
   left: 0px;
   width: auto;
   height: auto;
@@ -131,37 +135,25 @@
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
 
-.line {
+.leftArrowMerch{
   position: absolute;
-  top: 1200px;
-  left: 0px;
+  top: 1300px;
+  left: -55px;
   width: auto;
   height: auto;
   rotate: 0deg;
   z-index: -2;
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
-
-.redHead {
+.rightArrowMerch{
   position: absolute;
-  top: 1230px;
-  left: 130px;
+  top: 1700px;
+  right: -100px;
   width: auto;
   height: auto;
   z-index: -2;
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
-
-.leftArrow {
-  position: absolute;
-  top: 1550px;
-  right: 0px;
-  width: auto;
-  height: auto;
-  z-index: -2;
-  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
-}
-
 .nextRight {
   position: absolute;
   bottom: 50%;
@@ -171,7 +163,6 @@
   z-index: 1;
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
   transition: transform 0.3s ease;
-  /* Add smooth transition for scaling */
 }
 
 .nextLeft {
@@ -183,7 +174,6 @@
   z-index: 1;
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
   transition: transform 0.3s ease;
-  /* Add smooth transition for scaling */
 }
 
 .nextLeft:hover {

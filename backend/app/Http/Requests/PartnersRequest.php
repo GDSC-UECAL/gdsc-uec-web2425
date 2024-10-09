@@ -27,7 +27,7 @@ class PartnersRequest extends FormRequest
         return [
             'name' => 'required|string|max:255',
             'description' => 'nullable|string',
-            'logo' => 'required|file|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'logo' => 'required|file|mimes:jpeg,png,jpg,gif,svg',
             'link' => 'nullable|url|max:255',
         ];
     }

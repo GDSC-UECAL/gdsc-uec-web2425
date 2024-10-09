@@ -9,14 +9,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import bell from '../assets/products/bell.png';
 import ball1right from '../assets/products/ball1right.png';
 import ball1left from '../assets/products/ball1left.png';
-import ball2left from '../assets/products/ball1left.png';
 import square1 from '../assets/products/square1.png';
 import nextLeft from '../assets/products/nextLeft.png';
 import nextRight from '../assets/products/nextRight.png';
-import redHeadProjects from '../assets/products/redHeadProjects.png';
-import yellowHeadProjects from '../assets/products/yellowHeadProjects.png';
-import leftLineProjects from '../assets/products/leftLineProjects.png';
-import rightLineProjects from '../assets/products/rightLineProjects.png';
+import leftArrowCar from '../assets/products/leftArrowCar.png';
+import rightArrowCar from '../assets/products/rightArrowCar.png';
 
 function ProductsCarousel({banner, title, link, description }) {
   const [products, setProducts] = useState([]);
@@ -96,16 +93,15 @@ function ProductsCarousel({banner, title, link, description }) {
 
   return (
     <>
+      <h1 className='projtitle'>Projects</h1>
       <div className="elementsdiv">
       {/* Background Elements */}
-      <img src={bell} alt="" className="bellCar elements" />
+      <img src={bell} alt="" className="bellCar elements1" />
       <img src={ball1left} alt="" className="ball1leftCar elements2" />
       <img src={ball1right} alt="" className="ball1rightCar elements2" />
       <img src={square1} alt="" className="square1Car elements1" />
-      <img src={redHeadProjects} alt="" className="redHeadProjectsCar elements2" />
-      <img src={leftLineProjects} alt="" className="leftLineProjectsCar elements2" />
-      <img src={yellowHeadProjects} alt="" className="yellowHeadProjectsCar elements" />
-      <img src={rightLineProjects} alt="" className="rightLineProjectsCar elements" />
+      <img src={rightArrowCar} alt="" className="rightArrowCar elements" />
+      <img src={leftArrowCar} alt="" className="leftArrowCar elements" />
       </div>
       <div className="carouselcontainer">
         <div className="container">

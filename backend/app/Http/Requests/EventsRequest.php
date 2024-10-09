@@ -29,7 +29,7 @@ class EventsRequest extends FormRequest
             'date' => 'required|date',
             'description' => 'required|string',
             'location' => 'required|string|max:255',
-            'banner' => 'required|file|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'banner' => 'required|file|mimes:jpeg,png,jpg,gif,svg',
         ];
     }
 

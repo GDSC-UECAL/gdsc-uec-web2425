@@ -26,10 +26,10 @@ class MerchandisesRequest extends FormRequest
     {
         return [
             'title' => 'required|string|max:255',
-            'date' => 'required|date',
-            'description' => 'required|string',
+            'date' => 'nullable|date',
+            'description' => 'nullable|string',
             'price' => 'required|numeric|min:0',  
-            'banner' => 'required|file|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'banner' => 'required|file|mimes:jpeg,png,jpg,gif,svg',
         ];
     }
     

@@ -19,6 +19,7 @@ class TeamsResource extends JsonResource
             'name' => $this->name,
             'role' => $this->role,
             'image' => $this->image,
+            'link' => $this->link,
             'department' => new DepartmentResource($this->whenLoaded('department')),
         ];
     }
