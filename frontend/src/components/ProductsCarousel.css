@@ -13,7 +13,7 @@
   font-family: 'DM Sans', sans-serif;
   text-align: center;
   place-content: center;
-
+  margin-bottom: 5%;
 }
 .rdbtn[type=radio] {
   display: none;
@@ -42,10 +42,11 @@
 }
 
 .eventpic {
-  width: 100%; /* Ensures the image takes the full width of its container */
-  height: 600px; /* Set a definite height for the image */
-  border-radius: 10px; /* Rounded corners */
-  object-fit: cover; /* Ensures the image covers the area without distortion */
+  width: 100%;
+  max-height: 500px;
+  min-height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
   /* FOR PICTURES */
@@ -91,11 +92,11 @@
 
 .nextRightCar {
   position: absolute;
-  bottom: 30%;
-  left: 1280px; /* Adjust based on button placement */
+  bottom: 37%;
+  right: -10px; /* Adjust based on button placement */
   width: auto;
   height: auto;
-  z-index: 1;
+  z-index: 5;
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
   transition: transform 0.3s ease; /* Add smooth transition for scaling */
 }
@@ -108,11 +109,11 @@
 
 .nextLeftCar{
   position: absolute;
-  bottom: 30%;
-  right: 1280px; /* depende kung saan mo ilalagay yung buttons na to*/
+  bottom: 37%;
+  left: -10px; /* depende kung saan mo ilalagay yung buttons na to*/
   width: auto;
   height: auto;
-  z-index: 1; 
+  z-index: 5; 
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
   transition: transform 0.3s ease; /* Add smooth transition for scaling */
 }
@@ -197,7 +198,11 @@
 .txtinside2a{
   text-decoration: none;
 }
-
+.projtitle{
+  margin-top: 170px;
+  margin-bottom: -30px;
+  font-size: 100px;
+}
 
 
 
@@ -222,4 +227,105 @@
   text-align: center; /* Center the text */
   padding: 10px 0; /* Padding for better spacing */
   border-radius: 0 0 10px 10px; /* Rounded corners for bottom */
+}
+
+/* Tablet size (between 768px and 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .carouselcontainer{
+    margin-bottom: 12%;
+  }
+  .prodcard {
+    width: 70%; /* Increase the width slightly for tablet */
+  }
+
+  .eventpic {
+    max-height: 400px; /* Adjust image height for tablet */
+  }
+
+  .nextRightCar, .nextLeftCar {
+    bottom: 40%; /* Adjust button position */
+    width: 45px; /* Resize buttons */
+  }
+
+  .ball1rightCar, 
+  .rightLineProjectsCar, .leftLineProjectsCar,
+  .bellCar, .square1Car {
+    margin-top: 3%;
+    width: 20%; /* Scale down for tablet */
+    height: auto;
+  }
+  .yellowHeadProjectsCar,  .redHeadProjectsCar{
+    width: 5%; /* Scale down for tablet */
+    height: auto;
+    margin-right: -5%;
+  }
+  .ball1leftCar {
+    margin-left: -50%;
+  }
+
+  .txtinside {
+    font-size: 28px; /* Adjust font size for tablet */
+  }
+
+  .txtinside2 {
+    font-size: 17px; /* Adjust subtitle font size */
+  }
+}
+
+/* Mobile size (below 768px) */
+@media screen and (max-width: 767px) {
+  .carouselcontainer{
+    margin-bottom: 9%;
+  }
+  .projtitle{
+    font-size: 70px;
+    margin-bottom: -30px;
+  }
+
+  .carouselcontainer{
+    width: 100vh;
+  }
+
+  .cardscon{
+    margin: 5% auto auto auto;
+    width: 40vh;
+  }
+
+  .prodcard {
+    width: 90%; /* Maximize width for mobile */
+  }
+
+  .eventpic {
+    max-height: 300px; /* Further adjust image height for mobile */
+  }
+
+  .nextRightCar, .nextLeftCar {
+    bottom: 0%; /* Adjust button position */
+    width: 35px; /* Make buttons smaller for mobile */
+  }
+
+  .ball1leftCar, .ball1rightCar, 
+  .rightLineProjectsCar, .leftLineProjectsCar,
+  .bellCar, .square1Car {
+    margin-top: 10%;
+    width: 20%; /* Scale down more for mobile */
+    height: auto;
+  }
+  .yellowHeadProjectsCar, .redHeadProjectsCar {
+    margin-top: 10%;
+    width: 8%; /* Scale down more for mobile */
+    height: auto;
+  }
+
+  .txtinside {
+    font-size: 22px; /* Adjust main text size for mobile */
+  }
+
+  .txtinside2 {
+    font-size: 15px; /* Adjust subtitle font size */
+  }
+
+  .carouselcontainer {
+    padding: 20px 5px; /* Adjust padding for mobile */
+  }
 }

@@ -96,6 +96,7 @@ function ProductsCarousel({banner, title, link, description }) {
 
   return (
     <>
+      <h1 className='projtitle'>Projects</h1>
       <div className="elementsdiv">
       {/* Background Elements */}
       <img src={bell} alt="" className="bellCar elements" />

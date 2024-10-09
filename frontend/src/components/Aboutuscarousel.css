@@ -47,7 +47,8 @@
 
 .eventpic2 {
   width: 100%;
-  height: auto;
+  max-height: 500px;
+  min-height: 200px;
   border-radius: 10px;
   object-fit: cover;
 }
