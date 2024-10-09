@@ -62,6 +62,7 @@ class TeamsCrudController extends CrudController
         CRUD::field('name')->type('text');
         CRUD::field('role')->type('text');
         CRUD::field('image')->type('upload')->withFiles();
+        CRUD::field('link')->type('text');
         CRUD::field('department_id')->type('select')->label('Department')->entity('department')->model(Department::class)->attribute('title'); 
 
         /**

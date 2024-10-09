@@ -12,7 +12,7 @@ class Teams extends Model
     use CrudTrait;
     use HasFactory;
 
-    protected $fillable = ['name', 'role', 'image', 'department_id'];
+    protected $fillable = ['name', 'role', 'image', 'link', 'department_id'];
 
  
     public function department()
