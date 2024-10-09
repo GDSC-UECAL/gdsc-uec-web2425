@@ -298,6 +298,15 @@
     width: 20%; /* Scale down more for mobile */
     height: auto;
   }
+  .bellCar{
+    top:50px;
+  }
+  .square1Car{
+    top: 50px;
+  }
+  .ball1leftCar{
+    top:150px;
+  }
   .yellowHeadProjectsCar, .redHeadProjectsCar {
     margin-top: 10%;
     width: 8%; /* Scale down more for mobile */
@@ -317,7 +326,7 @@
   }
   .rightArrowCar{
     width: 20%;
-    bottom: 180px;
+    bottom: 400px;
   }
   .leftArrowCar{
     width: 20%;

@@ -188,8 +188,6 @@
   opacity: 0.75;
 }
 
-
-
 .elements {
   animation: float 8s ease-in-out infinite;
 }
@@ -245,4 +243,115 @@
   border: 4px solid white;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); 
   
+}
+
+/* Default styles (Desktop) */
+.card.custom-card {
+  width: 100%; /* Full width in the column */
+  margin-bottom: 20px;
+}
+
+/* Tablet size (768px to 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .card-body {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .row.g-5 {
+    gap: 20px; /* Space between cards */
+  }
+
+  .card.custom-card {
+    width: 100%; /* Ensure cards take full width */
+    margin: 10px 0; /* Margin between cards */
+  }
+}
+
+/* Mobile size (below 768px) */
+@media screen and (max-width: 767px) {
+  .merchTitle{
+    margin-top: 20px;
+    font-size: 56px;
+    margin-bottom: 0px;
+  }
+
+  .card.custom-card {
+    width: 100%; /* Full width on mobile devices */
+    margin-bottom: 10px;
+  }
+
+  .row.g-5 {
+    gap: 20px; /* Adjust gap between cards */
+  }
+
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .card-body {
+    padding: 10px; /* Further reduce padding */
+  }
+
+  .card-img-top .image-circle {
+    width: 70px; /* Reduce image size */
+    height: 70px;
+  }
+
+  h5.card-title {
+    font-size: 16px; /* Adjust font size for mobile */
+  }
+
+  .card-text {
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .button1 {
+    font-size: 14px; /* Adjust button font size */
+    padding: 5px 10px;
+  }
+  .card.custom-card {
+    text-align: left; /* Ensure left alignment */
+  }
+
+  .bell, .bigBall, .square2, .leftArrowMerch, .rightArrowMerch {
+    margin-top: 10%;
+    width: 20%; /* Further scaling for mobile */
+    height: auto;
+  }
+  .square2{
+    width: 20%;
+    top: 1650px;
+  }
+  .bell{
+    top: 1050px;
+  }
+  .bigBall{
+    top: 2380px;
+    width: 30%;
+  }
+  
+  /* Positioning tweaks for mobile */
+  .leftArrowMerch {
+    width: 20%;
+    top: 480px;
+  }
+
+  .rightArrowMerch {
+    width: 20%;
+    top: 2390px;
+    right: -30px;
+  }
+
+  /* Buttons becoming more nimble */
+  .nextRight, .nextLeft {
+    bottom: 0%;
+    width: 35px; /* Smaller buttons for smaller screens */
+  }
 }
