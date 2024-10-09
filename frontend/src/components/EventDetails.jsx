@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import './EventDetails.css';
 import teach from '../assets/events/teach.png';
 import rec21 from '../assets/events/rec21.png';
+import celis from '../assets/events/celis.png';
 import additionalData from '../assets/data/additionalData.json';
+// import eventsone from  '../assets/data/eventsone.json';
 
 const EventDetails = () => {
   const event = {
@@ -18,6 +20,13 @@ const EventDetails = () => {
     image4: rec21,
     image6: rec21,
     image8: rec21,
+  };
+
+  const images = {
+    image1: celis,
+    image3: teach,
+    image5: teach,
+    image7: teach,
   };
 
   const [containers, setContainers] = useState([]);
@@ -65,7 +74,10 @@ const EventDetails = () => {
                     backgroundPosition: 'center',
                   }}
                 >
-                  {container.backgroundImage ? (
+                  {/* Render image for containers 1, 3, 5, and 7 */}
+                  {container.image ? (
+                    <img src={images[container.image]} alt={`Container ${container.id}`} className="container-image" />
+                  ) : container.backgroundImage ? (
                     <span className="container-text">{container.text}</span>
                   ) : (
                     container.content
@@ -88,7 +100,10 @@ const EventDetails = () => {
                     backgroundPosition: 'center',
                   }}
                 >
-                  {container.backgroundImage ? (
+                  {/* Render image for containers 1, 3, 5, and 7 */}
+                  {container.image ? (
+                    <img src={images[container.image]} alt={`Container ${container.id}`} className="container-image" />
+                  ) : container.backgroundImage ? (
                     <span className="container-text">{container.text}</span>
                   ) : (
                     container.content
@@ -111,7 +126,10 @@ const EventDetails = () => {
                     backgroundPosition: 'center',
                   }}
                 >
-                  {container.backgroundImage ? (
+                  {/* Render image for containers 1, 3, 5, and 7 */}
+                  {container.image ? (
+                    <img src={images[container.image]} alt={`Container ${container.id}`} className="container-image" />
+                  ) : container.backgroundImage ? (
                     <span className="container-text">{container.text}</span>
                   ) : (
                     container.content
@@ -134,7 +152,10 @@ const EventDetails = () => {
                     backgroundPosition: 'center',
                   }}
                 >
-                  {container.backgroundImage ? (
+                  {/* Render image for containers 1, 3, 5, and 7 */}
+                  {container.image ? (
+                    <img src={images[container.image]} alt={`Container ${container.id}`} className="container-image" />
+                  ) : container.backgroundImage ? (
                     <span className="container-text">{container.text}</span>
                   ) : (
                     container.content

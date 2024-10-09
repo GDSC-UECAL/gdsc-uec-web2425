@@ -1,10 +1,10 @@
 [
-  { "id": 1, "content": "Content for Container 1" },
-  { "id": 2, "content": "Container 2", "backgroundImage": "image2", "text": "Text on Image 2" },
-  { "id": 3, "content": "Content for Container 3" },
+  { "id": 1, "content": "Container 1", "image": "image1" },    
+  { "id": 2, "content": "Container 2", "backgroundImage": "image2", "text": "Prof. John Ryan Celis" },
+  { "id": 3, "content": "Container 3", "image": "image3" },     
   { "id": 4, "content": "Container 4", "backgroundImage": "image4", "text": "Text on Image 4" },
-  { "id": 5, "content": "Content for Container 5" },
+  { "id": 5, "content": "Container 5", "image": "image5" },     
   { "id": 6, "content": "Container 6", "backgroundImage": "image6", "text": "Text on Image 6" },
-  { "id": 7, "content": "Content for Container 7" },
+  { "id": 7, "content": "Container 7", "image": "image7" },     
   { "id": 8, "content": "Container 8", "backgroundImage": "image8", "text": "Text on Image 8" }
 ]
