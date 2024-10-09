@@ -4,9 +4,6 @@ import '../components/Merchandises.css';
 import bell from '../assets/products/bell.png';
 import bigBall from '../assets/products/bigBall.png';
 import square2 from '../assets/products/square2.png';
-import line from '../assets/products/line.png';
-import redHead from '../assets/products/redHead.png';
-import leftArrow from '../assets/products/leftArrow.png';
 import nextLeft from '../assets/products/nextLeft.png';
 import nextRight from '../assets/products/nextRight.png';
 import leftArrowMerch from '../assets/products/leftArrowCar.png';
@@ -111,7 +108,7 @@ function Merchandises() {
 
         <div className="row g-5">
           {currentCards.length > 0 && currentCards.map((card, index) => (
-            <div className="col-4" key={index}>
+            <div className="col-12 col-sm-6 col-md-4" key={index}>
               <Card
                 text={card.description}
                 image={card.banner}

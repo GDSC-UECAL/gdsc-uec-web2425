@@ -21,6 +21,29 @@
     color: #611de6;
 }
 
+.event-dropdown-options {
+    position: absolute;
+    background-color: #F4F4F4; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1000; 
+    margin-top: 5px; 
+    width: 10vw; 
+    height: 30vh;
+    overflow: auto;
+}
+
+.event-dropdown-option {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: left;
+}
+
+.event-dropdown-option:hover {
+    background-color: #e2e2e2;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .event-dropdown-button {
         width: 15vw;
@@ -32,5 +55,12 @@
         padding: 3px;
         font-size: 7px;
         width: 18vw;
+    }
+    .event-dropdown-options {
+        width: 20vw; 
+    }
+    .event-dropdown-option {
+        padding: 5px;
+        font-size: 8px;
     }
 }

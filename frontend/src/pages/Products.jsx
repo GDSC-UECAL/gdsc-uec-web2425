@@ -11,7 +11,7 @@ function Products() {
     return (
         <>
             <div className="prodcontainer">
-            <ProductsCarousel/>
+            <ProductsCarousel />
             <Merchandises/>
             </div>
             
