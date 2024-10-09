@@ -123,17 +123,16 @@
   opacity: 0.75;
 }
 
-
-.yellowHeadProjectsCar{
+.leftArrowCar{
   position: absolute;
-  bottom: 130px;
-  right: 235px;
+  top: 320px;
+  left: 0px;
   width: auto;
   height: auto;
   z-index: -2; 
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
-.rightLineProjectsCar{
+.rightArrowCar{
   position: absolute;
   bottom: 100px;
   right: 0px;
@@ -142,26 +141,6 @@
   z-index: -2; 
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
 }
-
-.redHeadProjectsCar{
-  position: absolute;
-  top: 450px;
-  left: 175px;
-  width: auto;
-  height: auto;
-  z-index: -2; 
-  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
-}
-.leftLineProjectsCar{
-  position: absolute;
-  top: 420px;
-  left: 0px;
-  width: auto;
-  height: auto;
-  z-index: -2; 
-  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
-}
-
 .elements {
   animation: float 8s ease-in-out infinite;
 }
