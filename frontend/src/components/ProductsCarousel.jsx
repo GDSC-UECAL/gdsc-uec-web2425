@@ -9,14 +9,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import bell from '../assets/products/bell.png';
 import ball1right from '../assets/products/ball1right.png';
 import ball1left from '../assets/products/ball1left.png';
-import ball2left from '../assets/products/ball1left.png';
 import square1 from '../assets/products/square1.png';
 import nextLeft from '../assets/products/nextLeft.png';
 import nextRight from '../assets/products/nextRight.png';
-import redHeadProjects from '../assets/products/redHeadProjects.png';
-import yellowHeadProjects from '../assets/products/yellowHeadProjects.png';
-import leftLineProjects from '../assets/products/leftLineProjects.png';
-import rightLineProjects from '../assets/products/rightLineProjects.png';
 import leftArrowCar from '../assets/products/leftArrowCar.png';
 import rightArrowCar from '../assets/products/rightArrowCar.png';
 

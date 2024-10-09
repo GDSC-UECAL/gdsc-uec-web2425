@@ -9,6 +9,8 @@ import redHead from '../assets/products/redHead.png';
 import leftArrow from '../assets/products/leftArrow.png';
 import nextLeft from '../assets/products/nextLeft.png';
 import nextRight from '../assets/products/nextRight.png';
+import leftArrowMerch from '../assets/products/leftArrowCar.png';
+import rightArrowMerch from '../assets/products/rightArrowCar.png';
 
 function Card({ image, title, text, price, color }) {
   return (
@@ -79,14 +81,14 @@ function Merchandises() {
 
   return (
     <>
+    <h1 className='merchTitle'>Merchandises</h1>
       {/* Images */}
       <div className="elementsdiv">
         <img src={bell} alt="" className="bell elements1" />
         <img src={bigBall} alt="" className="bigBall elements1" />
         <img src={square2} alt="" className="square2 elements" />
-        <img src={line} alt="" className="line elements2" />
-        <img src={redHead} alt="" className="redHead elements2" />
-        <img src={leftArrow} alt="" className="leftArrow elements2" />
+        <img src={leftArrowMerch} alt="" className="leftArrowMerch elements2" />
+        <img src={rightArrowMerch} alt="" className="rightArrowMerch elements2" />
       </div>
 
       {/* Main Content */}

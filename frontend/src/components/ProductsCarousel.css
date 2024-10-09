@@ -134,7 +134,7 @@
 }
 .rightArrowCar{
   position: absolute;
-  bottom: 100px;
+  bottom: 00px;
   right: 0px;
   width: auto;
   height: auto;
@@ -249,6 +249,14 @@
   .txtinside2 {
     font-size: 17px; /* Adjust subtitle font size */
   }
+  .rightArrowCar{
+    width: 20%;
+    bottom: 0px;
+  }
+  .leftArrowCar{
+    width: 20%;
+    top: 250px;
+  }
 }
 
 /* Mobile size (below 768px) */
@@ -306,5 +314,13 @@
 
   .carouselcontainer {
     padding: 20px 5px; /* Adjust padding for mobile */
+  }
+  .rightArrowCar{
+    width: 20%;
+    bottom: 180px;
+  }
+  .leftArrowCar{
+    width: 20%;
+    top: 250px;
   }
 }
