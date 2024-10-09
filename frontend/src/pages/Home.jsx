@@ -26,6 +26,8 @@ import members_ico from '../assets/common/members_ico.png';
 import events_ico from '../assets/common/events_ico.png';
 import products_ico from '../assets/common/products_ico.png';
 import partners_ico from '../assets/common/partners_ico.png';
+import slider1 from "../assets/common/slider1.png";
+import slider2 from "../assets/common/slider2.png";
 import HomeBulletin from "../components/HomeBulletin.jsx";
 import emailjs from '@emailjs/browser';
 
@@ -53,11 +55,7 @@ function Home() {
   return (
     <>
     <div className="Landing" style={{width: '100%', height: '100vh', position: 'relative', overflowX: 'clip', margin: '0px', padding: '0px'}}>
-        <div className="Rectangle20" style={{width: '290px', height: '59px', left: '13vw', top: '700px', position: 'absolute', background: 'white', borderRadius: '60px', border: '7px #2C2C2C solid'}} />
-        <div className="Line1" style={{width: '205px', height: '0', left: '15vw', top: '725px', position: 'absolute', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.25)', border: '4px #2C2C2C solid'}}></div>  
-        <div className="Ellipse10" style={{width: '35px', height: '35px', left: '250px', top: '712px', position: 'absolute', background: '#DB4437', boxShadow: '2px 4px 4px -1px rgba(0, 0, 0, 0.25)', borderRadius: '50%', border: '4px white solid'}} />
-     
-        <img style={{width: '30%', left: '7vw', top: '105vw', opacity: '30%', position: 'absolute', animation: 'float 23s linear infinite'}} src={el12} />
+        <img style={{width: '20%', left: '0.1vw', top: '360px', position: 'absolute', animation: 'float 23s linear infinite'}} src={el12} />
         <img style={{width: '60%', left: '65vw', top: '1vh', position: 'absolute', float: 'right', animation: 'float 19s linear infinite'}} src={el2} />
         <img style={{width: '40%', left: '75vw', top: '60vh', position: 'absolute', float: 'right', animation: 'float 19s linear infinite'}} src={el3} />
         <img style={{width: '600px', left: '-280px', top: '70vh', position: 'absolute', animation: 'float 18s linear infinite'}} src={el5} />
@@ -65,12 +63,9 @@ function Home() {
 
         <img style={{width: '15%', right: '5vw', top: '300px', position: 'absolute', animation: 'float 8s linear infinite', transformOrigin: '0 0', transform: 'rotate(180deg)'}} src={el9} />    
         <div className="container-fluid p-0 position-relative" style={{ height: '100vh' }}>
-          
-        <div className="Rectangle21" style={{width: '340px', height: '59px', left: '58vw', top: '150px', position: 'absolute', background: 'white', borderRadius: '60px', border: '7px #2C2C2C solid'}} />   
-        <div className="Line4" style={{width: '263px', height: '0', left: '60vw', top: '175px', position: 'absolute', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.25)', border: '4px #2C2C2C solid'}}></div>
-        <div className="Ellipse11" style={{width: '35px', height: '35px', left: '70vw', top: '160px', position: 'absolute', background: '#4285F4', boxShadow: '2px 4px 4px -1px rgba(0, 0, 0, 0.25)', borderRadius: '50%', border: '4px white solid'}} />
-
-          <div className="position-absolute w-100 h-100 d-flex flex-column justify-content-center">
+       
+          <div className="position-absolute w-100 h-100 mt-5 d-flex flex-column justify-content-center">
+          <img style={{width: '400px', top: '90px', left: '1080px', position: 'relative', zIndex: '-999'}} src={slider1} />  
             <div className="text-start text-sm-center" style={{ right: 'clamp(0px, 15vw, 1000px)', position: 'relative' }}>
               <img style={{width: '25vw', top: '110px', left: '70vw', position: 'absolute', zIndex: '-999'}} src={vecB} />
               <img style={{width: '40vw', top: '270px', left: '1vw', position: 'absolute', zIndex: '-999'}} src={vecC} />
@@ -89,11 +84,12 @@ function Home() {
             </div>
           </div>
         </div>
+        <img style={{width: '300px', bottom: '200px', right: '400px', position: 'relative', zIndex: '-999'}} src={slider2} />  
       </div>    
       
       {/*What is GDSC?*/}
-      <div className="container-elements" style={{width: '100%', position: 'relative', overflowX: 'clip'}}>
-      <div className="About-GDSC" style={{width: '100%', position: 'relative', overflow: 'hidden', margin: '0px', padding: '0px'}}>
+      <div className="container-elements mt-5" style={{width: '100%', position: 'relative', overflowX: 'clip'}}>
+      <div className="About-GDSC mt-5" style={{width: '100%', position: 'relative', overflow: 'hidden', margin: '0px', padding: '0px'}}>
       <img style={{width: '18vw', left: '-1vw', top: '80px', position: 'absolute', zIndex: '-999'}} src={vecE} />
       <img style={{width: '18vw', right: '-2vw', top: '30px', position: 'absolute', zIndex: '-999'}} src={vecF} />
         <div className="container-fluid mt-5">
@@ -195,8 +191,8 @@ function Home() {
       
     {/* Partners and Sponsors */}          
 <div className="Partnerships  mt-3" style={{ width: '100%', position: 'relative', overflowX: 'clip', margin: '0px', padding: '0px' }}>
-  <img style={{width: '1000px', right: '73vw', top: '-100px', position: 'absolute', animation: 'float 13s linear infinite', zIndex: '-999'}} src={el4} />
-  <img style={{width: '1000px', left: '70vw', top: '700px', position: 'absolute', animation: 'float 8s linear infinite', transform: 'rotate(180deg)', zIndex: '-999'}} src={el8} />
+  <img style={{width: '1000px', right: '72vw', top: '-200px', position: 'absolute', animation: 'float 13s linear infinite', zIndex: '-999'}} src={el4} />
+  <img style={{width: '1000px', left: '70vw', position: 'absolute', animation: 'float 8s linear infinite', transform: 'rotate(180deg)', zIndex: '-999'}} src={el8} />
   <div className="row mt-5">
     <div className="col-12 text-center">
       <h2 className="display-5 mt-5 px-5 fw-bold">Partners and Sponsors</h2>
