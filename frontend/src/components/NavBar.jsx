@@ -9,7 +9,7 @@ function Navbar() {
                 <div className="container-fluid">
                     <Link to="/home">
                         <a className="navbar-brand mx-lg-2" href="#">
-                            <img src={nav_logo} alt="Logo" />
+                            <img src={nav_logo} alt="Logo"style={{width: 'clamp(6rem, 100%, 5.7vw)'}} />
                         </a>    
                     </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">

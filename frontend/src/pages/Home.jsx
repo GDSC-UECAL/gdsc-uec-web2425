@@ -56,10 +56,10 @@ function Home() {
     <>
     <div className="Landing" style={{width: '100%', height: '100vh', position: 'relative', overflowX: 'clip', margin: '0px', padding: '0px'}}>
         <img style={{width: '20%', left: '0.1vw', top: '360px', position: 'absolute', animation: 'float 23s linear infinite'}} src={el12} />
-        <img style={{width: '60%', left: '65vw', top: '1vh', position: 'absolute', float: 'right', animation: 'float 19s linear infinite'}} src={el2} />
-        <img style={{width: '40%', left: '75vw', top: '60vh', position: 'absolute', float: 'right', animation: 'float 19s linear infinite'}} src={el3} />
-        <img style={{width: '600px', left: '-280px', top: '70vh', position: 'absolute', animation: 'float 18s linear infinite'}} src={el5} />
-        <img style={{width: '1000px', left: '-550px', top: '-100px', position: 'absolute', animation: 'float 15s linear infinite'}} src={el10} />
+        <img style={{width: '40%', left: '76vw', top: '1vh', position: 'absolute', float: 'right', animation: 'float 19s linear infinite'}} src={el2} />
+        <img style={{width: '30%', left: '80vw', top: '65vh', position: 'absolute', float: 'right', animation: 'float 19s linear infinite'}} src={el3} />
+        <img style={{width: 'clamp(10rem, 100%, 30rem)', left: '-200px', top: '72vh', position: 'absolute', animation: 'float 18s linear infinite'}} src={el5} />
+        <img style={{width: 'clamp(40rem, 100%, 50rem)', left: '-350px', top: '-50px', position: 'absolute', animation: 'float 15s linear infinite'}} src={el10} />
 
         <img style={{width: '15%', right: '5vw', top: '300px', position: 'absolute', animation: 'float 8s linear infinite', transformOrigin: '0 0', transform: 'rotate(180deg)'}} src={el9} />    
         <div className="container-fluid p-0 position-relative" style={{ height: '100vh' }}>
@@ -67,24 +67,24 @@ function Home() {
           <div className="position-absolute w-100 h-100 mt-5 d-flex flex-column justify-content-center">
           <img style={{width: '400px', top: '90px', left: '1080px', position: 'relative', zIndex: '-999'}} src={slider1} />  
             <div className="text-start text-sm-center" style={{ right: 'clamp(0px, 15vw, 1000px)', position: 'relative' }}>
-              <img style={{width: '25vw', top: '110px', left: '70vw', position: 'absolute', zIndex: '-999'}} src={vecB} />
-              <img style={{width: '40vw', top: '270px', left: '1vw', position: 'absolute', zIndex: '-999'}} src={vecC} />
-            <img style={{width: '40vw', top: '10px', position: 'relative', zIndex: '-999'}} src={vecA} />
-              <h2 className="text-together">Together,</h2>
+              <img style={{width: 'clamp(7rem, 100%, 25vw)', top: '110px', left: '70vw', position: 'absolute', zIndex: '-999'}} src={vecB} />
+              <img style={{width: 'clamp(10rem, 100%, 40vw)', top: '270px', left: '1vw', position: 'absolute', zIndex: '-999'}} src={vecC} />
+            <img style={{width: 'clamp(10rem, 100%, 40vw)', top: '10px', position: 'relative', zIndex: '-999'}} src={vecA} />
+              <h2 className="text-together" style={{fontSize: '13vmin'}}>Together,</h2>
             </div>
             <div className="text-center my-4">
-              <h2 className="text-we-discover">we discover</h2>
+              <h2 className="text-we-discover" style={{fontSize: '13vmin'}}>we discover</h2>
             </div>
             <div className="text-start text-sm-center" style={{ left: 'clamp(0px, 15vw, 1800px)', position: 'relative' }}>
               <img style={{width: '25%', left: '14vw', top: '100px', position: 'absolute',  animation: 'float 13s linear infinite'}} src={el1} />
-              <h2 className="text-future">future.</h2>
+              <h2 className="text-future" style={{fontSize: '13vmin'}}>future.</h2>
             </div>
             <div>
               <img style={{width: '30vw', top: '-10px ', left: '18vw', position: 'relative', zIndex: '-999'}} src={vecD} />
             </div>
           </div>
         </div>
-        <img style={{width: '300px', bottom: '200px', right: '400px', position: 'relative', zIndex: '-999'}} src={slider2} />  
+        <img style={{width: 'clamp(2rem, 100%, 300px)', bottom: '200px', right: '400px', position: 'relative', zIndex: '-999'}} src={slider2} />  
       </div>    
       
       {/*What is GDSC?*/}
@@ -171,28 +171,14 @@ function Home() {
         </div>
 
         <img style={{width: '10vw', left: '-5vw', top: '650px', position: 'absolute', zIndex: '-999'}} src={vecG} />
-        <img style={{width: '18vw', right: '-2vw', top: '500x', position: 'absolute', zIndex: '-999'}} src={vecH} />
-
-        <div className="row mb-5">
-          <div className="col-12 text-center">
-            <h3 className="display-6 mt-5 fw-bold">Bulletin Board</h3>
-          </div>
-        </div>  
-
-        <div className="row">
-          <div className="col-12">
-            <div className="px-5 text-center d-flex justify-content-center" style={{overflow: 'visible'}}>
-              <HomeBulletin />
-            </div>
-          </div>
-        </div>   
+        <img style={{width: '18vw', right: '-2vw', top: '500x', position: 'absolute', zIndex: '-999'}} src={vecH} /> 
       </div>
     </div>
       
     {/* Partners and Sponsors */}          
 <div className="Partnerships  mt-3" style={{ width: '100%', position: 'relative', overflowX: 'clip', margin: '0px', padding: '0px' }}>
-  <img style={{width: '1000px', right: '72vw', top: '-200px', position: 'absolute', animation: 'float 13s linear infinite', zIndex: '-999'}} src={el4} />
-  <img style={{width: '1000px', left: '70vw', position: 'absolute', animation: 'float 8s linear infinite', transform: 'rotate(180deg)', zIndex: '-999'}} src={el8} />
+  <img style={{width: 'clamp(20rem, 100%, 1000px)', right: '75rem', top: '-200px', position: 'absolute', animation: 'float 13s linear infinite', zIndex: '-999'}} src={el4} />
+  <img style={{width: 'clamp(20rem, 100%, 1000px)', left: '85rem', top: '250px', position: 'absolute', animation: 'float 8s linear infinite', transform: 'rotate(180deg)', zIndex: '-999'}} src={el8} />
   <div className="row mt-5">
     <div className="col-12 text-center">
       <h2 className="display-5 mt-5 px-5 fw-bold">Partners and Sponsors</h2>
@@ -205,7 +191,7 @@ function Home() {
   <div className="row justify-content-center  gx-4 gy-4">
     {partners.map((partner, index) => (
       <div key={index} className="col-3 col-sm-3 col-md-2 col-lg-2">
-        <div className="partnership-item" 
+        <div className="partnership-item"
           style={{
             transition: 'transform 0.3s ease-in-out',
             overflow: 'hidden',
@@ -214,11 +200,7 @@ function Home() {
               <img 
                 src={`http://localhost:8000/storage/${partner.logo}`}
                 className="img-fluid" 
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'contain',
-                }} 
+                id='partner-dim'
               />
             </a>
         </div>
@@ -234,11 +216,11 @@ function Home() {
   <div className="Contact_Us mt-5" style={{ width: '100%', position: 'relative', overflow: 'hidden', margin: '0px', padding: '0px' }}>
     <div className="container-fluid mt-5">
       <div className="row flex-column-reverse flex-md-row">
-        <div className="col-md-6 d-flex justify-content-center align-items-center mb-md-0 order-md-1">
+        <div className="col-md-6 d-flex justify-content-end align-items-center mb-md-0 order-md-1 p-0">
           <img
             src={gdsc_mascot}
             alt="Club"
-            style={{ width: 'clamp(20rem, 35vw, 40vw)', height: 'auto', objectFit: 'cover' }}
+            style={{ width: 'clamp(20rem, 35vw, 40vw)', height: 'auto', objectFit: 'cover'}}
           />
         </div>
         

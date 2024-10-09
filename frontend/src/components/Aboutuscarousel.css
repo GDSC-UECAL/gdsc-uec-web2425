@@ -24,8 +24,8 @@
 
 .prodcard2 {
   position: absolute;
-  width: 60%;
-  height: auto;
+  width: clamp(15rem, 100%, 50rem);
+  height: clamp(15rem, 100%, 50rem);
   left: 0;
   right: 0;
   margin: auto;
@@ -46,11 +46,10 @@
 }
 
 .eventpic2 {
-  width: 100%;
-  max-height: 500px;
-  min-height: 200px;
+  width: clamp(15rem, 100%, 50rem);
+  height: clamp(15rem, 100%, 50rem);
   border-radius: 10px;
-  object-fit: cover;
+  object-fit: fill;
 }
 
   /* FOR PICTURES */

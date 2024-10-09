@@ -133,6 +133,13 @@
   position: relative;
 }
 
+#partner-dim{
+  height: auto;
+  max-height: 190px;
+  width: 200px;
+  object-fit: fill;
+}
+
 @media (max-width: 1200px) {
   .text-together,
   .text-we-discover,
