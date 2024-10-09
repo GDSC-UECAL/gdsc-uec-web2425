@@ -1,0 +1,36 @@
+.event-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.event-dropdown-button {
+    background-color: #F4F4F4;
+    color: black;
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 10vw;
+    align-items: center;
+}
+
+.event-dropdown-arrow {
+    color: #611de6;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .event-dropdown-button {
+        width: 15vw;
+    }
+}
+
+@media (max-width: 767px) {
+    .event-dropdown-button {
+        padding: 3px;
+        font-size: 7px;
+        width: 18vw;
+    }
+}

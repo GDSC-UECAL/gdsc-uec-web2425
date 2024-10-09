@@ -12,7 +12,7 @@ import './components/Navbar.css'
 import './components/ProductsCarousel.css';
 import './pages/Products.css';
 import Events from './pages/Events.jsx'
-import EventDetails from './components/EventDetails.jsx';
+import EventDetails from './pages/EventDetails.jsx';
 
 
 function App() {
@@ -27,6 +27,7 @@ function App() {
       <Route path='/products' element = {<Products></Products>}/>
       <Route path='/about' element = {<About></About>}/>
       <Route path='/events' element = {<Events></Events>}/>
+      <Route path="/event/:id" element={<EventDetails></EventDetails>} />
       <Route path='/teams' element = {<Teams></Teams>}/>
       <Route path='/home' element = {<Home></Home>}/>
       <Route path='/event_details' element = {<EventDetails></EventDetails>}/>

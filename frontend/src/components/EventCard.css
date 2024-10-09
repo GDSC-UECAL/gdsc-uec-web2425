@@ -1,0 +1,80 @@
+#event-container .event-item {
+    cursor: pointer;
+    text-align: left;
+    border-radius: 5%;
+    background-color: #F4F4F4;
+}
+
+#event-container .event-image {
+    height: 120px;
+    overflow: hidden;
+    position: relative;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+#event-container .event-item:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+}
+
+#event-container img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.event-details {
+    display: flex;
+    align-items: center;
+}
+
+.event-details div {
+    padding: 10px;
+}
+
+.event-month-day {
+    line-height: 5px;
+    text-align: center;
+}
+
+.event-month {
+    color: #611de6;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.event-day {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.event-title {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.event-location {
+    font-size: 12px;
+}
+
+@media (max-width: 767px) {
+    .event-month {
+        font-size: 18px;
+    }
+    
+    .event-day {
+        font-size: 18px;
+    }
+    
+    .event-title {
+        font-size: 8px;
+    }
+    
+    .event-location {
+        font-size: 8px;
+    }
+}

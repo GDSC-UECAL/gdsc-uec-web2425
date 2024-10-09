@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Events.css";
-import cube from '../assets/common/6.png';
-import ball from "../assets/common/1.png";
-import vector1 from '../assets/common/vector_c.png';
-import vector2 from '../assets/common/vector_f.png';
+import EventDropdown from "../components/EventDropdown";
+import EventCard from "../components/EventCard";
 
 function Events() {
     const [events, setEvents] = useState([]);
@@ -22,22 +20,37 @@ function Events() {
         setShowAllEvents(true)
     }
 
+    const monthData = [
+        "JAN", "FEB", "MAR", "APR", "MAY", "JUN",
+        "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"
+    ];
+
     return (
         <>
-            <img className="event-image cube" src={cube} alt="cube"/>
-            <img className="event-image ball" src={ball} alt="ball"/>
-            <img className="event-image vector1" src={vector1} alt="vector1"/>
-            <img className="event-image vector2" src={vector2} alt="vector2"/>
             <main id="event-main">
-                <h1>Events</h1>
+                <div id="event-nav">
+                    <div>
+                        <h1>Events</h1>
+                    </div>
+                    <div id="event-dropdowns">
+                        <EventDropdown title="Month"/>
+                        <EventDropdown title="Department"/>
+                        <EventDropdown title="Category"/>
+                    </div>
+                </div>
                 <div id="event-container">
-                    {(showAllEvents ? events : events.slice(0, 4)).map((event) => (
-                        <div key={event.id}>
-                            <img src={event.banner} alt={event.banner} />
-                            <h6>{event.title}</h6>
-                            <p>{event.date}</p>
-                        </div>
-                    ))}
+                    {(showAllEvents ? events : events.slice(0, 4)).map((event) => {
+                        const date = event.date.split('-');
+                        const month = parseInt(date[1], 10) - 1;
+                        const day = parseInt(date[2], 10);
+
+                        const formattedMonth = monthData[month];
+                        const formattedDay = `${day}`;
+
+                        return (
+                            <EventCard key={event.id} {...event} day={formattedDay} month={formattedMonth}/>
+                        );
+                    })}
                 </div>
                 {!showAllEvents && (
                     <div id="event-button">
