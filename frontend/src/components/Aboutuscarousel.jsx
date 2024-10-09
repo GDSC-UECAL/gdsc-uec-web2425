@@ -9,26 +9,27 @@ import nextLeft from '../assets/products/nextLeft.png';
 import nextRight from '../assets/products/nextRight.png';
 
 function Aboutuscarousel() {
-    const [products, setProducts] = useState([]);
+
     const [activeIndex, setActiveIndex] = useState(0);
     const [isTransitioning, setIsTransitioning] = useState(false); // New state for transition
 
+    const [carousel, setCarousel] = useState([]);
+
     useEffect(() => {
-        const fetchedProducts = [
-            { id: 1, banner: pic1, alt: 'laptop'},
-            { id: 2, banner: pic2, alt: 'laptop'},
-            { id: 3, banner: pic3, alt: 'laptop'},
-            { id: 4, banner: pic4, alt: 'laptop'},
-            { id: 5, banner: pic2, alt: 'laptop'},
-        ];
-        setProducts(fetchedProducts);
+        fetch('http://localhost:8000/api/v1/carousel')
+        .then(response => response.json())
+        .then(data => {
+            setCarousel(data.data);
+        })
+        .catch(error => console.error('Error fetching events:', error));
     }, []);
+
 
     // Handle next button click (move to the next card)
     const handleNext = () => {
     if (isTransitioning) return; // Prevent action if currently transitioning
     setIsTransitioning(true);
-    setActiveIndex((prevIndex) => (prevIndex + 1) % products.length);
+    setActiveIndex((prevIndex) => (prevIndex + 1) % carousel.length);
     
     setTimeout(() => {
       setIsTransitioning(false); // Reset transition state after delay
@@ -39,7 +40,7 @@ function Aboutuscarousel() {
     if (isTransitioning) return; // Prevent action if currently transitioning
     setIsTransitioning(true);
     setActiveIndex((prevIndex) =>
-      prevIndex === 0 ? products.length - 1 : prevIndex - 1
+      prevIndex === 0 ? carousel.length - 1 : prevIndex - 1
     );
 
     setTimeout(() => {
@@ -53,7 +54,7 @@ function Aboutuscarousel() {
     };
 
     const getTransformStyles = (index) => {
-        const totalItems = products.length;
+        const totalItems = carousel.length;
         const previousIndex = (activeIndex - 1 + totalItems) % totalItems;
         const nextIndex = (activeIndex + 1) % totalItems;
         const beforePreviousIndex = (activeIndex - 2 + totalItems) % totalItems;
@@ -108,7 +109,7 @@ function Aboutuscarousel() {
             <div className="carouselcontainer2">
                 <div className="container">
                     {/* Radio Buttons for direct selection */}
-                    {products.map((_, index) => (
+                    {carousel.map((_, index) => (
                         <input
                             key={index}
                             className="rdbtn2"
@@ -136,7 +137,7 @@ function Aboutuscarousel() {
                             style={{ cursor: 'pointer' }}
                         />
                         {/* Product Cards */}
-                        {products.map((product, index) => {
+                        {carousel.map((product, index) => {
                             const isActive = activeIndex === index;
 
                             return (
@@ -149,10 +150,10 @@ function Aboutuscarousel() {
                                 >
                                     
                                     {isActive ? (
-                                        <img className="eventpic2" src={product.banner} alt={product.alt} />
+                                        <img className="eventpic2" src={`http://localhost:8000/storage/${product.image}`} alt={product.alt} />
                                     ) : (
                                         <>
-                                        <img className="eventpic2" src={product.banner} alt={product.alt} />
+                                        <img className="eventpic2" src={`http://localhost:8000/storage/${product.image}`} alt={product.alt} />
                                         </>
                                     )}
                                 </label>
