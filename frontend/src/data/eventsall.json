@@ -1,23 +1,35 @@
 [
     {
         "id": 1,
-        "title": "Blockchain Technology: Transforming Digital Transactions",
-        "date": "2023-09-15",
-        "description": "An exploration of blockchain technology and its applications in various sectors, focusing on security and transparency.",
-        "location": "Tech Innovation Hub, Silicon Valley, CA",
-        "banner": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/colorful-event-night-flyer-design-template-b1326bc2830ad37c593e6d12e17d9207_screen.jpg?ts=1636993393",
+        "title": "TEACH TALK 1.0",
+        "date": "2024-09-24",
+        "description": "Join us for the first-ever panel discussion with the Department of Computer Studies and Systems - UE Caloocan. This is your chance to ask questions about math, data, arduino, or any real-life tech applications on your mind!",
+        "location": "MPH 2, 3RD FLOOR, ENGINEERING BUILDING",
+        "banner": "Unlocking the potential of decentralized systems.",
         "speakers": [
             {
                 "id": 1,
-                "name": "Alice Chen",
+                "name": "Abaya",
                 "role": "Blockchain Developer",
-                "image": "path/to/image1.png"
+                "image": "../src/assets/events/celis.png"
             },
             {
                 "id": 2,
-                "name": "Robert Brown",
+                "name": "Joy",
                 "role": "Cryptocurrency Analyst",
-                "image": "crypto_expert.png"
+                "image": "../src/assets/events/celis.png"
+            },
+            {
+                "id": 3,
+                "name": "Celis",
+                "role": "Cryptocurrency Analyst",
+                "image": "../src/assets/events/celis.png"
+            },
+            {
+                "id": 4,
+                "name": "Froilan",
+                "role": "Cryptocurrency Analyst",
+                "image": "../src/assets/events/celis.png"
             }
         ]
     },
