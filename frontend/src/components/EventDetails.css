@@ -47,27 +47,43 @@
 }
 
 .flexible-content-container {
-  display: grid;                       /* Use grid layout */
-  grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
-  gap: 20px;                          /* Space between grid items */
-  width: 100%;                        /* Ensure it takes full width */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Keep 4 columns for other items */
+  gap: 20px;
+  width: 100%;
 }
 
 .additional-container {
-  background-color: #f0f2f5;         /* Background color for the additional containers */
-  padding: 10px;                     /* Padding inside the containers */
-  border-radius: 5px;                /* Slight rounding of corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
-  display: flex;                     /* Make the container a flexbox */
-  justify-content: center;           /* Center content horizontally */
-  align-items: center;               /* Center content vertically */
-  min-height: 100px;                 /* Minimum height for visibility */
-  background-size: cover;            /* Background size to cover */
-  background-position: center;       /* Center the background image */
+  background-color: #f0f2f5;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  background-size: 110% 65% !important; 
+  background-repeat: no-repeat !important; 
+  background-position: -21px 20px !important;
 }
 
+/* Styles for merged container holding containers 1 and 2 */
+.merged-container {
+  display: flex;              /* Set to flex to align items side by side */
+  gap: 0px;                   /* Remove any gap between the items */
+  grid-column: span 2;        /* Span across 2 columns in the grid */
+}
+
+/* Style adjustments for individual containers inside the merged container */
+.merged-container .additional-container {
+  flex: 1;                    /* Make containers 1 and 2 share space evenly */
+  width: 50%;                 /* Ensure both take half the width */
+  margin: 0;                  /* Remove any extra margin */
+  background-size: 110% 65% !important; /* Adjust background size */
+}
+
+
 .background-image {
-  color: white;                      /* Set text color to contrast the image */
+  color: white;
 }
 
 .container-text {
