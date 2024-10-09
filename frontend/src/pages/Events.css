@@ -50,6 +50,13 @@
     color: white;
 }
 
+#event-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;       
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     #event-dropdowns {
         width: 50vw;

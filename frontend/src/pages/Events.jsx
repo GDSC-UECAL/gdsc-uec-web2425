@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import "./Events.css";
 import EventDropdown from "../components/EventDropdown";
 import EventCard from "../components/EventCard";
+import { monthData, departmentData } from "../data/dropdown_data";
+import EventHero from "../components/EventHero";
 
 function Events() {
     const [events, setEvents] = useState([]);
@@ -27,7 +29,8 @@ function Events() {
             const eventMonth = dateParts[1]; 
 
             const matchesMonth = selectedMonth ? eventMonth === selectedMonth : true;
-            return matchesMonth;
+            const matchesDepartment = selectedDepartment ? event.department === selectedDepartment : true;
+            return matchesMonth && matchesDepartment;
         });
 
         setFilteredEvents(filtered);
@@ -38,31 +41,17 @@ function Events() {
         setShowAllEvents(true)
     }
 
-    const monthData = [
-        { name: 'January', value: '01' },
-        { name: 'February', value: '02' },
-        { name: 'March', value: '03' },
-        { name: 'April', value: '04' },
-        { name: 'May', value: '05' },
-        { name: 'June', value: '06' },
-        { name: 'July', value: '07' },
-        { name: 'August', value: '08' },
-        { name: 'September', value: '09' },
-        { name: 'October', value: '10' },
-        { name: 'November', value: '11' },
-        { name: 'December', value: '12' },
-    ];
-
     return (
         <>
             <main id="event-main">
+                <EventHero events={events}/>
                 <div id="event-nav">
                     <div>
                         <h1>Events</h1>
                     </div>
                     <div id="event-dropdowns">
                         <EventDropdown title="Month" options={monthData} onSelect={setSelectedMonth} />
-                        <EventDropdown title="Department" options={['Web Development', "Game Development", "Data Science", "UI/UX"]} onSelect={setSelectedDepartment}/>
+                        <EventDropdown title="Department" options={departmentData} onSelect={setSelectedDepartment}/>
                         <EventDropdown title="Category" options={['Workshops', 'Conferences', 'Webinars']} onSelect={setSelectedCategory}/>
                     </div>
                 </div>
@@ -81,11 +70,16 @@ function Events() {
                         );
                     })}
                 </div>
-                {!showAllEvents && filteredEvents.length !== 0 && 
+                {!showAllEvents && filteredEvents.length >= 4 && 
                     <div id="event-button">
                         <button onClick={handleShowAll}>See More</button>
                     </div>
                 }
+                {filteredEvents.length == 0 && (
+                    <div id="event-message">
+                        <p>No Available events.</p>
+                    </div>
+                )}
             </main>
         </>
     )

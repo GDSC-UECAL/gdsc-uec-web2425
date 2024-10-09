@@ -19,21 +19,21 @@ function EventDropdown({title, options, onSelect}) {
     return (
         <div className="event-dropdown">
             <div className="event-dropdown-button" onClick={toggleDropdown}>
-                {!selectedOption ? (
+                {isOpen ? (
                     <>
                         <span>{title}</span>
-                        <span className="event-dropdown-arrow">▼</span>
+                        <span className={`event-dropdown-arrow ${isOpen ? 'open' : ''}`}>▲</span>
                     </>
                 ) : (
                     <>
-                        <span>{selectedOption}</span>
-                        <span className="event-dropdown-arrow">▼</span>
+                        <span>{selectedOption ? selectedOption : title}</span>
+                        <span className={`event-dropdown-arrow ${isOpen ? 'open' : ''}`}>▼</span>
                     </>
                 )}
             </div>
             {isOpen && (
                 <div className="event-dropdown-options">
-                    {options.map((option, index) => (
+                    {options.map((option) => (
                         <div className="event-dropdown-option" key={option.value} onClick={() => handleOptionClick(option)}>
                             {option.name}
                         </div>

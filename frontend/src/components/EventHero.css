@@ -1,0 +1,115 @@
+#event-hero-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px - 40px);
+    margin-bottom: 30px;
+}
+
+.event-banner-container {
+    display: flex;
+}
+
+.event-banner-container img {
+    height: auto;
+    width: 15vw;
+}
+
+.event-text-highlight {
+    color: #611de6;
+}
+
+.event-hero-designs {
+    position: absolute;
+    height: auto;
+    animation: move 3s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.horn {
+    width: 30vw;
+    top: 30%; 
+    left: -20%; 
+}
+
+.ball {
+    width: 30vw;
+    top: -5%;
+    right: -20%;
+}
+
+.cube1 {
+    width: 50vw;
+    top: 15%;
+    right: -30%;
+}
+
+.cube2 {
+    width: 50vw;
+    top: -5%;
+    left: -30%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .horn {
+        width: 30vw;
+        top: 30%; 
+        left: -20%; 
+    }
+    
+    .ball {
+        width: 30vw;
+        top: -5%;
+        right: -20%;
+    }
+    
+    .cube1 {
+        width: 50vw;
+        top: 15%;
+        right: -30%;
+    }
+    
+    .cube2 {
+        width: 50vw;
+        top: -5%;
+        left: -30%;
+    }
+}
+
+@media (max-width: 767px) {
+    .horn {
+        width: 80vw;
+        top: 25%; 
+        left: -60%; 
+    }
+    
+    .ball {
+        width: 80vw;
+        top: -1%;
+        right: -70%;
+    }
+    
+    .cube1 {
+        width: 100vw;
+        top: 15%;
+        right: -70%;
+    }
+    
+    .cube2 {
+        width: 100vw;
+        top: 5%;
+        left: -80%;
+    }
+}

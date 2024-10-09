@@ -19,6 +19,11 @@
 
 .event-dropdown-arrow {
     color: #611de6;
+    transition: transform 0.5s ease;
+}
+
+.event-dropdown-arrow.open {
+    transform: rotate(120deg);
 }
 
 .event-dropdown-options {
@@ -48,6 +53,14 @@
     .event-dropdown-button {
         width: 15vw;
     }
+    .event-dropdown-options {
+        width: 15vw; 
+        height: 15vh;
+    }
+    .event-dropdown-option {
+        padding: 5px;
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -57,7 +70,8 @@
         width: 18vw;
     }
     .event-dropdown-options {
-        width: 20vw; 
+        width: 18vw; 
+        height: 20vh;
     }
     .event-dropdown-option {
         padding: 5px;

@@ -2,9 +2,10 @@
     {
         "id": 1,
         "title": "TEACH llll TALK 1.0",
-        "date": "2024-09-24",
+        "date": "2024-10-24",
         "description": "Join us for the first-ever panel discussion with the Department of Computer Studies and Systems - UE Caloocan. This is your chance to ask questions about math, data, arduino, or any real-life tech applications on your mind!",
         "location": "MPH 2, 3RD FLOOR, ENGINEERING BUILDING",
+        "department": 1,
         "banner": "Unlocking the potential of decentralized systems.",
         "speakers": [
             {
@@ -36,9 +37,10 @@
     {
         "id": 2,
         "title": "Building Scalable Microservices with Kubernetes",
-        "date": "2023-11-20",
+        "date": "2024-10-20",
         "description": "Learn how to architect and deploy scalable microservices using Kubernetes and Docker for seamless application management.",
         "location": "CloudTech Conference Center, Austin, TX",
+        "department": 2,
         "banner": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/colorful-event-night-flyer-design-template-b1326bc2830ad37c593e6d12e17d9207_screen.jpg?ts=1636993393",
         "speakers": [
             {
