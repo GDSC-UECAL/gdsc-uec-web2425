@@ -12,11 +12,8 @@ function Products() {
         <>
             <div className="prodcontainer">
             <ProductsCarousel />
+            <Merchandises/>
             </div>
-            {/* <h1 style={{ marginTop: '210px', marginBottom:'50px', fontSize: '100px' }}>Merchandises</h1>
-            <Merchandises/>*/}
-            
-            
         </>
     );
 };
