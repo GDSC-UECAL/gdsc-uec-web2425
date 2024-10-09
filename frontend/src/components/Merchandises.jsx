@@ -80,7 +80,6 @@ function Merchandises() {
   return (
     <>
       {/* Images */}
-      <h1 className='merchTitle'>Merchandises</h1>
       <div className="elementsdiv">
         <img src={bell} alt="" className="bell elements1" />
         <img src={bigBall} alt="" className="bigBall elements1" />

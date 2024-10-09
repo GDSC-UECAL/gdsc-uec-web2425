@@ -271,22 +271,6 @@
     font-size: 17px; /* Adjust subtitle font size */
   }
 }
-  /* FOR THE POINTERS*/
-  .redHeadProjectsCar{
-    top: 410px;
-    left: 175px;
-  }
-  .leftLineProjectsCar{
-    top: 380px;
-  }
-
-  .yellowHeadProjectsCar{
-    right: 240px;
-    top: 840px;
-  }
-  .rightLineProjectsCar{
-    top: 800px;
-  }
 
 /* Mobile size (below 768px) */
 @media screen and (max-width: 767px) {
@@ -331,23 +315,6 @@
     margin-top: 10%;
     width: 8%; /* Scale down more for mobile */
     height: auto;
-  }
-
-  /* FOR THE POINTERS*/
-  .redHeadProjectsCar{
-    top: 210px;
-    left: 75px;
-  }
-  .leftLineProjectsCar{
-    top: 200px
-  }
-
-  .yellowHeadProjectsCar{
-    right: 85px;
-    top:458px;
-  }
-  .rightLineProjectsCar{
-    top: 450px;
   }
 
   .txtinside {
