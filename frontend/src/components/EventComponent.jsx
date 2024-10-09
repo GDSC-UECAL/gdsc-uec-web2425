@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import './EventDetails.css';
+import './EventComponent.css';
 import teach from '../assets/events/teach.png';
 import rec21 from '../assets/events/rec21.png';
 import celis from '../assets/events/celis.png';
 import additionalData from '../assets/data/additionalData.json';
 // import eventsone from  '../assets/data/eventsone.json';
 
-const EventDetails = () => {
+const EventComponent = () => {
   const event = {
     title: 'React Conference 2024',
     date: 'March 12, 2024',
@@ -170,4 +170,4 @@ const EventDetails = () => {
   );
 };
 
-export default EventDetails;
+export default EventComponent;
