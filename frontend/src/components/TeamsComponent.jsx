@@ -9,7 +9,18 @@ const TeamsComponent = () => {
     const [activeDepartment, setActiveDepartment] = useState('Executive Board');
     const [loading, setLoading] = useState(true);
 
-    
+    // Department color mapping
+    const departmentColors = {
+        'Executive Board': '#DB4437',
+        'Technology Department': '#4285F4',
+        'Operations Department': '#F4B400',
+        'Creatives Board': '#0F9D58',
+        'Community Development Department': '#611DE6',
+    };
+
+    // Fallback color
+    const defaultColor = '#000000';
+
     useEffect(() => {
         const fetchDepartments = async () => {
             try {
@@ -33,13 +44,12 @@ const TeamsComponent = () => {
         return <div>Loading...</div>; 
     }
 
-
     const uniqueDepartments = Array.from(new Set(teams.map(team => team.department.title)));
 
-
+    // Use department color or fallback to black if department is not found
+    const color = departmentColors[activeDepartment] || defaultColor;
+    const overlayColor = color + '80'; // Add transparency for the overlay color
     const activeDept = teams.find(team => team.department.title === activeDepartment);
-    const color = activeDept?.department?.color || '#000'; // Fallback color
-    const overlayColor = activeDept?.department?.overlayColor || 'rgba(0,0,0,0.5)';
     const overview = activeDept?.department?.description || '';
     const members = teams.filter(member => member.department.title === activeDepartment); // Get members of the active department
 
@@ -84,7 +94,7 @@ const TeamsComponent = () => {
                         <Col lg={4} key={memberIndex} className="text-center mb-4">
                             <img src={`http://localhost:8000/storage/${member.image}`} alt={member.name} className="membersPic" />
                             <h4 className="memberName">{member.name}</h4>
-                            <h5 className="execMember">{member.role}</h5>
+                            <h5 className="execMember" style={{ color }}>{member.role}</h5> {/* Apply the department color */}
                         </Col>
                     ))
                 ) : (
