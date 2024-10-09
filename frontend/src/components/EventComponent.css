@@ -1,0 +1,61 @@
+/* EventDetails.css */
+.event-details-page {
+  display: flex;                     
+  flex-direction: column;            
+  align-items: flex-start;           
+  padding: 40px;                    
+  width: 100%;                       
+  max-width: 1400px;                
+  margin: 0 auto;                   
+}
+
+.image-container {
+  display: flex;                     
+  justify-content: center;           
+  align-items: center;               
+  background-color: #e3f2fd;                             
+  width: 500px;                      
+  margin-top: 80px;                    
+}
+
+.image {
+  max-width: 100%;                   
+  height: auto;                      
+}
+
+.event-details-flex-container {
+  display: flex;                     
+  gap: 20px;                         
+  width: 100%;                       
+}
+
+.event-details-container {
+  background-color: #f9f9f9;         
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;                     
+  width: 100%;                       
+  max-width: 500px;                  
+}
+
+.flexible-container {
+  display: flex;                     
+  justify-content: center;           
+  align-items: flex-start;           
+  background-color: #f0f2f5;         
+  padding: 20px;                     
+  width: 100%;                       
+}
+
+.flexible-content-container {
+  display: grid;                     /* Use grid for the additional containers */
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 10px;                        /* Space between containers */
+  width: 100%;                       
+}
+
+.additional-container {
+  background-color: #fff;           /* Background color for the additional containers */
+  border: 1px solid #ddd;           /* Border for visibility */
+  padding: 20px;                    /* Padding inside the additional containers */
+  text-align: center;               /* Center the text */
+}
