@@ -11,25 +11,25 @@
                 "id": 1,
                 "name": "Abaya",
                 "role": "Blockchain Developer",
-                "image": "../assets/events/celis.png"
+                "image": "../src/assets/events/celis.png"
             },
             {
                 "id": 2,
                 "name": "Joy",
                 "role": "Cryptocurrency Analyst",
-                "image": "../assets/events/celis.png"
+                "image": "../src/assets/events/celis.png"
             },
             {
                 "id": 3,
                 "name": "Celis",
                 "role": "Cryptocurrency Analyst",
-                "image": "../assets/events/celis.png"
+                "image": "../src/assets/events/celis.png"
             },
             {
                 "id": 4,
                 "name": "Froilan",
                 "role": "Cryptocurrency Analyst",
-                "image": "../assets/events/celis.png"
+                "image": "../src/assets/events/celis.png"
             }
         ]
     }
