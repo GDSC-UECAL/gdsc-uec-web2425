@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './EventDetails.css';
 import teach from '../assets/events/teach.png';
-import rec21 from '../assets/events/rec21.png'; // Import the image here
-import additionalData from '../assets/data/additionalData.json'; // Adjust the path as necessary
+import rec21 from '../assets/events/rec21.png';
+import additionalData from '../assets/data/additionalData.json';
 
 const EventDetails = () => {
   const event = {
@@ -13,10 +13,9 @@ const EventDetails = () => {
     description: 'Join us for a day full of learning and networking with the brightest minds in the React community. This event will feature talks from top developers and hands-on workshops to enhance your React skills.',
   };
 
-  // Map for the images
   const backgroundImages = {
-    image2: rec21, // Assign the imported image here
-    image4: rec21, // You can change these to different images as needed
+    image2: rec21,
+    image4: rec21,
     image6: rec21,
     image8: rec21,
   };
@@ -24,12 +23,11 @@ const EventDetails = () => {
   const [containers, setContainers] = useState([]);
 
   useEffect(() => {
-    setContainers(additionalData); // Use the imported data directly
+    setContainers(additionalData);
   }, []);
 
   return (
     <div className="event-details-page">
-      {/* Image container */}
       <div className="image-container">
         <img 
           src={teach} 
@@ -39,9 +37,7 @@ const EventDetails = () => {
         />
       </div>
 
-      {/* Event details and flexible container side by side */}
       <div className="event-details-flex-container">
-        {/* Event details container */}
         <div className="event-details-container">
           <div className="event-details">
             <h1 className="event-title">{event.title}</h1>
@@ -53,28 +49,99 @@ const EventDetails = () => {
           </div>
         </div>
 
-        {/* Right-side flexible container */}
         <div className="flexible-container">
           <div className="flexible-content-container">
-            {containers.map((container) => (
-              <div
-                key={container.id}
-                className={`additional-container ${container.backgroundImage ? 'background-image' : ''}`}
-                style={{
-                  backgroundImage: container.backgroundImage
-                    ? `url(${backgroundImages[container.backgroundImage]})`
-                    : 'none',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                }}
-              >
-                {container.backgroundImage ? (
-                  <span className="container-text">{container.text}</span>
-                ) : (
-                  container.content
-                )}
-              </div>
-            ))}
+            {/* Wrap containers 1 and 2 inside a merged container */}
+            <div className="merged-container">
+              {containers.slice(0, 2).map((container) => (
+                <div
+                  key={container.id}
+                  className={`additional-container ${container.backgroundImage ? 'background-image' : ''}`}
+                  style={{
+                    backgroundImage: container.backgroundImage
+                      ? `url(${backgroundImages[container.backgroundImage]})`
+                      : 'none',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}
+                >
+                  {container.backgroundImage ? (
+                    <span className="container-text">{container.text}</span>
+                  ) : (
+                    container.content
+                  )}
+                </div>
+              ))}
+            </div>
+
+            {/* Wrap containers 3 and 4 inside a merged container */}
+            <div className="merged-container">
+              {containers.slice(2, 4).map((container) => (
+                <div
+                  key={container.id}
+                  className={`additional-container ${container.backgroundImage ? 'background-image' : ''}`}
+                  style={{
+                    backgroundImage: container.backgroundImage
+                      ? `url(${backgroundImages[container.backgroundImage]})`
+                      : 'none',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}
+                >
+                  {container.backgroundImage ? (
+                    <span className="container-text">{container.text}</span>
+                  ) : (
+                    container.content
+                  )}
+                </div>
+              ))}
+            </div>
+
+            {/* Wrap containers 5 and 6 inside a merged container */}
+            <div className="merged-container">
+              {containers.slice(4, 6).map((container) => (
+                <div
+                  key={container.id}
+                  className={`additional-container ${container.backgroundImage ? 'background-image' : ''}`}
+                  style={{
+                    backgroundImage: container.backgroundImage
+                      ? `url(${backgroundImages[container.backgroundImage]})`
+                      : 'none',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}
+                >
+                  {container.backgroundImage ? (
+                    <span className="container-text">{container.text}</span>
+                  ) : (
+                    container.content
+                  )}
+                </div>
+              ))}
+            </div>
+
+            {/* Wrap containers 7 and 8 inside a merged container */}
+            <div className="merged-container">
+              {containers.slice(6, 8).map((container) => (
+                <div
+                  key={container.id}
+                  className={`additional-container ${container.backgroundImage ? 'background-image' : ''}`}
+                  style={{
+                    backgroundImage: container.backgroundImage
+                      ? `url(${backgroundImages[container.backgroundImage]})`
+                      : 'none',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}
+                >
+                  {container.backgroundImage ? (
+                    <span className="container-text">{container.text}</span>
+                  ) : (
+                    container.content
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
