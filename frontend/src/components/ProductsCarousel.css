@@ -42,10 +42,10 @@
 }
 
 .eventpic {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
+  width: 100%; /* Ensures the image takes the full width of its container */
+  height: 600px; /* Set a definite height for the image */
+  border-radius: 10px; /* Rounded corners */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
 }
 
   /* FOR PICTURES */
@@ -174,7 +174,7 @@
 }
 
 .txtinside{
-  margin-top: -28%;
+  margin-top: -24%;
   color: white;
   font-weight: 700;
   font-size: 35px;
@@ -211,4 +211,15 @@
   100% {
       transform: translateY(0px);
   }
+}
+
+.text-overlay {
+  position: absolute; /* Position it over the image */
+  bottom: 0; /* Align to the bottom */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  color: white; /* Text color */
+  text-align: center; /* Center the text */
+  padding: 10px 0; /* Padding for better spacing */
+  border-radius: 0 0 10px 10px; /* Rounded corners for bottom */
 }

@@ -161,11 +161,13 @@ function ProductsCarousel({banner, title, link, description }) {
                         src={`http://localhost:8000/storage/${product.banner}`}
                         alt={product.alt}
                       />
-                      <div className="txtinside">
-                        <p>{product.title}</p>
-                      </div>
-                      <div className="txtinside2">
-                        <p>{product.description}</p>
+                      <div className="text-overlay"> {/* New container for text */}
+                        <div className="txtinside">
+                          <p>{product.title}</p>
+                        </div>
+                        <div className="txtinside2">
+                          <p>{product.description}</p>
+                        </div>
                       </div>
                     </a>
                   ) : (
@@ -175,11 +177,13 @@ function ProductsCarousel({banner, title, link, description }) {
                         src={`http://localhost:8000/storage/${product.banner}`}
                         alt={product.alt}
                       />
-                      <div className="txtinside">
-                        <p>{product.title}</p>
-                      </div>
-                      <div className="txtinside2">
-                        <p>{product.description}</p>
+                      <div className="text-overlay"> {/* New container for text */}
+                        <div className="txtinside">
+                          <p>{product.title}</p>
+                        </div>
+                        <div className="txtinside2">
+                          <p>{product.description}</p>
+                        </div>
                       </div>
                     </>
                   )}
