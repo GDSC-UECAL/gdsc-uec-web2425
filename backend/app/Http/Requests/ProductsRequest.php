@@ -27,7 +27,7 @@ class ProductsRequest extends FormRequest
         return [
             'title' => 'required|string|max:255',
             'date' => 'nullable|date',
-            'description' => 'nullable|string',
+            'description' => 'required|string|max:50',
             'contributor' => 'nullable|string|max:255',
             'banner' => 'required|file|mimes:jpeg,png,jpg,gif,svg',
             'link' => 'required|url|max:255',
