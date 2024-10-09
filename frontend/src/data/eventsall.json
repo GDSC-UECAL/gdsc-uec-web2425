@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "TEACH TALK 1.0",
+        "title": "TEACH llll TALK 1.0",
         "date": "2024-09-24",
         "description": "Join us for the first-ever panel discussion with the Department of Computer Studies and Systems - UE Caloocan. This is your chance to ask questions about math, data, arduino, or any real-life tech applications on your mind!",
         "location": "MPH 2, 3RD FLOOR, ENGINEERING BUILDING",
@@ -45,13 +45,13 @@
                 "id": 3,
                 "name": "John Smith",
                 "role": "DevOps Engineer",
-                "image": "john_devops.png"
+                "image":  "../src/assets/events/celis.png"
             },
             {
                 "id": 4,
                 "name": "Emily Johnson",
                 "role": "Cloud Solutions Architect",
-                "image": "emily_cloud.png"
+                "image":  "../src/assets/events/celis.png"
             }
         ]
     },
@@ -67,13 +67,13 @@
                 "id": 5,
                 "name": "Sara Lee",
                 "role": "AI Research Scientist",
-                "image": "sara_ai.png"
+                "image":  "../src/assets/events/celis.png"
             },
             {
                 "id": 6,
                 "name": "Michael Green",
                 "role": "Data Scientist",
-                "image": "michael_data.png"
+                "image":  "../src/assets/events/celis.png"
             }
         ]
     },
@@ -89,13 +89,13 @@
                 "id": 7,
                 "name": "Natalie Adams",
                 "role": "Cybersecurity Expert",
-                "image": "natalie_cyber.png"
+                "image":  "../src/assets/events/celis.png"
             },
             {
                 "id": 8,
                 "name": "David Kim",
                 "role": "Ethical Hacker",
-                "image": "david_hacker.png"
+                "image":  "../src/assets/events/celis.png"
             }
         ]
     },
@@ -111,13 +111,13 @@
                 "id": 9,
                 "name": "Sophia White",
                 "role": "Full Stack Developer",
-                "image": "sophia_fullstack.png"
+                "image":  "../src/assets/events/celis.png"
             },
             {
                 "id": 10,
                 "name": "Liam Brown",
                 "role": "Frontend Engineer",
-                "image": "liam_frontend.png"
+                "image":  "../src/assets/events/celis.png"
             }
         ]
     }

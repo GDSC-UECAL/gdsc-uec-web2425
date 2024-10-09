@@ -1,0 +1,132 @@
+/* EventDetails.css */
+.event-details-page {
+  display: flex;                     
+  flex-direction: column;                      
+  padding: 40px;                    
+  width: 100%;                       
+  max-width: 1400px;                
+  margin: 0 auto;                   
+}
+
+.image-title-container {          
+  display: flex;    
+  flex-direction: row;                                                                        
+  margin-top: 80px;  
+  align-items: center;                  
+}
+
+.title-container {
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.image {
+  width: auto;                
+  height: 500px;                      
+}
+
+.event-details-flex-container {
+  display: flex;                     
+  gap: 20px;                         
+  width: 100%;                       
+}
+
+.event-details {
+  display: flex;
+  flex-direction: row; 
+}
+
+.event-details-container {
+  background-color: #f9f9f9;         
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;                     
+  width: 100%;                       
+  max-width: 500px;    
+  display: flex;
+  flex-direction: row; 
+              
+}
+
+.flexible-container {
+  display: flex;                     
+  justify-content: center;                   
+  background-color: #f0f2f5;         
+  padding: 20px;                     
+  width: 100%;                       
+}
+
+.flexible-content-container {
+  gap: 10px;                   
+  width: 100%;                       
+}
+
+.additional-container {
+  background-color: #fff;           /* Background color for the additional containers */
+  border: 1px solid #ddd;           /* Border for visibility */
+  padding: 20px;                    /* Padding inside the additional containers */
+  text-align: center;               /* Center the text */
+}
+
+
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ensures 3 items per row on large screens */
+  gap: 20px; /* Space between speaker cards */
+  width: 100%;
+}
+
+.speaker-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.speaker-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.speaker-details {
+  flex: 1;
+}
+
+.speaker-name {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.speaker-title {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.speaker-description {
+  font-size: 0.85em;
+  color: #666;
+}
+
+.event-background {
+  position: fixed;  /* Use fixed to make it fill the viewport */
+  z-index: -1;      /* Ensure it's behind other content */
+  height: 100vh;    /* Set height to 100% of viewport height */
+  width: 100vw; 
+  width: 100%;      /* Set width to 100% of viewport width */
+  overflow: hidden; /* Hide overflow, in case of any content */
+}
+
+.event-background-image {
+  position: absolute;   /* Positioning for the image */
+  top: 0px;             /* Center vertically */
+  width: 100%;          /* Full width of the parent */
+  height: 1000px;         /* Maintain aspect ratio */
+  transform: translate(-50%, -50%); /* Center the image */
+  filter: blur(10px);   /* Apply blur effect */
+}
