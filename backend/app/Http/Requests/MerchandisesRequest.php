@@ -29,7 +29,7 @@ class MerchandisesRequest extends FormRequest
             'date' => 'required|date',
             'description' => 'required|string',
             'price' => 'required|numeric|min:0',  
-            'banner' => 'required|file|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'banner' => 'required|file|mimes:jpeg,png,jpg,gif,svg',
         ];
     }
     

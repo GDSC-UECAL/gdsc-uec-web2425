@@ -26,7 +26,7 @@ class CarouselRequest extends FormRequest
     {
         return [
             'title' => 'required|string|max:255',
-            'image' => 'required|file|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'required|file|mimes:jpeg,png,jpg,gif,svg',
         ];
     }
 

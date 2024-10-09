@@ -29,7 +29,7 @@ class ProductsRequest extends FormRequest
             'date' => 'nullable|date',
             'description' => 'nullable|string',
             'contributor' => 'nullable|string|max:255',
-            'banner' => 'required|file|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'banner' => 'required|file|mimes:jpeg,png,jpg,gif,svg',
             'link' => 'required|url|max:255',
         ];
     }

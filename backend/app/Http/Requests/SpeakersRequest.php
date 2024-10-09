@@ -28,7 +28,7 @@ class SpeakersRequest extends FormRequest
             'events_id' => 'required|integer|exists:events,id', 
             'name' => 'required|string|max:255',
             'role' => 'required|string|max:255',
-            'image' => 'required|file|mimes:jpeg,png,jpg,gif,svg|max:2048', 
+            'image' => 'required|file|mimes:jpeg,png,jpg,gif,svg', 
         ];
     }
     
