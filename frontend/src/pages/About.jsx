@@ -23,6 +23,7 @@ import vecE from '../assets/common/vector_e.png';
 import vecF from '../assets/common/vector_f.png';
 import vecG from '../assets/common/vector_g.png';
 import vecH from '../assets/common/vector_h.png';
+import vision from '../assets/about/vision.png';
 import "../components/Aboutuscarousel.css";
 import Aboutuscarousel from '../components/Aboutuscarousel.jsx';
 import { FaBrain, FaHammer, FaNetworkWired } from 'react-icons/fa';
@@ -67,6 +68,7 @@ function About() {
             <div className="about-carousel">
                 <Aboutuscarousel />
             </div>
+            <div style={{width:'100vw', overflowX: 'clip'}}>
             <img className="vector-image vec-e" style={{ width: '20%', left: '0vw', top: '104vh', position: 'absolute', float: 'right' }} src={vecE} />
             <img className="vector-image vec-h" style={{ width: '21%', right: '0vw', top: '110.6vh', position: 'absolute', float: 'right' }} src={vecH} />
             <img className="floating-element el6" style={{ width: '21%', right: '-10vw', top: '145.6vh', position: 'absolute', float: 'right' }} src={el6} />
@@ -83,10 +85,11 @@ function About() {
                     </p>
                 </div>
             </div>
-            <div className="about-container">
-                <section className="mission-section text-start" >
+            </div>
+            <div className="about-container p-2">
+                <section className="mission-section text-start mb-5" >
                 <h2 className="mission-title" style={{ textAlign: 'start' }}>Mission</h2>
-                <p className="mission-subtitle" style={{ textAlign: 'start' }}>We aim to do the <b><span style={{color:'#eb5757'}}>A</span>.<span style={{color:'#f2c94c'}}>B</span><span style={{color:'#198754'}}>.C</span></b></p>
+                <p className="mission-subtitle mb-5" style={{ textAlign: 'start' }}>We aim to do the <b><span style={{color:'#eb5757'}}>A</span>.<span style={{color:'#f2c94c'}}>B</span><span style={{color:'#198754'}}>.C</span></b></p>
                 <div className="row text-center text-start">
                     <div className="col-md-4 col-sm-12 mb-4">
                     <div className="mission-item">
@@ -111,8 +114,62 @@ function About() {
                     </div>
                 </div>
                 </section>
-            </div>
 
+                <section className="mission-section" >
+                <div className="row flex-column-reverse flex-md-row">
+                    <div className="col-md-6 col-sm-12 mb-4">
+                        <div className="vision-item" style={{lineHeight: '35px'}}>
+                            <h2 className="mission-title mb-3" style={{ textAlign: 'start' }}>Vision</h2>
+                            <p>The organization envisions itself as a catalyst for creating an inclusive and supportive environment that encourages personal and professional growth. Through the power of technology and innovative solutions, we aim to uplift communities, making a positive impact and addressing their needs.</p>
+                        </div>
+                    </div>
+                    <div className="col-md-6 col-sm-12 mb-4">
+                        <div className="mission-item">
+                        <img
+                            src={vision}
+                            alt="Club"
+                            style={{ maxWidth: '100%', height: 'auto', objectFit: 'cover' }}
+                        />
+                        </div>
+                    </div>
+                </div>
+                </section>
+                <section className="mission-section text-start" >
+                <div className="row flex-column-reverse flex-md-row text-center text-start">
+                    <div className="col-md-6 col-sm-12 mb-4">
+                        <div className="mission-item" style={{lineHeight: '35px'}}>
+                            <h2 className="mission-title mb-2" style={{ textAlign: 'start' }}>Departments</h2>
+                        </div>
+                    </div>
+                </div>
+                </section>
+            </div>
+                <div className="row text-center text-start">
+                    <div className="col-md-6 col-sm-12 mb-4 d-flex flex-column justify-content-center">
+                        <div className="o-department-block text-start" style={{ borderColor: '#f54242'}}>
+                            <h3>Operations Department</h3>
+                            <p>Ensures seamless event execution and initiative implementation, optimizing resources for successful outcomes through meticulous planning.</p>
+                        </div>
+                        <div className="c-department-block my-3 text-start" style={{color: '#4287f5', borderColor: '#4287f5'}}>
+                            <h3>Creatives Department</h3>
+                            <p>Plans and implements engaging marketing and communication strategies, enhancing the organization's brand presence and community.</p>
+                        </div>
+                        <div className="cd-department-block text-start" style={{color: '#f5ae45', borderColor: '#f5ae45'}}>
+                            <h3>Community Development Department</h3>
+                            <p>Empowers members through educational materials and workshops, fostering innovation and technical expertise within the community.</p>
+                        </div>
+                    </div>
+                    <div className="col-md-6 col-sm-12 mb-4 d-flex flex-column justify-content-center">
+                        <div className="t-department-block mb-3 text-end" style={{color: '#39ba3c', borderColor: '#39ba3c'}}>
+                            <h3>Technology Department</h3>
+                            <p>Empowers members through educational materials and workshops, fostering innovation and technical expertise within the community.</p>
+                        </div>
+                        <div className="e-department-block text-end" style={{color: '#6c12b6', borderColor: '#6c12b6'}}>
+                            <h3>Executive Board</h3>
+                            <p>Oversees strategic direction and decision-making, ensuring organizational goals are met effectively and efficiently, while continually evaluating and adapting to emerging opportunities.</p>
+                        </div>
+                    </div>
+                </div>
         </>
     );
 }

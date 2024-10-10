@@ -142,8 +142,10 @@
 .c { color: #f5ae45; }
 
 .gdsc-description {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1.6;
+  text-align: justify;
+  padding-inline:3%;
 }
 
 .logo {
@@ -238,6 +240,12 @@ body {
   text-align: center;
 }
 
+.vision-title {
+  font-size: 2.7rem;
+  font-weight: bold;
+  text-align: center;
+}
+
 .mission-subtitle {
   text-align: center;
   margin-bottom: 2rem;
@@ -250,18 +258,56 @@ body {
   text-align: start;
 }
 
+.vision-item {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.vision-item p{
+  text-align: center;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .mission-heading {
   margin-top: 0.5rem;
   font-size: 1.5rem;
   text-align: start;
 }
 
-.mission-item p {
-  font-size: 1rem;
-  margin-top: 0.5rem;
-  text-align: start;
+.o-department-block,
+.c-department-block,
+.cd-department-block,
+.t-department-block,
+.e-department-block {
+  padding-inline: 20%;
+  padding-block: 10px;
+  border-radius: 15px;
+  border: 6px solid;
+  width: 100%;
+  transition: background-color 0.3s ease;
 }
 
+.o-department-block:hover {
+  background-color: rgba(245, 66, 66, 0.3);
+}
+
+.c-department-block:hover {
+  background-color: rgba(66, 135, 245, 0.3);
+}
+
+.cd-department-block:hover {
+  background-color: rgba(245, 174, 69, 0.3);
+}
+
+.t-department-block:hover {
+  background-color: rgba(57, 186, 60, 0.3);
+}
+
+.e-department-block:hover {
+  background-color: rgba(108, 18, 182, 0.3);
+}
 
 .form-control:focus {
   font-family: 'Poppins', sans-serif;

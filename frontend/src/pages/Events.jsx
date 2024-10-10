@@ -4,6 +4,8 @@ import EventDropdown from "../components/EventDropdown";
 import EventCard from "../components/EventCard";
 import { monthData, departmentData } from "../data/dropdown_data";
 import EventHero from "../components/EventHero";
+import EventCarousel from '../components/EventCarousel';
+
 
 function Events() {
     const [events, setEvents] = useState([]);
@@ -53,7 +55,7 @@ function Events() {
     return (
         <>
             <main id="event-main">
-                <EventHero events={futureEvents}/>
+                    <EventCarousel />
                 <div id="event-nav">
                     <div>
                         <h1>Events</h1>
