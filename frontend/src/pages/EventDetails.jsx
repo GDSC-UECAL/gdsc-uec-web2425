@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './EventDetails.css'; // Assuming CSS is already there for styling
 import teach from '../assets/events/teach.png'; // Image file for the event
+import rec21 from  '../assets/events/rec21.png'; // Another image file for the event
+
 
 function EventDetails() {
   const { id } = useParams(); // Get event ID from URL params
@@ -57,6 +59,7 @@ function EventDetails() {
         {/* Event details section */}
         <div className="event-details-container">
           <div className="event-details">
+            <h1>About</h1>
             <p className="event-description">{event.description}</p>
           </div>
         </div>

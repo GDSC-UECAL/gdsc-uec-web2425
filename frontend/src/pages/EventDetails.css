@@ -20,6 +20,7 @@
   justify-content: center;
   text-align: left;
   color: white;
+  padding-left: 50px;
 }
 
 .image {
@@ -35,7 +36,7 @@
 
 .event-details {
   display: flex;
-  flex-direction: row; 
+  flex-direction: column; 
 }
 
 .event-details-container {
@@ -69,6 +70,10 @@
   text-align: center;               /* Center the text */
 }
 
+.speakers-section{
+  text-align: left;
+}
+
 
 .speakers-grid {
   display: grid;
@@ -78,30 +83,39 @@
 }
 
 .speaker-card {
+  position: relative; /* Make the container relative to position the background */
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  background-image: url('../assets/events/rec21.png'); /* Use the background image */
+  background-repeat: no-repeat; /* Avoid repeating the background */
+  background-position: 30px 40px; /* Center the background image */
+  background-size: 300px 50px; /* Cover the entire speaker card */
 }
 
 .speaker-image {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+  z-index: 1; /* Place the speaker image on top of the background */
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
   margin-right: 20px;
   object-fit: cover;
 }
 
 .speaker-details {
+  z-index: 1; /* Ensure text appears on top of the background */
   flex: 1;
 }
 
 .speaker-name {
   font-size: 1.1em;
-  font-weight: bold;
+  font-weight: 100;
+  text-align: left;
+  color: white;
 }
 
 .speaker-title {
@@ -114,6 +128,7 @@
   color: #666;
 }
 
+
 .event-background {
   position: fixed;  /* Use fixed to make it fill the viewport */
   z-index: -1;      /* Ensure it's behind other content */
@@ -125,9 +140,26 @@
 
 .event-background-image {
   position: absolute;   /* Positioning for the image */
-  top: 0px;             /* Center vertically */
+  top: 200px;             /* Center vertically */
   width: 100%;          /* Full width of the parent */
   height: 1000px;         /* Maintain aspect ratio */
   transform: translate(-50%, -50%); /* Center the image */
-  filter: blur(10px);   /* Apply blur effect */
+  filter: blur(20px);   /* Apply blur effect */
+}
+
+.event-description{
+  text-align: left;
+  margin-top: 30px;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.title-container .event-title{
+  font-size: 3.5em;
+  font-weight: 500;
+}
+
+.title-container .event-date{
+  color: white;
+  font-size: 1.0em;
 }
