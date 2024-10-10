@@ -3,6 +3,7 @@ import horn from "../assets/common/5.png";
 import ball from "../assets/common/4.png";
 import cube1 from "../assets/common/6.png";
 import cube2 from "../assets/common/3.png";
+import EventCarousel from "./EventCarousel";
 
 function EventHero({events}) {
 
@@ -18,11 +19,7 @@ function EventHero({events}) {
                 <p className="event-text-highlight">together, we discover future</p>
                 <div className="event-banner-container">
                     {events.length > 0 ? (
-                        events.slice(0, 5).map((event, index) => (
-                            <div key={event.id} className={`image-wrapper char${index + 1}`}>
-                                <img src={event.banner} alt={event.name} />
-                            </div>
-                        ))
+                        <EventCarousel events={events.slice(0,5)}/>
                     ) : (
                         <p>No upcoming events available.</p>
                     )}

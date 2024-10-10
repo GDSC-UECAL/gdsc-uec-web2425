@@ -6,7 +6,7 @@
         "description": "Join us for the first-ever panel discussion with the Department of Computer Studies and Systems - UE Caloocan. This is your chance to ask questions about math, data, arduino, or any real-life tech applications on your mind!",
         "location": "MPH 2, 3RD FLOOR, ENGINEERING BUILDING",
         "department": 1,
-        "banner": "Unlocking the potential of decentralized systems.",
+        "banner": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/colorful-event-night-flyer-design-template-b1326bc2830ad37c593e6d12e17d9207_screen.jpg?ts=1636993393",
         "speakers": [
             {
                 "id": 1,
@@ -60,7 +60,7 @@
     {
         "id": 3,
         "title": "Artificial Intelligence and Machine Learning: Trends and Future",
-        "date": "2024-01-30",
+        "date": "2024-10-26",
         "description": "Dive into the latest advancements in AI and ML technologies, discussing their impact on industries and everyday life.",
         "location": "AI Research Lab, New York, NY",
         "banner": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/colorful-event-night-flyer-design-template-b1326bc2830ad37c593e6d12e17d9207_screen.jpg?ts=1636993393",
@@ -82,7 +82,7 @@
     {
         "id": 4,
         "title": "Cybersecurity: Safeguarding the Digital Landscape",
-        "date": "2024-03-15",
+        "date": "2024-10-15",
         "description": "Understanding the critical cybersecurity measures that organizations must adopt to protect their assets in a digital-first world.",
         "location": "Cyber Defense Center, Washington, D.C.",
         "banner": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/colorful-event-night-flyer-design-template-b1326bc2830ad37c593e6d12e17d9207_screen.jpg?ts=1636993393",
@@ -104,7 +104,7 @@
     {
         "id": 5,
         "title": "The Future of Web Development: JAMstack and Beyond",
-        "date": "2024-05-10",
+        "date": "2024-10-11",
         "description": "A deep dive into JAMstack architecture and how it empowers developers to build fast, scalable websites.",
         "location": "Web Dev Summit, San Francisco, CA",
         "banner": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/colorful-event-night-flyer-design-template-b1326bc2830ad37c593e6d12e17d9207_screen.jpg?ts=1636993393",

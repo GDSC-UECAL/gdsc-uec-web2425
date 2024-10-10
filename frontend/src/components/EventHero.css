@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - 60px - 40px);
-    margin-bottom: 30px;
+    margin: 30px 0 30px 0;
     position: relative;
     z-index: 1;
 }
@@ -41,27 +41,27 @@
 }
 
 .horn {
-    width: 30vw;
-    top: 30%; 
+    width: 35vw;
+    top: 20%; 
     left: -20%; 
 }
 
 .ball {
-    width: 30vw;
+    width: 35vw;
     top: -5%;
     right: -20%;
 }
 
 .cube1 {
-    width: 50vw;
+    width: 45vw;
     top: 15%;
-    right: -30%;
+    right: -25%;
 }
 
 .cube2 {
-    width: 50vw;
+    width: 45vw;
     top: -5%;
-    left: -30%;
+    left: -25%;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -79,25 +79,25 @@
     
     .horn {
         width: 70vw;
-        top: 50%; 
-        left: -40%; 
+        top: 20%; 
+        left: -45%; 
     }
     
     .ball {
         width: 70vw;
         top: -5%;
-        right: -40%;
+        right: -45%;
     }
     
     .cube1 {
         width: 90vw;
-        top: 25%;
+        top: 15%;
         right: -60%;
     }
     
     .cube2 {
         width: 90vw;
-        top: 3%;
+        top: -5%;
         left: -60%;
     }
 }
@@ -118,8 +118,8 @@
 
     .horn {
         width: 100vw;
-        top: 40%; 
-        left: -90%; 
+        top: 10%; 
+        left: -80%; 
     }
     
     .ball {
@@ -130,13 +130,13 @@
     
     .cube1 {
         width: 120vw;
-        top: 20%;
-        right: -110%;
+        top: 7%;
+        right: -100%;
     }
     
     .cube2 {
         width: 120vw;
-        top: 0;
-        left: -110%;
+        top: -5%;
+        left: -100%;
     }
 }

@@ -4,7 +4,6 @@ import EventDropdown from "../components/EventDropdown";
 import EventCard from "../components/EventCard";
 import { monthData, departmentData } from "../data/dropdown_data";
 import EventHero from "../components/EventHero";
-import EventCarousel from '../components/EventCarousel';
 
 
 function Events() {
@@ -55,7 +54,7 @@ function Events() {
     return (
         <>
             <main id="event-main">
-                    <EventCarousel />
+                    <EventHero events={futureEvents}/>
                 <div id="event-nav">
                     <div>
                         <h1>Events</h1>
@@ -81,7 +80,7 @@ function Events() {
                         );
                     })}
                 </div>
-                {!showAllEvents && filteredEvents.length >= 4 && 
+                {!showAllEvents && filteredEvents.length > 4 && 
                     <div id="event-button">
                         <button onClick={handleShowAll}>See More</button>
                     </div>
