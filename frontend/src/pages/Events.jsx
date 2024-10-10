@@ -7,6 +7,7 @@ import EventHero from "../components/EventHero";
 
 function Events() {
     const [events, setEvents] = useState([]);
+    const [futureEvents, setFutureEvents] = useState([]);
     const [filteredEvents, setFilteredEvents] = useState([]);
     const [showAllEvents, setShowAllEvents] = useState(false);
     const [selectedMonth, setSelectedMonth] = useState('');
@@ -17,11 +18,19 @@ function Events() {
         async function fetchData() {
             const response = await fetch('src/data/eventsall.json');
             const data = await response.json();
-            setEvents(data)
-            setFilteredEvents(data);
-        };
+
+            setEvents(data);
+
+            const currentDate = new Date();
+            const upcomingEvents = data
+                .filter(event => new Date(event.date) >= currentDate)
+                .sort((a, b) => new Date(a.date) - new Date(b.date)); 
+    
+            setFilteredEvents(upcomingEvents);
+            setFutureEvents(upcomingEvents)
+        }
         fetchData();
-    }, [])
+    }, []);
 
     useEffect(() => {
         const filtered = events.filter(event => {
@@ -34,7 +43,7 @@ function Events() {
         });
 
         setFilteredEvents(filtered);
-    }, [selectedMonth, selectedDepartment, selectedCategory, events]);
+    }, [selectedMonth, selectedDepartment, selectedCategory]);
     
 
     function handleShowAll() {
@@ -44,7 +53,7 @@ function Events() {
     return (
         <>
             <main id="event-main">
-                <EventHero events={events}/>
+                <EventHero events={futureEvents}/>
                 <div id="event-nav">
                     <div>
                         <h1>Events</h1>

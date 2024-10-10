@@ -15,7 +15,7 @@ function EventCard(props) {
             <div className="event-image">
                 <img src={banner} alt={banner} />
             </div>
-            <div className="event-details">
+            <div className="event-details-main">
                 <div className="event-month-day">
                     <p className="event-month">{month}</p>
                     <p className="event-day">{day}</p>

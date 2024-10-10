@@ -5,16 +5,24 @@
 
 .event-dropdown-button {
     background-color: #F4F4F4;
-    color: black;
+    color: black; 
     padding: 10px;
-    font-size: 12px;
+    font-size: 12px; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    width: 10vw;
-    align-items: center;
+    display: flex; 
+    justify-content: space-between; 
+    width: 10vw; 
+    align-items: center; 
+    overflow: hidden; 
+    white-space: nowrap; 
+}
+
+.event-dropdown-button span {
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: block; 
 }
 
 .event-dropdown-arrow {

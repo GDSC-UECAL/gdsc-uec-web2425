@@ -27,12 +27,13 @@
     object-fit: cover;
 }
 
-.event-details {
+.event-details-main {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.event-details div {
+.event-details-main div {
     padding: 10px;
 }
 

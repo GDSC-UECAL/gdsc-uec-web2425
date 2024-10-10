@@ -18,8 +18,8 @@ function EventHero({events}) {
                 <p className="event-text-highlight">together, we discover future</p>
                 <div className="event-banner-container">
                     {events.length > 0 ? (
-                        events.map((event) => (
-                            <div key={event.id}>
+                        events.slice(0, 5).map((event, index) => (
+                            <div key={event.id} className={`image-wrapper char${index + 1}`}>
                                 <img src={event.banner} alt={event.name} />
                             </div>
                         ))
