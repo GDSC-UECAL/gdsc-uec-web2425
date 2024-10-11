@@ -2,14 +2,6 @@ import React, { useState } from 'react';
 import './EventCarousel.css';
 
 const EventCarousel = ({events}) => {
-  const images = [
-    { id: 1, src: events[0]?.banner, alt: 'Event 1' },
-    { id: 2, src: events[1]?.banner, alt: 'Event 2' },
-    { id: 3, src: events[2]?.banner, alt: 'Event 3' },
-    { id: 4, src: events[3]?.banner, alt: 'Event 4' },
-    { id: 5, src: events[4]?.banner, alt: 'Event 5' },
-  ];
-
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleItemClick = (index) => {
@@ -17,11 +9,10 @@ const EventCarousel = ({events}) => {
   };
 
   const getClassName = (index) => {
-    const itemCount = images.filter(image => image.src).length;
+    const position = (index - activeIndex + events.length) % events.length;
+    const itemCount = events.filter(event => event.banner).length;
 
     if (itemCount === 0) return '';
-
-    const position = (index - activeIndex + itemCount) % itemCount;
 
     if (itemCount === 1) {
         return 'carousel-items item-3';
@@ -57,17 +48,19 @@ const EventCarousel = ({events}) => {
 
   return (
     <div className="carousel-container">
-       {images.filter(image => image.src).length > 0 ? ( 
+       {/* {images.filter(image => image.src).length > 0 ? (  */}
+       {events.filter(event => event.banner).length > 0 ? ( 
         <div className="carousel">
-          {images
-            .filter(image => image.src)
-            .map((image, index) => (
+          {events
+            .filter(event => event.banner) 
+            .map((event, index) => (
               <div 
                 className={getClassName(index)} 
-                key={index}
+                key={event.id}
                 onClick={() => handleItemClick(index)}
               >
-                <img src={image.src} alt={image.alt} />
+                <img src={`http://localhost:8000/storage/${event.banner}`} alt={event.title} />
+                <p className="carousel-event-title">{event.title}</p>
               </div>
             ))}
         </div>
