@@ -1,0 +1,76 @@
+.igma-carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .igma-carousel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .igma-carousel-items {
+    position: absolute;
+    top: 50%;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    width: 30vw;
+    height: 20vw;
+    top: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    object-fit: fill;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .igma-carousel-items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .igma-items-1 {
+    transform: scale(1.1) translateX(0%) scale(1);
+    border: 5px inset #f54242;
+    box-shadow: 0 0px 20px #f54242;
+  }
+  
+  .igma-items-2 {
+    transform: translateX(110%) scale(0.8);
+    filter: blur(4px);
+  }
+  
+  .igma-items-3 {
+    transform: translateX(200%) scale(0.8);
+    filter: blur(4px);
+    z-index: 1;
+  }
+  
+  .igma-items-4 {
+    transform: translateX(210%) scale(0.8);
+    filter: blur(4px);
+  }
+  
+  /* Responsive adjustments for small screens */
+  @media (max-width: 768px) {
+    .igma-carousel-items {
+      width: 40vw;
+      height: 40vw;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .igma-carousel-items {
+      width: 60vw;
+      height: 60vw;
+    }
+  }
+  
