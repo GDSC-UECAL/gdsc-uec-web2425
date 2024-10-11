@@ -10,90 +10,50 @@ const EventCarousel = ({events}) => {
     { id: 5, src: events[4]?.banner, alt: 'Event 5' },
   ];
 
-  const getInitialActiveIndex = (images) => {
-    const itemCount = images.filter(image => image.src).length;
-
-    if (itemCount === 1) return 0;
-    if (itemCount === 2) return ""; 
-    if (itemCount === 3) return 1; 
-    if (itemCount === 4) return ""; 
-    if (itemCount === 5) return 2; 
-  };
-
-  const [activeIndex, setActiveIndex] = useState(getInitialActiveIndex(images));
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const handleItemClick = (index) => {
-    const itemCount = images.filter(image => image.src).length;
-
-    if (itemCount < 2 || itemCount > 4) {
-      setActiveIndex(index);
-    }
+    setActiveIndex(index)
   };
 
   const getClassName = (index) => {
-    const position = (index - activeIndex + images.length) % images.length;
     const itemCount = images.filter(image => image.src).length;
 
     if (itemCount === 0) return '';
 
+    const position = (index - activeIndex + itemCount) % itemCount;
+
     if (itemCount === 1) {
-      return 'carousel-items item-3';
+        return 'carousel-items item-3';
     }
 
     if (itemCount === 2) {
-      if (position === 0) {
-        return 'carousel-items item-2';
-      }
-      if (position === 1) {
-        return 'carousel-items item-4';
-      }
+        return position === 0 ? 'carousel-items item-2' : 'carousel-items item-4';
     }
 
     if (itemCount === 3) {
-      if (position === 0) {
-        return 'carousel-items item-2';
-      }
-      if (position === 1) {
-        return 'carousel-items item-3';
-      }
-      if (position === 4) {
-        return 'carousel-items item-4';
-      }
+        return `carousel-items item-${position + 2}`;
     }
 
     if (itemCount === 4) {
       if (position === 0) {
-        return 'carousel-items item-1';
+        return `carousel-items item-4`
       }
       if (position === 1) {
-        return 'carousel-items item-2';
+        return `carousel-items item-5`
       }
       if (position === 2) {
-        return 'carousel-items item-4';
+        return `carousel-items item-1`
       }
       if (position === 3) {
-        return 'carousel-items item-5';
+        return `carousel-items item-2`
       }
     }
 
     if (itemCount === 5) {
-      if (position === 0) {
-        return 'carousel-items item-3';
-      }
-      if (position === 1) {
-        return 'carousel-items item-4';
-      }
-      if (position === 2) {
-        return 'carousel-items item-5';
-      }
-      if (position === 3) {
-        return 'carousel-items item-1';
-      }
-      if (position === 4) {
-        return 'carousel-items item-2';
-      }
+        return `carousel-items item-${(position + 2) % 5 + 1}`; 
     }
-  };
+};
 
   return (
     <div className="carousel-container">
