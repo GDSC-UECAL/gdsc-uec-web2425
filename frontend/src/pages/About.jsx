@@ -13,6 +13,7 @@ import el11 from '../assets/common/11.png';
 import el12 from '../assets/common/12.png';
 import el13 from "../assets/common/13.png";
 import el14 from "../assets/common/14.png";
+import el15 from "../assets/common/15.png"
 import gdsc_photo from '../assets/common/gdsc-grp.png';
 import gdsc_mascot from '../assets/common/mascot.png';
 import vecA from '../assets/common/vector_a.png';
@@ -55,7 +56,7 @@ function About() {
                 <img className="floating-element el8" style={{ width: '10%', left: '80vw', top: '15vh', position: 'absolute', float: 'right', animation: 'float1 17s linear infinite' }} src={el8} />
                 <img className="floating-element el9" style={{ width: '7%', left: '60vw', top: '20vh', position: 'absolute', float: 'right', animation: 'float 9s linear infinite' }} src={el9} />
                 
-                <img style={{ width: '53%', left: '53.7vw', top: '15.5vh', position: 'absolute', float: 'right' }} src={el14} />
+                <img style={{ width: '50%', right: '-3vw', top: '24.5vh', position: 'absolute', float: 'right' }} src={el15} />
 
                 <img style={{ width: '50%', left: '-3vw', top: '24.5vh', position: 'absolute', float: 'right' }} src={el13} />
 
@@ -75,8 +76,8 @@ function About() {
             <img className="vector-image vec-h" style={{ width: '21%', right: '0vw', top: '110.6vh', position: 'absolute', float: 'right' }} src={vecH} />
             <img className="floating-element el6" style={{ width: '21%', right: '-10vw', top: '145.6vh', position: 'absolute', float: 'right' }} src={el6} />
             <img className="floating-element el10" style={{ width: '10%', left: '-5vw', top: '130.6vh', position: 'absolute', float: 'right' }} src={el10} />
-            <img className="floating-element el12" style={{ width: '19%', left: '-10vw', top: '160.6vh', position: 'absolute', float: 'right' }} src={el12} />
-            <img className="vector-image vec-c" style={{ width: '30%', left: '-4vw', top: '180.6vh', position: 'absolute', float: 'right' }} src={vecC} />
+            <img className="floating-element el12" style={{ width: '19%', left: '-9vw', top: '160.6vh', position: 'absolute', float: 'right' }} src={el12} />
+            <img className="vector-image vec-c" style={{ width: '30%', left: '-5.5vw', top: '194.6vh', position: 'absolute', float: 'right' }} src={vecC} />
             <div className="container-fluid p-0 position-relative">
                 <div className="gdsc-section">
                     <h2 className="gdsc-title">

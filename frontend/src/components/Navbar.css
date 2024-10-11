@@ -5,7 +5,8 @@
     padding-left: 30px;
     font-weight: bold;
     box-shadow: 0 0px 20px 0 rgba(0,0,0,.1);
-    
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 .nav-link{
@@ -14,6 +15,24 @@
     font-weight: 700;
     font-style: bold;
     
+}
+
+.registerbtn{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #611DE6;
+    color: #ffffff;
+}
+
+.registerbtn:hover{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+    color: #611DE6;
 }
 
 .nav-item .nav-link.active {

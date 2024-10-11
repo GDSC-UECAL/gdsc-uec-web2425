@@ -42,7 +42,7 @@ function Navbar() {
 
                             {/* Register Link */}
                             <div className="register d-flex justify-content-bottom align-items-center justify-content-md-end mt-3 mt-md-0">
-                                <Link className="nav-link mx-lg-2" to="/#">Register</Link>
+                                <button className="registerbtn nav-link mx-lg-2" to="/#">Register</button>
                             </div>
                         </div>
 
