@@ -74,7 +74,7 @@ function About() {
             <div style={{width:'100vw', overflowX: 'clip'}}>
             <img className="vector-image vec-e" style={{ width: '20%', left: '0vw', top: '104vh', position: 'absolute', float: 'right' }} src={vecE} />
             <img className="vector-image vec-h" style={{ width: '21%', right: '0vw', top: '110.6vh', position: 'absolute', float: 'right' }} src={vecH} />
-            {/*<img className="floating-element el6" style={{ width: '21%', right: '-10vw', top: '145.6vh', position: 'absolute', float: 'right' }} src={el6} />*/}
+            {/*<img className="floating-element el6" style={{ width: '21%', right: '-10vw', top: '145.6vh', position: 'absolute', float: 'right' }} src={el6} />*/} {/*Move this somewhere not too much to the side*/}
             <img className="floating-element el10" style={{ width: '10%', left: '-5vw', top: '130.6vh', position: 'absolute', float: 'right' }} src={el10} />
             <img className="floating-element el12" style={{ width: '19%', left: '-9vw', top: '160.6vh', position: 'absolute', float: 'right' }} src={el12} />
             <img className="vector-image vec-c" style={{ width: '30%', left: '-5.5vw', top: '194.6vh', position: 'absolute', float: 'right' }} src={vecC} />
