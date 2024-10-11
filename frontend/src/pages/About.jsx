@@ -26,6 +26,8 @@ import vecH from '../assets/common/vector_h.png';
 import vision from '../assets/about/vision.png';
 import "../components/Aboutuscarousel.css";
 import Aboutuscarousel from '../components/Aboutuscarousel.jsx';
+import IgmaKadimaCarousel from '../components/IgmaKadimaCarousel';
+import ChaptersCarousel from '../components/ChaptersCarousel';
 import { FaBrain, FaHammer, FaNetworkWired } from 'react-icons/fa';
 
 
@@ -78,7 +80,7 @@ function About() {
             <div className="container-fluid p-0 position-relative">
                 <div className="gdsc-section">
                     <h2 className="gdsc-title">
-                        What is <span className="gdsc-letter g">G</span><span className="gdsc-letter d">D</span><span className="gdsc-letter s">S</span><span className="gdsc-letter c">C</span> UE Caloocan?
+                        WHAT IS <span className="gdsc-letter g">G</span><span className="gdsc-letter d">D</span><span className="gdsc-letter s">S</span><span className="gdsc-letter c">C</span> UE Caloocan?
                     </h2>
                     <p className="gdsc-description">
                         Google Developer Student Clubs UE Caloocan is a student-led technology organization situated at the University of The East in Caloocan City. As a proud member of a global community, our mission is to empower diverse communities worldwide through the transformative power of technology.
@@ -87,30 +89,46 @@ function About() {
             </div>
             </div>
             <div className="about-container p-2">
-                <section className="mission-section text-start mb-5" >
+                <section className="mission-section" >
+                    <div className="row flex-column-reverse flex-md-row">
+                        <div className="col-md-6 col-sm-12 mb-4">
+                            <div className="mission-item" style={{lineHeight: '35px'}}>
+                                <p className="IgmaKadima mb-0" style={{ fontWeight: '600' }}>To Grow and To</p>
+                                <h2 className="mission-title mb-3" style={{ textAlign: 'start' }}><span style={{color:'#f54242'}}>Igma<br></br>Kadima</span></h2>
+                                <p>Google Developer Student Clubs UE Caloocan is a student-led technology organization situated at the University of The East in Caloocan City.</p>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-sm-12 row align-items-center">
+                            <div className="mission-item">
+                                <IgmaKadimaCarousel />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section className="mission-section text-start my-5" >
                 <h2 className="mission-title" style={{ textAlign: 'start' }}>Mission</h2>
                 <p className="mission-subtitle mb-5" style={{ textAlign: 'start' }}>We aim to do the <b><span style={{color:'#eb5757'}}>A</span>.<span style={{color:'#f2c94c'}}>B</span><span style={{color:'#198754'}}>.C</span></b></p>
                 <div className="row text-center text-start">
                     <div className="col-md-4 col-sm-12 mb-4">
-                    <div className="mission-item">
-                        <FaNetworkWired className="abc-icon" style={{color:'#eb5757'}}/>
-                        <h3 className="mission-heading text-danger">Aspire</h3>
-                        <p> Individuals to grow with the help of peer-to-peer learning through the community.</p>
-                    </div>
-                    </div>
-                    <div className="col-md-4 col-sm-12 mb-4">
-                    <div className="mission-item">
-                        <FaHammer className="abc-icon" style={{color:'#f2c94c'}}/>
-                        <h3 className="mission-heading text-warning">Build</h3>
-                        <p>Experience & meaningful technologies to empower communities.</p>
-                    </div>
-                    </div>
-                    <div className="col-md-4 col-sm-12 mb-4">
-                    <div className="mission-item">
-                        <FaBrain className="abc-icon" style={{color:'#198754'}}/>
-                        <h3 className="mission-heading text-success">Connect</h3>
-                        <p>With people through the community and organizations to grow your network.</p>
-                    </div>
+                        <div className="mission-item">
+                            <FaNetworkWired className="abc-icon" style={{color:'#eb5757', fontSize: '3rem'}} />
+                            <h3 className="mission-heading text-danger">Aspire</h3>
+                            <p> Individuals to grow with the help of peer-to-peer learning through the community.</p>
+                        </div>
+                        </div>
+                        <div className="col-md-4 col-sm-12 mb-4">
+                        <div className="mission-item">
+                            <FaHammer className="abc-icon" style={{color:'#f2c94c', fontSize: '3rem'}} />
+                            <h3 className="mission-heading text-warning">Build</h3>
+                            <p>Experience & meaningful technologies to empower communities.</p>
+                        </div>
+                        </div>
+                        <div className="col-md-4 col-sm-12 mb-4">
+                        <div className="mission-item">
+                            <FaBrain className="abc-icon" style={{color:'#198754', fontSize: '3rem'}} />
+                            <h3 className="mission-heading text-success">Connect</h3>
+                            <p>With people through the community and organizations to grow your network.</p>
+                        </div>
                     </div>
                 </div>
                 </section>
@@ -146,7 +164,7 @@ function About() {
             </div>
                 <div className="row text-center text-start">
                     <div className="col-md-6 col-sm-12 mb-4 d-flex flex-column justify-content-center">
-                        <div className="o-department-block text-start" style={{ borderColor: '#f54242'}}>
+                        <div className="o-department-block text-start" style={{ color: '#f54242', borderColor: '#f54242'}}>
                             <h3>Operations Department</h3>
                             <p>Ensures seamless event execution and initiative implementation, optimizing resources for successful outcomes through meticulous planning.</p>
                         </div>
@@ -168,6 +186,28 @@ function About() {
                             <h3>Executive Board</h3>
                             <p>Oversees strategic direction and decision-making, ensuring organizational goals are met effectively and efficiently, while continually evaluating and adapting to emerging opportunities.</p>
                         </div>
+                    </div>
+                </div>
+                <div className="about-container p-2">
+                    <h2 className="gdsc-title mt-5">
+                        Meet the other <span className="gdsc-letter g">G</span><span className="gdsc-letter d">D</span><span className="gdsc-letter s">S</span><span className="gdsc-letter c">C</span> chapters!
+                    </h2>
+                    <div style={{height:'90vh'}}>
+                    <section className="-section">
+                    <div className="row flex-md-row">
+                        <div className="col-md-6 col-sm-12 m2-4">
+                            <div className="mission-item">
+                                <ChaptersCarousel />
+                            </div>   
+                        </div>
+                        <div className="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                            <div className="chapter-item text-center">
+                                <p>GDSC-UECal is only one of 43 Google Developer Student Clubs (GDSCs) in the Philippines, all of which are university-based community groups that aim to bridge the gap between theory and practical application for Filipino student developers</p>
+                                <a href="https://gdg.community.dev" target="_blank" rel="noopener noreferrer" className="btn btn-submit">See Other GDSC Chapters</a>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
                     </div>
                 </div>
         </>

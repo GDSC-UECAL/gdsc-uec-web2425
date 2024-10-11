@@ -29,6 +29,7 @@
   padding: 0;
 }
 
+
 .floating-element {
   position: absolute;
   filter: blur(2px);
@@ -133,7 +134,7 @@
 }
 
 .gdsc-letter {
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 .g { color: #4287f5; }
@@ -235,13 +236,12 @@ body {
 }
 
 .mission-title {
-  font-size: 2.7rem;
-  font-weight: bold;
+  font-size: 5rem;
   text-align: center;
 }
 
 .vision-title {
-  font-size: 2.7rem;
+  font-size: 5rem;
   font-weight: bold;
   text-align: center;
 }
@@ -256,12 +256,22 @@ body {
   display: flex;
   flex-direction: column;
   text-align: start;
+  font-size: 1.2rem;
 }
 
 .vision-item {
   display: flex;
   flex-direction: column;
   text-align: start;
+}
+
+.chapter-item{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  padding-bottom: 3rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .vision-item p{
@@ -322,7 +332,7 @@ body {
   background-color: #611de6;
   border: none;
   transition: background-color 0.2s;
-  width: 100px;
+  width: 300px;
   color: white;
 }
 
@@ -333,7 +343,12 @@ body {
 
 
 
-/* Responsive styles */
+.mission-title, .vision-title {
+  font-size: 5rem;
+  text-align: center;
+}
+
+
 @media (max-width: 1200px) {
   .about-title { font-size: 4rem; }
   .gdsc-title { font-size: 3rem; }
@@ -374,11 +389,19 @@ body {
     font-size: 3rem;
     margin-bottom: 1rem;
   }
+  .mission-item {margin-bottom: 3rem;}
   .about-content {padding: 1rem;}
   .side-image {opacity: 0.5;}
   .testimg {opacity: 0.7;}
   .mission-item { margin-bottom: 1.5rem;}
+  .mission-title, .vision-title {
+    font-size: 3.5rem;
+    text-align: center;
+  }
 }
+
+
+
 
 @media (max-width: 500px) {
   .about-title { font-size: 2.5rem; }
@@ -393,4 +416,8 @@ body {
   .about-title {font-size: 2.5rem;}
   .side-image {opacity: 0.3;}
   .testimg {opacity: 0.5;}
+  .mission-title, .vision-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
 }
