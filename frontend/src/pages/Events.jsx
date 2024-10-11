@@ -5,7 +5,6 @@ import EventCard from "../components/EventCard";
 import { monthData, departmentData } from "../data/dropdown_data";
 import EventHero from "../components/EventHero";
 
-
 function Events() {
     const [events, setEvents] = useState([]);
     const [futureEvents, setFutureEvents] = useState([]);
@@ -15,54 +14,57 @@ function Events() {
     const [selectedDepartment, setSelectedDepartment] = useState('');
     const [selectedCategory, setSelectedCategory] = useState('');
 
+
     useEffect(() => {
-        async function fetchData() {
-            const response = await fetch('src/data/eventsall.json');
-            const data = await response.json();
+        fetch('http://localhost:8000/api/v1/events') 
+            .then(response => response.json())
+            .then(data => {
+                const eventsData = data.data;
 
-            setEvents(data);
+                setEvents(eventsData);
 
-            const currentDate = new Date();
-            const upcomingEvents = data
-                .filter(event => new Date(event.date) >= currentDate)
-                .sort((a, b) => new Date(a.date) - new Date(b.date)); 
-    
-            setFilteredEvents(upcomingEvents);
-            setFutureEvents(upcomingEvents)
-        }
-        fetchData();
+                const currentDate = new Date();
+                const upcomingEvents = eventsData
+                    .filter(event => new Date(event.date) >= currentDate)
+                    .sort((a, b) => new Date(a.date) - new Date(b.date));
+
+                setFilteredEvents(upcomingEvents);
+                setFutureEvents(upcomingEvents);
+            })
+            .catch(error => console.error('Error fetching events:', error));
     }, []);
+
 
     useEffect(() => {
         const filtered = events.filter(event => {
             const dateParts = event.date.split('-');
-            const eventMonth = dateParts[1]; 
+            const eventMonth = dateParts[1];
 
             const matchesMonth = selectedMonth ? eventMonth === selectedMonth : true;
             const matchesDepartment = selectedDepartment ? event.department === selectedDepartment : true;
+
             return matchesMonth && matchesDepartment;
         });
 
         setFilteredEvents(filtered);
-    }, [selectedMonth, selectedDepartment, selectedCategory]);
-    
+    }, [selectedMonth, selectedDepartment, selectedCategory, events]);
 
     function handleShowAll() {
-        setShowAllEvents(true)
+        setShowAllEvents(true);
     }
 
     return (
         <>
             <main id="event-main">
-                    <EventHero events={futureEvents}/>
+                <EventHero events={futureEvents} />
                 <div id="event-nav">
                     <div>
                         <h1>Events</h1>
                     </div>
                     <div id="event-dropdowns">
                         <EventDropdown title="Month" options={monthData} onSelect={setSelectedMonth} />
-                        <EventDropdown title="Department" options={departmentData} onSelect={setSelectedDepartment}/>
-                        <EventDropdown title="Category" options={['Workshops', 'Conferences', 'Webinars']} onSelect={setSelectedCategory}/>
+                        <EventDropdown title="Department" options={departmentData} onSelect={setSelectedDepartment} />
+                        <EventDropdown title="Category" options={['Workshops', 'Conferences', 'Webinars']} onSelect={setSelectedCategory} />
                     </div>
                 </div>
                 <div id="event-container">
@@ -76,23 +78,25 @@ function Events() {
                         const formattedDay = `${day}`;
 
                         return (
-                            <EventCard key={event.id} {...event} day={formattedDay} month={monthName}/>
+                            <EventCard key={event.id} {...event} day={formattedDay} month={monthName} banner={
+                                `http://localhost:8000/storage/${event.banner}`
+                            } />
                         );
                     })}
                 </div>
-                {!showAllEvents && filteredEvents.length > 4 && 
+                {!showAllEvents && filteredEvents.length > 4 && (
                     <div id="event-button">
                         <button onClick={handleShowAll}>See More</button>
                     </div>
-                }
-                {filteredEvents.length == 0 && (
+                )}
+                {filteredEvents.length === 0 && (
                     <div id="event-message">
                         <p>No Available events.</p>
                     </div>
                 )}
             </main>
         </>
-    )
+    );
 }
 
 export default Events;
