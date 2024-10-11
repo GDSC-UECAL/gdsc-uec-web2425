@@ -1,69 +1,60 @@
 
-.navbar{
+.navbar { 
+    width: 100%;
+    overflow-x: hidden;
     background-color: white;
     padding: 8px;
     padding-left: 30px;
     font-weight: bold;
-    box-shadow: 0 0px 20px 0 rgba(0,0,0,.1);
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, .1);
     box-sizing: border-box;
     max-width: 100%;
 }
 
-.nav-link{
+
+body, html {
+    overflow-x: hidden; 
+}
+
+.offcanvas {
+    width: 100%; 
+}
+
+
+.navbar-brand img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.registerbtn {
+    padding: 10px 20px;
+    background-color: #611DE6;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.registerbtn:hover {
+    background-color: white;
+    color: #611DE6;
+    border: 1px solid #611DE6;
+}
+
+
+.nav-link {
     color: hsl(0, 0%, 1%);
     font-family: "Mulish", sans-serif;
     font-weight: 700;
     font-style: bold;
-    
+    transition: color 0.3s ease-in-out;
 }
 
-.registerbtn{
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #611DE6;
-    color: #ffffff;
-}
-
-.registerbtn:hover{
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #ffffff;
-    color: #611DE6;
-}
-
-.nav-item .nav-link.active {
-    color: #ffffff;
-}
-
-.nav-link:hover{
+.nav-link:hover {
     color: rgb(151, 142, 142);
 }
 
-.navbar-brand{
-    height: auto;
-    padding: 0%;
-    padding-right: 50px;
-}
 
-.btn-primary{
-    color: hsl(0, 0%, 1%);
-    font-family: "Mulish", sans-serif;
-    font-weight: 700;
-    font-style: bold;
-}
-
-.button1{
-    background-color: #ffffff;
-    color: #611DE6;
-}
-
-.button2{
-    background-color: #611DE6;
+.nav-item .nav-link.active {
     color: white;
 }
-
-
