@@ -315,10 +315,11 @@
 
   .txtinside {
     font-size: 22px; /* Adjust main text size for mobile */
+    margin-top: -30%;
   }
 
   .txtinside2 {
-    font-size: 15px; /* Adjust subtitle font size */
+    font-size: 10px; /* Adjust subtitle font size */
   }
 
   .carouselcontainer {
@@ -326,10 +327,11 @@
   }
   .rightArrowCar{
     width: 20%;
-    bottom: 400px;
+    right: -35px;
+    bottom: 450px;
   }
   .leftArrowCar{
     width: 20%;
-    top: 250px;
+    top: 220px;
   }
 }

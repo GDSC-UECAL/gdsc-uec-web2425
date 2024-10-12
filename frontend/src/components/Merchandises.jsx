@@ -11,7 +11,7 @@ import rightArrowMerch from '../assets/products/rightArrowCar.png';
 
 function Card({ image, title, text, price, color }) {
   return (
-    <div className="card custom-card no-margin-padding">
+    <div className="card custom-card no-margin-padding cardhovermerch">
       {/* Container for the circle and image */}
       <div className="image-circle-container">
         <div className="circle-background" style={{ backgroundColor: color }}></div>
@@ -84,7 +84,8 @@ function Merchandises() {
         <img src={bell} alt="" className="bell elements1" />
         <img src={bigBall} alt="" className="bigBall elements1" />
         <img src={square2} alt="" className="square2 elements" />
-        <img src={leftArrowMerch} alt="" className="leftArrowMerch elements2" />
+        <img src={leftArrowMerch} alt="" className="leftArrowMerch" />
+        <img src={rightArrowMerch} alt="" className="rightArrowMerch" />
         {/*<img src={rightArrowMerch} alt="" className="rightArrowMerch elements2" />*/} {/*Move this somewhere not too much to the side*/}
       </div>
 

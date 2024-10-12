@@ -1,3 +1,4 @@
+
 .merchTitle{
   margin-top: 210px;
   margin-bottom: 50px;
@@ -63,18 +64,18 @@
 
 
 .button1 {
-  background-color: rgb(132, 57, 147);
-  color: black;
+  background-color: #611DE6;
   transition: background-color 0.3s ease, color 0.3s ease;
+  color: white;
   /* Transition for button2 */
   border-color: #611DE6;
   z-index: -2;
 }
 
 .button1:hover {
-  background-color: #611DE6;
+  background-color: white;
   /* Change background color on hover */
-  color: white;
+  color: #611DE6;
   /* Change text color on hover */
   border-color: #611DE6;
 }
@@ -297,6 +298,7 @@
 
   .card-body {
     padding: 10px; /* Further reduce padding */
+    text-align: left; /* Ensure left alignment */
   }
 
   .card-img-top .image-circle {
@@ -310,6 +312,7 @@
 
   .card-text {
     font-size: 14px; /* Adjust font size */
+    text-align: left; /* Ensure left alignment */
   }
 
   .button1 {

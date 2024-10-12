@@ -100,8 +100,8 @@ function ProductsCarousel({banner, title, link, description }) {
       <img src={ball1left} alt="" className="ball1leftCar elements2" />
       <img src={ball1right} alt="" className="ball1rightCar elements2" />
       <img src={square1} alt="" className="square1Car elements1" />
-      <img src={rightArrowCar} alt="" className="rightArrowCar elements" />
-      <img src={leftArrowCar} alt="" className="leftArrowCar elements" />
+      <img src={rightArrowCar} alt="" className="rightArrowCar" />
+      <img src={leftArrowCar} alt="" className="leftArrowCar" />
       </div>
       <div className="carouselcontainer">
         <div className="container">
