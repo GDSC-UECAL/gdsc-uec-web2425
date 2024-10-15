@@ -9,6 +9,15 @@
     z-index: 1;
 }
 
+#event-hero-main h1 {
+    font-size: 6vw;
+    margin-bottom: 20px;
+}
+
+#event-hero-main p {
+    font-size: 1.5vw;
+}
+
 .event-banner-container {
     display: flex;
 }
@@ -26,6 +35,12 @@
     position: absolute;
     height: auto;
     animation: move 3s ease-in-out infinite alternate;
+}
+
+#event-hero-message {
+    display: flex;
+    align-items: center;
+    height: 40vh;
 }
 
 @keyframes move {
@@ -66,11 +81,12 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
     #event-hero-main h1 {
-        font-size: 8vw;
+        font-size: 13vw;
+        text-align: center;
     }
 
     #event-hero-main p {
-        font-size: 3.5vw;
+        font-size: 4vw;
     }
 
     #event-hero-main img {

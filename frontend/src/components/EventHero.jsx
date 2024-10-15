@@ -21,7 +21,9 @@ function EventHero({events}) {
                     {events.length > 0 ? (
                         <EventCarousel events={events.slice(0,5)}/>
                     ) : (
-                        <p>No upcoming events available.</p>
+                        <div id="event-hero-message">
+                            <p>No upcoming events available.</p>
+                        </div>
                     )}
                 </div>
             </div>

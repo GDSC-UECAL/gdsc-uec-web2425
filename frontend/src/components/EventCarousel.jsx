@@ -48,8 +48,7 @@ const EventCarousel = ({events}) => {
 
   return (
     <div className="carousel-container">
-       {/* {images.filter(image => image.src).length > 0 ? (  */}
-       {events.filter(event => event.banner).length > 0 ? ( 
+       {events.filter(event => event.banner).length > 0 && ( 
         <div className="carousel">
           {events
             .filter(event => event.banner) 
@@ -64,13 +63,9 @@ const EventCarousel = ({events}) => {
               </div>
             ))}
         </div>
-      ) : (
-        <div className="events-message">
-          <span>There's no upcoming events.</span>
-        </div>
-      )}
+        )}
     </div>
   );
-};
+}
 
 export default EventCarousel;
