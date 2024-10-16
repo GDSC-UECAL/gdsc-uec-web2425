@@ -2,16 +2,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 50vh;
     width: 100%;
     position: relative;
-    margin-top: 60px;
+    margin-top: 5vh;
   }
   
   .carousel {
     position: relative;
     width: 100vw;
-    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +22,7 @@
     transform: translateY(-50%);
     transition: transform 0.5s ease, opacity 0.5s ease;
     width: 20vw;
-    height: 20vw;
+    height: 40vh;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     object-fit: fill;
@@ -66,10 +65,13 @@
   }
   
 @media (min-width: 768px) and (max-width: 1024px) {
+  .carousel-container {
+    height: 45vh;
+    margin-top: 2.5vh;
+  }
   .carousel-items {
     width: 25vw;
-    height: 25vw;
-    top: 50%;
+    height: 25vh;
   }
   .item-1 {
     transform: translateX(-240px) translateY(-45%) rotate(-7deg) scale(0.9);
@@ -86,10 +88,14 @@
 }
 
 @media (max-width: 767px) {
+  .carousel-container {
+    height: 45vh;
+    margin-top: 2.5vh;
+  }
+
   .carousel-items {
     width: 30vw;
-    height: 30vw;
-    top: 10%;
+    height: 25vh;
   }
   .item-1 {
     transform: translateX(-120px) translateY(-45%) rotate(-7deg) scale(0.9);

@@ -17,15 +17,13 @@ function EventHero({events}) {
                 <h1>Upcoming Events</h1>
                 <p>Come and join our exciting events where</p>
                 <p className="event-text-highlight">together, we discover future</p>
-                <div className="event-banner-container">
-                    {events.length > 0 ? (
-                        <EventCarousel events={events.slice(0,5)}/>
-                    ) : (
-                        <div id="event-hero-message">
+                {events.length > 0 ? (
+                    <EventCarousel events={events.slice(0,5)}/>
+                ) : (
+                    <div id="event-hero-message">
                             <p>No upcoming events available.</p>
-                        </div>
-                    )}
-                </div>
+                    </div>
+                )}
             </div>
         </>
     )
