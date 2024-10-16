@@ -197,7 +197,7 @@
     margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    justify-content: space-between; /* Add space between members */
+    justify-content: start; /* Add space between members */
 }
 
 .membersPic {
