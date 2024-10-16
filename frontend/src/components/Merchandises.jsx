@@ -84,8 +84,8 @@ function Merchandises() {
         <img src={bell} alt="" className="bell elements1" />
         <img src={bigBall} alt="" className="bigBall elements1" />
         <img src={square2} alt="" className="square2 elements" />
-        <img src={leftArrowMerch} alt="" className="leftArrowMerch" />
-        <img src={rightArrowMerch} alt="" className="rightArrowMerch" />
+        {/*<img src={leftArrowMerch} alt="" className="leftArrowMerch" />
+        <img src={rightArrowMerch} alt="" className="rightArrowMerch" />*/}
         {/*<img src={rightArrowMerch} alt="" className="rightArrowMerch elements2" />*/} {/*Move this somewhere not too much to the side*/}
       </div>
 
