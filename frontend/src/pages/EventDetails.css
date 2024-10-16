@@ -11,27 +11,24 @@
 .image-title-container {          
   display: flex;    
   flex-direction: row;                                                                        
-  margin-top: 80px;  
+  margin-top: 160px;  
   align-items: center;                  
 }
 
-.title-container {
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-  color: white;
-  padding-left: 50px;
-}
+
 
 .image {
-  width: auto;                
+  width: auto;      
+  border-radius: 16px;          
   height: 500px;                      
 }
 
 .event-details-flex-container {
   display: flex;                     
-  gap: 20px;                         
-  width: 100%;                       
+  gap: 50px;                         
+  width: 100%;    
+  margin-top: 30px;       
+              
 }
 
 .event-details {
@@ -40,22 +37,25 @@
 }
 
 .event-details-container {
-  background-color: #f9f9f9;         
+  background-color: white;         
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
   padding: 20px;                     
   width: 100%;                       
   max-width: 500px;    
   display: flex;
   flex-direction: row; 
-              
+  border-radius: 16px;  
+  border: 1px solid #787777;
 }
 
 .flexible-container {
   display: flex;                     
   justify-content: center;                   
-  background-color: #f0f2f5;         
+  background-color: white;           
   padding: 20px;                     
-  width: 100%;                       
+  width: 100%;    
+  border-radius: 16px;  
+  border: 1px solid #787777;                   
 }
 
 .flexible-content-container {
@@ -87,14 +87,7 @@
   display: flex;
   align-items: center;
   padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  background-image: url('../assets/events/rec21.png'); /* Use the background image */
-  background-repeat: no-repeat; /* Avoid repeating the background */
-  background-position: 30px 40px; /* Center the background image */
-  background-size: 300px 50px; /* Cover the entire speaker card */
+  justify-content: center;
 }
 
 .speaker-image {
@@ -102,30 +95,34 @@
   width: 100px;
   height: 100px;
   border-radius: 10%;
-  margin-right: 20px;
   object-fit: cover;
+  justify-content: end;
 }
 
 .speaker-details {
-  z-index: 1; /* Ensure text appears on top of the background */
   flex: 1;
+  align-items: center;
+  justify-content: center;
 }
 
 .speaker-name {
-  font-size: 1.1em;
-  font-weight: 100;
+  font-size: 1em;
   text-align: left;
   color: white;
+  background-color: #611DE6;
+  padding: 10px;
+  border-radius: 20px;
+  align-items: center;
+  text-align:end;
+  margin-left: -20px;
+  padding-left: 20px;
 }
 
-.speaker-title {
-  font-size: 0.9em;
-  color: #555;
-}
 
 .speaker-description {
   font-size: 0.85em;
   color: #666;
+  
 }
 
 
@@ -142,24 +139,38 @@
   position: absolute;   /* Positioning for the image */
   top: 200px;             /* Center vertically */
   width: 100%;          /* Full width of the parent */
-  height: 1000px;         /* Maintain aspect ratio */
+  height: 800px;         /* Maintain aspect ratio */
   transform: translate(-50%, -50%); /* Center the image */
   filter: blur(20px);   /* Apply blur effect */
 }
 
 .event-description{
   text-align: left;
-  margin-top: 30px;
   font-size: 20px;
   padding: 20px;
+  text-align: justify;
+}
+
+.title-container {
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  color: white;
+  padding-left: 50px;
+  letter-spacing: 2px;
 }
 
 .title-container .event-title{
   font-size: 3.5em;
-  font-weight: 500;
+  font-weight: 500px;
+}
+
+.title-container .event-location{
+  color: white;
+  font-size: 1.2em;
 }
 
 .title-container .event-date{
   color: white;
-  font-size: 1.0em;
+  font-size: 1.2em;
 }

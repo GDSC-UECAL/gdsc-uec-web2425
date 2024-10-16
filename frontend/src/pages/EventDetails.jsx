@@ -46,7 +46,6 @@ function EventDetails() {
           <div className="title-container">
             <h1 className="event-title">{event.title}</h1>
             <span className="event-date">{event.date}</span>
-            <span className="event-time">{event.time ? event.time : 'TBA'}</span> 
             <p className="event-location">{event.location}</p>
           </div>
         </div>
@@ -56,7 +55,7 @@ function EventDetails() {
           {/* Event details section */}
           <div className="event-details-container">
             <div className="event-details">
-              <h1>About</h1>
+              <h2>About</h2>
               <p className="event-description">{event.description}</p>
             </div>
           </div>
@@ -67,6 +66,7 @@ function EventDetails() {
               <div className="flexible-content-container">
                 <div className="speakers-section">
                   <h2>Speakers</h2>
+                  <br />
                   <div className="speakers-grid">
                     {event.speakers.map((speaker, index) => (
                       <div key={index} className="speaker-card">
@@ -75,9 +75,7 @@ function EventDetails() {
                           className="speaker-image"
                         />
                         <div className="speaker-details">
-                          <p className="speaker-name"><strong>{speaker.name}</strong></p>
-                          <p className="speaker-title">{speaker.title}</p>
-                          <p className="speaker-description">{speaker.description}</p>
+                          <p className="speaker-name">{speaker.name}</p>
                         </div>
                       </div>
                     ))}
