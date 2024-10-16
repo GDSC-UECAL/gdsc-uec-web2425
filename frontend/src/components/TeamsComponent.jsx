@@ -91,7 +91,7 @@ const TeamsComponent = () => {
             <Row className="teamMembers">
                 {members.length > 0 ? (
                     members.map((member, memberIndex) => (
-                        <Col xs={12} sm={6} md={4} lg={3} key={memberIndex} className="text-center mb-4">
+                        <Col sm={12} md={6} lg={3} key={memberIndex} className="text-center mb-4">
                             <img src={`http://localhost:8000/storage/${member.image}`} alt={member.name} className="membersPic" />
                             <h4 className="memberName">{member.name}</h4>
                             <h5 className="execMember" style={{ color }}>{member.role}</h5> {/* Apply the department color */}
