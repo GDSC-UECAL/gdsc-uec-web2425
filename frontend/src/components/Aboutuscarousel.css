@@ -1,152 +1,117 @@
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
 
 * {
-  box-sizing: border-box;
-  
+    box-sizing: border-box;
 }
 
 .carouselcontainer2 {
-  margin-top: -27%;   /*Deletable*/
-  margin-bottom: 30%; /*Deletable*/
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 10px;
-  font-family: 'DM Sans', sans-serif;
-  text-align: center;
-  place-content: center;
-
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 10px;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
 }
+
 .rdbtn2[type=radio] {
-  display: none;
-}
-
-.prodcard2 {
-  position: absolute;
-  width: clamp(15rem, 100%, 50rem);
-  height: clamp(15rem, 100%, 50rem);
-  left: 0;
-  right: 0;
-  margin: auto;
-  transition: transform .4s ease, opacity .4s ease, z-index .4s ease;
-  cursor: pointer;
-  text-decoration: none;
-  
+    display: none;
 }
 
 .cardscon2 {
-  position: relative;
-  width: 100%;
-  height: auto;
-  margin-top: 4%;
-  padding: 0% 0% 33% 0%;
-  text-decoration: none;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    margin-bottom: 20px;
+}
 
+.prodcard2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: transform 0.4s ease, opacity 0.4s ease, z-index 0.4s ease;
+    cursor: pointer;
 }
 
 .eventpic2 {
-  width: clamp(15rem, 100%, 50rem);
-  height: clamp(15rem, 100%, 50rem);
-  border-radius: 10px;
-  object-fit: fill;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-  /* FOR PICTURES */
-
-
-.nextRightCar2 {
-  position: absolute;
-  bottom: 30%;
-  right: 20vh; /* Adjust based on button placement */
-  width: auto;
-  height: auto;
-  z-index: 6;
-  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
-  transition: transform 0.3s ease; /* Add smooth transition for scaling */
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px;
 }
 
-.nextRightCar2:hover {
-  transform: scale(1.15); /* Apply scale on hover */
-  opacity: 0.75;
+.prev-button {
+    left: 10px;
 }
 
-.nextLeftCar2{
-  position: absolute;
-  bottom: 30%;
-  left: 20vh; /* depende kung saan mo ilalagay yung buttons na to*/
-  width: auto;
-  height: auto;
-  z-index: 6; 
-  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
-  transition: transform 0.3s ease; /* Add smooth transition for scaling */
+.next-button {
+    right: 10px;
 }
 
-.nextLeftCar2:hover {
-  transform: scale(1.15); /* Apply scale on hover */
-  opacity: 0.75;
+.nav-button img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease;
 }
 
-/* Tablet size (between 768px and 1024px) */
-@media screen and (max-width: 1024px) and (min-width: 768px) {
-  .carouselcontainer{
-    margin-bottom: 12%;
-  }
-  .prodcard2 {
-    width: 70%; /* Increase the width slightly for tablet */
-  }
-
-  .eventpic2 {
-    max-height: 400px; /* Adjust image height for tablet */
-  }
-
-  .nextRightCar2, .nextLeftCar2 {
-    bottom: 40%; /* Adjust button position */
-    width: 45px; /* Resize buttons */
-  }
+.nav-button:hover img {
+    transform: scale(1.15);
+    opacity: 0.75;
 }
 
-/* Mobile size (below 768px) */
-@media screen and (max-width: 767px) {
-  .carouselcontainer{
-    margin-bottom: 5%;
-  }
-  .projtitle{
-    font-size: 70px;
-    margin-bottom: -30px;
-  }
-
-  .carouselcontainer2{
-    width: 1vh;
-  }
-
-  .cardscon2{
-    margin: 5% auto auto auto;
-    width: 65vh;
-  }
-
-  .prodcard2 {
-    width: 90%; /* Maximize width for mobile */
-  }
-
-  .eventpic2 {
-    max-height: 300px; /* Further adjust image height for mobile */
-  }
-
-  .nextRightCar2, .nextLeftCar2 {
-    bottom: 0%; /* Adjust button position */
-    width: 35px; /* Make buttons smaller for mobile */
-  }
-
-  .nextRightCar2{
-    right: -5vw;
-  }
-  .nextLeftCar2{
-    right: 0vw;  
-  }
-
-  .carouselcontainer {
-    padding: 20px 5px; /* Adjust padding for mobile */
-  }
+.radio-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
+.radio-buttons input {
+    margin: 0 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .carouselcontainer2 {
+        padding: 20px 5px;
+    }
+
+    .nav-button img {
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cardscon2 {
+        padding-bottom: 75%; /* Adjust aspect ratio for mobile */
+    }
+
+    .nav-button img {
+        width: 20px;
+    }
+
+    .nav-button {
+        padding: 5px;
+    }
+
+    .prev-button {
+        left: 5px;
+    }
+
+    .next-button {
+        right: 5px;
+    }
+}

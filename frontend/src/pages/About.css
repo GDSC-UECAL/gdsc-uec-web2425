@@ -58,18 +58,16 @@
 .el12-vector { width: 19%; left: -10%; top: 160.6vh; }
 .vec-c { width: 30%; left: -4%; top: 180.6vh; }
 
+F
 .About-Us {
   width: 100%;
-  min-height: 100vh;
+  min-height: 50vh;
   position: relative;
-  overflow: hidden;
+  overflow-x: clip;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
+
 
 .about-content {
   width: 100%;
@@ -82,7 +80,7 @@
 }
 
 .about-title {
-  font-size: 5rem;
+  font-size: 10rem;
   font-weight: 600;
   color: #2c2c2c;
   margin-bottom: 2rem;
@@ -90,8 +88,9 @@
 }
 
 .about-carousel {
-  width: 100%;
-  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .testimg {
@@ -232,7 +231,7 @@ body {
 }
 
 .mission-section {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .mission-title {
@@ -350,7 +349,7 @@ body {
 
 
 @media (max-width: 1200px) {
-  .about-title { font-size: 4rem; }
+  .about-title { font-size: 6rem; }
   .gdsc-title { font-size: 3rem; }
   .gdsc-letter { font-size: 3.5rem; }
   .gdsc-description { font-size: 1.3rem; }
@@ -379,16 +378,12 @@ body {
 }
 
 @media (max-width: 768px) {
-  .about-title { font-size: 3rem; }
+  .about-title { font-size: 6rem; }
   .gdsc-title { font-size: 2.5rem; }
   .gdsc-letter { font-size: 3rem; }
   .gdsc-description { font-size: 1.1rem; }
   .floating-element { width: 10%; }
   .vector-image { width: 30%; }
-  .about-title {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
   .mission-item {margin-bottom: 3rem;}
   .about-content {padding: 1rem;}
   .side-image {opacity: 0.5;}
@@ -413,11 +408,11 @@ body {
   .text-together,
   .text-we-discover,
   .text-future {font-size: 50px;}
-  .about-title {font-size: 2.5rem;}
+  .about-title {font-size: 4rem;}
   .side-image {opacity: 0.3;}
   .testimg {opacity: 0.5;}
   .mission-title, .vision-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
   }
 }
